@@ -14,7 +14,9 @@ var Blob = function(group, graphNodes, graphSvg) {
     this.shape = graphSvg.append('g')
         .append("path")
         .attr("fill", color(group))
-        .attr('opacity', .3);
+        .attr('stroke-width', 60)
+        .attr('stroke', color(group))
+        .attr('opacity', .7);
 
     var getCenter = function(data) {
         var totalX = 0, totalY = 0;
@@ -71,8 +73,8 @@ var node, link, hull, nodes;
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 
 var simulation = d3.forceSimulation()
-    .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(200))
-    .force("charge", d3.forceManyBody().strength(-2000))
+    .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(20))
+    .force("charge", d3.forceManyBody().strength(-200))
     .force("center", d3.forceCenter(width / 2, height / 2));
 
 var loadData = new Promise(function(resolve, reject) { 
