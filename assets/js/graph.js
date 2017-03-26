@@ -7,7 +7,7 @@ var lineFunction = d3.line()
                       .x(function(d) { return d.x; })
                       .y(function(d) { return d.y; });
 
-var Blob = function(group, node) {
+var Blob = function(group, node, svg) {
     this.group = group;
     this.nodes = [];
     this.nodes.push(node);
@@ -75,10 +75,10 @@ var createBlobs = function(nodes) {
             }
         }
         if (hulls.length === 0) {
-            hulls.push(new Blob(nodes[i].group, nodes[i]));
+            hulls.push(new Blob(nodes[i].group, nodes[i], svg));
         }
         if(noGroup) {
-            hulls.push(new Blob(nodes[i].group, nodes[i]));
+            hulls.push(new Blob(nodes[i].group, nodes[i], svg));
         }
     }
 }
