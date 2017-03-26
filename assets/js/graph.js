@@ -104,7 +104,7 @@ var simulation = d3.forceSimulation()
 var linkHovered = {source: 0, target: 0, hover: false};
 var node;
 
-d3.json("./js/miserables.json", function(error, graph) {
+d3.json("./js/data/miserables.json", function(error, graph) {
     if (error) throw error;
 
     createBlobs(graph.nodes);
