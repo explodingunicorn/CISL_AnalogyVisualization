@@ -50,10 +50,6 @@ var Blob = function(group, graphNodes, graphSvg) {
         return newHull;
     }
 
-    this.printHull = function() {
-        console.log(updateHull(this.nodes, this.hull));
-    }
-
     this.update = function() {
         this.center = getCenter(this.nodes);
         this.hull.anchorPoint = this.center;
@@ -77,8 +73,9 @@ var simulation = d3.forceSimulation()
     .force("charge", d3.forceManyBody().strength(-200))
     .force("center", d3.forceCenter(width / 2, height / 2));
 
+//Creating promise for our XML data
 var loadData = new Promise(function(resolve, reject) { 
-    d3.xml("./js/data/ww2.xml", function(error, graph) {
+    d3.xml("../../data/roman_empire_1000.xml", function(error, graph) {
         console.log(graph);
 
         var dataFeatures = graph.querySelector("AIMind").querySelector("Features").querySelectorAll("Feature");
@@ -96,68 +93,86 @@ var loadData = new Promise(function(resolve, reject) {
             };
         });
 
-        var filterTrack = 1;
+        //Filter nodes, this changes our nodes array and returns a nodes filter array
         var nodesFilter = (function() {
+            //Fill this array with 1's or 0's at the nodes ID depending on if the node meets the requirements
             var arr = [];
-            arr[0] = "start";
             for(var i = 0; i < nodes.length; i++) {
-                if(nodes[i].connections.length < 5) {
-                    arr[filterTrack] = 0;
+                if(nodes[i].connections.length < 1) {
+                    //Set our node filter place to false
+                    arr[parseInt(nodes[i].id)] = 0;
+                    //Remove this node from our nodes array
                     nodes.splice(i, 1);
                     i--;
                 }
                 else {
-                    arr[filterTrack] = 1;
+                    //Set our node filter place to true
+                    arr[parseInt(nodes[i].id)] = 1;
                 }
-                filterTrack++;
             }
             return arr;
         })();
 
         var links = (function() {
             var linksArr = [];
+            var linksFilter = [];
+            var nodesToCheck = []
             console.log(nodesFilter);
             for(var i = 0; i < nodes.length; i++) {
-                if(nodes[i].connections.length > 0)  {
-                    var hasConnections = false;
-                    for(var j = 0; j < nodes[i].connections.length; j++) {
-                        var sourceIndex = parseInt(nodes[i].connections[j].source)
-                        var targetIndex = parseInt(nodes[i].connections[j].target)
-                        if(nodesFilter[sourceIndex] && nodesFilter[targetIndex]) {
-                            linksArr.push(nodes[i].connections[j]);
-                            hasConnections = true;
-                        }
-                    }
-                    if(!hasConnections) {
-                        console.log('no connections');
+                var hasConnections = false;
+                //Loops through all nodes left
+                for(var j = 0; j < nodes[i].connections.length; j++) {
+                    var targetIndex = parseInt(nodes[i].connections[j].target)
+                    //Checking if this node has an outgoing connection with a target
+                    if(nodesFilter[targetIndex]) {
+                        linksArr.push(nodes[i].connections[j]);
+                        linksFilter[targetIndex] = 1;
+                        hasConnections = true;
                     }
                 }
+                if(!hasConnections) {
+                    nodesToCheck.push({node: nodes[i], index: i});
+                    console.log(nodes[i]);
+                }
             }
+
+            //To check if a node has an incoming connection
+            console.log(nodes);
+            // for(var k = 0; k < nodesToCheck.length; k++) {
+            //     if(!linksFilter[parseInt(nodesToCheck[k].node.id)]) {
+            //         nodes.splice(nodesToCheck[k].index, 1);
+            //         console.log(nodesToCheck[k].index);
+            //         console.log(nodesToCheck[k].node.id);
+            //         k--;
+            //     }
+            // }
             return linksArr;
         })();
 
         hull = new Blob('social network', nodes, svg);
         startZoom();
 
-        link = svg.append('g')
-                .attr("class", "links")
-                .selectAll("line")
-                .data(links)
-                .enter().append("line")
-                .attr('stroke', 'white')
-                .attr("stroke-width", '3');
-
-        node = svg.append('g')
-                .attr("class", "nodes")
-                .selectAll("circle")
-                .data(nodes)
-                .enter().append("circle")
-                .attr("r", function(d) { return d.connections.length * 2 })
-                .attr("fill", function(d) { return 'white'; })
-                .call(d3.drag()
-                    .on("start", dragstarted)
-                    .on("drag", dragged)
-                    .on("end", dragended));
+        try {
+            link = svg.append('g')
+                    .attr("class", "links")
+                    .selectAll("line")
+                    .data(links)
+                    .enter().append("line")
+                    .attr('stroke', 'white')
+                    .attr("stroke-width", '3');
+            
+            node = svg.append('g')
+                    .attr("class", "nodes")
+                    .selectAll("circle")
+                    .data(nodes)
+                    .enter().append("circle")
+                    .attr("r", function(d) { return d.connections.length * 2 })
+                    .attr("fill", function(d) { return 'white'; })
+                    .call(d3.drag()
+                        .on("start", dragstarted)
+                        .on("drag", dragged)
+                        .on("end", dragended));
+        
 
         node.append("title")
             .text(function(d) { return d.id; });
@@ -168,6 +183,12 @@ var loadData = new Promise(function(resolve, reject) {
 
         simulation.force("link")
             .links(links);
+        }
+
+        catch (err) {
+            console.log(err);
+            simulation.stop();
+        }
 
         function ticked() {
             if(hull) {
@@ -185,16 +206,19 @@ var loadData = new Promise(function(resolve, reject) {
                 .attr("cy", function(d) { return d.y; })
         }
 
+        
+
         resolve(true);
     });
 });
 
 loadData.then(function(val) {
     if (val) {
-        
+        //Runs after data, and graph is loaded
     }
-}, function() {
-    console.log('error');
+}, function(err) {
+    //Runs on error
+    console.log(err);
 });
 
 function startZoom() {
