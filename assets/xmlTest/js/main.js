@@ -3,8 +3,9 @@ ConvexHullGrahamScan.prototype.removePoints = function() {
 }
 
 var lineFunction = d3.line()
-                      .x(function(d) { return d.x; })
-                      .y(function(d) { return d.y; });
+                        .x(function(d) { return d.x; })
+                        .y(function(d) { return d.y; })
+                        .curve(d3.curveLinearClosed);
 
 var Blob = function(group, graphNodes, graphSvg) {
     this.group = group;
@@ -64,7 +65,7 @@ var svg = d3.select("svg"),
     width = window.innerWidth,
     height = window.innerHeight
 
-var node, link, hull, nodes;
+var node, link, hull, nodes, nodesToDisplay = [];
     
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 
@@ -75,7 +76,7 @@ var simulation = d3.forceSimulation()
 
 //Creating promise for our XML data
 var loadData = new Promise(function(resolve, reject) { 
-    d3.xml("../../data/roman_empire_1000.xml", function(error, graph) {
+    d3.xml("../../data/big_unrestricted_techdata.xml", function(error, graph) {
         console.log(graph);
 
         var dataFeatures = graph.querySelector("AIMind").querySelector("Features").querySelectorAll("Feature");
@@ -93,21 +94,23 @@ var loadData = new Promise(function(resolve, reject) {
             };
         });
 
+        var availableTargets = [];
         //Filter nodes, this changes our nodes array and returns a nodes filter array
         var nodesFilter = (function() {
             //Fill this array with 1's or 0's at the nodes ID depending on if the node meets the requirements
             var arr = [];
             for(var i = 0; i < nodes.length; i++) {
-                if(nodes[i].connections.length < 1) {
+                if(nodes[i].connections.length > 10) {
                     //Set our node filter place to false
-                    arr[parseInt(nodes[i].id)] = 0;
                     //Remove this node from our nodes array
-                    nodes.splice(i, 1);
-                    i--;
+                    //nodes.splice(i, 1);
+                    //arr.push(i);
+                    availableTargets[parseInt(nodes[i].id)] = 1;
+                    arr.push(i);
                 }
                 else {
-                    //Set our node filter place to true
-                    arr[parseInt(nodes[i].id)] = 1;
+                    // Set our node filter place to true
+                    availableTargets[parseInt(nodes[i].id)] = 0;
                 }
             }
             return arr;
@@ -115,41 +118,44 @@ var loadData = new Promise(function(resolve, reject) {
 
         var links = (function() {
             var linksArr = [];
-            var linksFilter = [];
+            var linksTargets = [];
             var nodesToCheck = []
             console.log(nodesFilter);
-            for(var i = 0; i < nodes.length; i++) {
+            for(var i = 0; i < nodesFilter.length; i++) {
                 var hasConnections = false;
-                //Loops through all nodes left
-                for(var j = 0; j < nodes[i].connections.length; j++) {
-                    var targetIndex = parseInt(nodes[i].connections[j].target)
+                //Set our index to an integer that references the position in all of the nodes
+                var nodesFilterIndex = nodesFilter[i];
+                nodesToDisplay.push(nodes[nodesFilterIndex]);
+                for(var j = 0; j < nodesToDisplay[i].connections.length; j++) {
+                    var targetId = parseInt(nodesToDisplay[i].connections[j].target)
                     //Checking if this node has an outgoing connection with a target
-                    if(nodesFilter[targetIndex]) {
-                        linksArr.push(nodes[i].connections[j]);
-                        linksFilter[targetIndex] = 1;
+                    if(availableTargets[targetId]) {
+                        linksArr.push(nodes[nodesFilterIndex].connections[j]);
+                        // linksFilter[targetIndex] = 1;
                         hasConnections = true;
+                        linksTargets[targetId] = 1;
                     }
                 }
                 if(!hasConnections) {
-                    nodesToCheck.push({node: nodes[i], index: i});
-                    console.log(nodes[i]);
+                    nodesToCheck.push({node: nodes[nodesFilterIndex], index: i});
                 }
             }
+            console.log(linksTargets);
 
             //To check if a node has an incoming connection
-            console.log(nodes);
-            // for(var k = 0; k < nodesToCheck.length; k++) {
-            //     if(!linksFilter[parseInt(nodesToCheck[k].node.id)]) {
-            //         nodes.splice(nodesToCheck[k].index, 1);
-            //         console.log(nodesToCheck[k].index);
-            //         console.log(nodesToCheck[k].node.id);
-            //         k--;
-            //     }
-            // }
+            console.log(nodesToCheck);
+            var nodesRemoved = 0;
+            for(var i = 0; i < nodesToCheck.length; i++) {
+                var id = parseInt(nodesToCheck[i].node.id);
+                if(!linksTargets[id]) {
+                    nodesToDisplay.splice(nodesToCheck[i].index - nodesRemoved, 1);
+                    nodesRemoved += 1;
+                }
+            }
             return linksArr;
         })();
 
-        hull = new Blob('social network', nodes, svg);
+        hull = new Blob('social network', nodesToDisplay, svg);
         startZoom();
 
         try {
@@ -164,9 +170,9 @@ var loadData = new Promise(function(resolve, reject) {
             node = svg.append('g')
                     .attr("class", "nodes")
                     .selectAll("circle")
-                    .data(nodes)
+                    .data(nodesToDisplay)
                     .enter().append("circle")
-                    .attr("r", function(d) { return d.connections.length * 2 })
+                    .attr("r", function(d) { return d.connections.length || 1 })
                     .attr("fill", function(d) { return 'white'; })
                     .call(d3.drag()
                         .on("start", dragstarted)
@@ -178,7 +184,7 @@ var loadData = new Promise(function(resolve, reject) {
             .text(function(d) { return d.id; });
 
         simulation
-            .nodes(nodes)
+            .nodes(nodesToDisplay)
             .on("tick", ticked);
 
         simulation.force("link")
@@ -232,7 +238,6 @@ function startZoom() {
                 .on("zoom", zoomed));
 
     function zoomed() {
-        console.log('hi');
         node.attr('transform', d3.event.transform);
         link.attr('transform', d3.event.transform);
         hull.shape.attr('transform', d3.event.transform);
