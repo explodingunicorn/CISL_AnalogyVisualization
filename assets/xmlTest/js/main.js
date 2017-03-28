@@ -74,9 +74,9 @@ var simulation = d3.forceSimulation()
     .force("charge", d3.forceManyBody().strength(-200))
     .force("center", d3.forceCenter(width / 2, height / 2));
 
-//Creating promise for our XML data
+//Creating promise for our XML dataaa;
 var loadData = new Promise(function(resolve, reject) { 
-    d3.xml("../../data/big_unrestricted_techdata.xml", function(error, graph) {
+    d3.xml("../../data/ww2.xml", function(error, graph) {
         console.log(graph);
 
         var dataFeatures = graph.querySelector("AIMind").querySelector("Features").querySelectorAll("Feature");
@@ -100,7 +100,7 @@ var loadData = new Promise(function(resolve, reject) {
             //Fill this array with 1's or 0's at the nodes ID depending on if the node meets the requirements
             var arr = [];
             for(var i = 0; i < nodes.length; i++) {
-                if(nodes[i].connections.length > 10) {
+                if(nodes[i].connections.length > 3) {
                     //Set our node filter place to false
                     //Remove this node from our nodes array
                     //nodes.splice(i, 1);
@@ -140,10 +140,9 @@ var loadData = new Promise(function(resolve, reject) {
                     nodesToCheck.push({node: nodes[nodesFilterIndex], index: i});
                 }
             }
-            console.log(linksTargets);
 
-            //To check if a node has an incoming connection
-            console.log(nodesToCheck);
+            //To check if a node has an incoming connecti
+            console.log('pls workkkk');
             var nodesRemoved = 0;
             for(var i = 0; i < nodesToCheck.length; i++) {
                 var id = parseInt(nodesToCheck[i].node.id);

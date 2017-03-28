@@ -13,4 +13,7 @@ app.listen(port, function() {
     console.log('Running on port 3000!');
 });
 
-//tweet.stream();
+
+var livereload = require('livereload');
+var lrserver = livereload.createServer();
+lrserver.watch([__dirname + "/assets/js", __dirname + "/assets/xmltest/js"]);

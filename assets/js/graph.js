@@ -1,4 +1,4 @@
-console.log('wtf');
+console.log('wtfffffffffffffffffffff');
 ConvexHullGrahamScan.prototype.removePoints = function() {
     this.points = [];
 }
