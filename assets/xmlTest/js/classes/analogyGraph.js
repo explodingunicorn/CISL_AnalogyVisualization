@@ -3,7 +3,10 @@ var AnalogyGraph = function() {
     var width = window.innerWidth;
     var height = window.innerHeight;
 
-    var hull, _NODES, _LINKS;
+    var _HULLS = [], _NODES, _LINKS;
+    var hull = svg.append('g')
+                    .attr('class', 'hulls');
+    startZoom();
     var link = svg.append('g')
                     .attr("class", "links")
                     .selectAll("line");
@@ -22,6 +25,7 @@ var AnalogyGraph = function() {
         .force("charge", d3.forceManyBody().strength(-200))
         .force("center", d3.forceCenter(width / 2, height / 2));
 
+    //Private function to filter our nodes when they are 
     var filterNodes = function(nodes) {
         var nodesToDisplay = [];
         var availableTargets = [];
@@ -42,7 +46,6 @@ var AnalogyGraph = function() {
             }
             return arr;
         })();
-        console.log(nodesFilter);
 
         var links = (function() {
             var linksArr = [];
@@ -134,54 +137,42 @@ var AnalogyGraph = function() {
 
         simulation.alpha(1).restart();
     }
-
-    var updateGraph = function() {
-        link.enter().append("line")
-                    .attr('stroke', 'black')
-                    .attr("stroke-width", '3');
-
-        link.exit().remove();
-
-        node.enter().append("circle")
-                .attr("r", function(d) { return d.connections.length || 1 })
-                .attr("fill", function(d) { return 'white'; })
-                .call(d3.drag()
-                    .on("start", dragstarted)
-                    .on("drag", dragged));
-        
-        node.exit().remove();
-    }
-
+    //Function for loading a new data set, the only public function on this class
     this.loadDataSet = function(dataSetName, tag) {
+        //D3 function to read our XML
         d3.xml(dataSetName, function(error, graph) {
 
+            //Have to grab AIMind, then Features, then Feature first to get the XML tags we need
             var dataFeatures = graph.querySelector("AIMind").querySelector("Features").querySelectorAll("Feature");
+            //Setting nodes to whatever is returned after we read the data, using map to create a new array
             var nodes = [].map.call(dataFeatures, function(feature) {
+                //Setting the features ID to a variable to be used elsewhere
                 var id = feature.getAttribute("id");
+                //Return our data to nodes
                 return {
-                id: feature.getAttribute("id")+tag,
-                name: feature.getAttribute("data"),
-                connections: [].map.call(feature.querySelector("neighbors").querySelectorAll("neighbor"), function(n) {
-                    return {
-                        source: id+tag,
-                        target: n.getAttribute('dest')+tag
-                    };
-                })
+                    id: id+tag,
+                    name: feature.getAttribute("data"),
+                    //Make another selection, this time selecting all of our connections or Neighbors
+                    connections: [].map.call(feature.querySelector("neighbors").querySelectorAll("neighbor"), function(n) {
+                            return {
+                                //Return the source and target
+                                source: id+tag,
+                                target: n.getAttribute('dest')+tag
+                            };
+                    })
                 };
             });
 
+            //Push our nodes to our existing graphs array
             existingGraphs.push(nodes);
+            //Assemble the graph 
             assembleGraph(existingGraphs.length-1);
+            _HULLS.push(new Blob(tag, nodeGroupsArr[existingGraphs.length-1], hull));
 
             //hull = new Blob('social network', nodesToDisplay, svg);
+            //If we are running this for the first time append our zoom rect, and our node and link group to our svg
             if(existingGraphs.length === 1) {
-                startZoom();
-                node = svg.append('g')
-                    .attr('class', 'nodes')
-                    .selectAll("circle");
-                svg.append('g')
-                    .attr("class", "links")
-                    .selectAll("line");
+                //startZoom();
                 startGraph();
 
             }
@@ -191,29 +182,26 @@ var AnalogyGraph = function() {
         });
     }
 
+    //Function that runs to update the graph, or on 'tick'
     function ticked() {
-        try {
-            if(hull) {
-                hull.update();
-            };
+        if(_HULLS) {
+            for (var i = 0; i < _HULLS.length; i++) {
+                _HULLS[i].update();
+            }
+        };
 
-            node
-                .attr("cx", function(d) { return d.x; })
-                .attr("cy", function(d) { return d.y; })
+        node
+            .attr("cx", function(d) { return d.x; })
+            .attr("cy", function(d) { return d.y; })
 
-            link
-                .attr("x1", function(d) { return d.source.x; })
-                .attr("y1", function(d) { return d.source.y; })
-                .attr("x2", function(d) { return d.target.x; })
-                .attr("y2", function(d) { return d.target.y; });
-
-            console.log('this working?');
-        }
-        catch(e) {
-            console.log(e);
-        }
+        link
+            .attr("x1", function(d) { return d.source.x; })
+            .attr("y1", function(d) { return d.source.y; })
+            .attr("x2", function(d) { return d.target.x; })
+            .attr("y2", function(d) { return d.target.y; });
     }
 
+    //Function to start our zoom in feature
     function startZoom() {
         svg.append("rect")
                 .attr("width", width)
@@ -227,10 +215,13 @@ var AnalogyGraph = function() {
         function zoomed() {
             node.attr('transform', d3.event.transform);
             link.attr('transform', d3.event.transform);
-            //hull.shape.attr('transform', d3.event.transform);
+            for(var i = 0; i < _HULLS.length; i++) {
+                _HULLS[i].shape.attr('transform', d3.event.transform);
+            }
         }
     }
 
+    //Functions for updating our nodes when we drag them
     function dragstarted(d) {
         if (!d3.event.active) simulation.alphaTarget(0.3).restart();
         d.fx = d.x;

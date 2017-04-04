@@ -16,4 +16,5 @@ app.listen(port, function() {
 
 var livereload = require('livereload');
 var lrserver = livereload.createServer();
-lrserver.watch([__dirname + "/assets/js", __dirname + "/assets/xmltest/js"]);
+console.log(__dirname);
+lrserver.watch(__dirname + "/assets/xmlTest");

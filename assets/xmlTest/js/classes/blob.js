@@ -19,7 +19,7 @@ var Blob = function(group, nodes, svg) {
         .attr("fill", color(group))
         .attr('stroke', color(group))
         .attr('stroke-width', 40)
-        .attr('opacity', .3);
+        .attr('opacity', .6);
 
     var getCenter = function(data) {
         var totalX = 0, totalY = 0;
