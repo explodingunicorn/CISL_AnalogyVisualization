@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+.app {
+    width: 100%;
+    height: 100%;
+}
+svg {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+.links line {
+    stroke: white;
+    stroke-opacity: 0.3;
+}
+
+.nodes circle {
+    stroke-width: 3px;
+}
+
+h1 {
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0;
+}
+
+.acceptBtn {
+    background-color: #86BA90;
+    border-radius: 3px;
+    color: #f7fff7;
+    display: block;
+    padding: 10px 15px;
+}
+
+.acceptBtn:hover {
+    cursor: pointer;
+}
+
+.acceptBtn h1 {
+    display: inline-block;
+    margin: 0 !important;
+}
+
+.full-screen-container {
+    align-items: center;
+    background-color: rgba(0,0,0, .3);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 101;
+}
+
+.data-selector {
+    background-color: #f7fff7;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    height: auto;
+}
+
+.data-selector h1 {
+    margin-bottom: 10px;
+}
+
+.data-selector select {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+.add-data {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.nodeTitle {
+    font-family: arial;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #999;
+}

@@ -1,49 +1,39 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<style>
-    html {
-        width: 100%;
-        height: 100%;
-    }
-    body{
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        height: 100%;
-    }
-    svg {
-        width: 100%;
-        height: 100%;
-    }
-    .links line {
-      stroke: #999;
-      stroke-opacity: 0.6;
-    }
-
-    .nodes circle {
-      stroke: #fff;
-      stroke-width: 1.5px;
-    }
-
-    .nodeTitle {
-        font-family: arial;
-        position: fixed;
-        top: 0;
-        left: 0;
-        margin: 0;
-        padding: 10px;
-        background-color: white;
-        border: 1px solid #999;
-    }
-
-</style>
-<svg></svg>
-<p id="node1" class="nodeTitle"></p>
-<p id="node2" class="nodeTitle"></p>
-<script
-  src="https://code.jquery.com/jquery-3.2.0.min.js"
-  integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
-  crossorigin="anonymous"></script>
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="./js/graham_scan.min.js"></script>
-<script src="./js/graph.js"></script>
+<html>
+    <head>
+        <link href="./css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="./css/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="app">
+            <svg id="graph"></svg>
+            <p id="node1" class="nodeTitle"></p>
+            <p id="node2" class="nodeTitle"></p>
+            <div v-if="selecting" class="full-screen-container">
+                <div class="data-selector">
+                    <h1>What data set would you like to load?</h1>
+                    <select v-model="currentlySelected">
+                        <option v-for="set in dataSelections" v-bind:value="set.val">{{set.name}}</option>
+                    </select>
+                    <div class="acceptBtn" v-on:click="addDataSet"><h1><i class="fa fa-plus-circle" aria-hidden="true"></i> add this data</h1></div>
+                </div>
+            </div>
+            <div class="add-data acceptBtn" v-on:click="selecting=true"><h1><i class="fa fa-plus-circle" aria-hidden="true"></i> add new data set</h1></div>
+        </div>
+        <script
+        src="https://code.jquery.com/jquery-3.2.0.min.js"
+        integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
+        crossorigin="anonymous"></script>
+        <script src="./js/vue.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="./js/graham_scan.min.js"></script>
+        <script src="./js/classes/blob.js"></script>
+        <script src="./js/classes/analogyGraph.js"></script>
+        <script src="./js/main.js"></script>
+        <script>
+        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+        ':35729/livereload.js?snipver=1"></' + 'script>')
+        </script> 
+    </body>
+</html>
