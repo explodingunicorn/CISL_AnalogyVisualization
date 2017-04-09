@@ -8,13 +8,19 @@
     <body>
         <div class="app">
             <svg id="graph"></svg>
-            <p id="node1" class="nodeTitle"></p>
-            <p id="node2" class="nodeTitle"></p>
+            <div class="set-container">
+                <div class="set-selector" v-for="set in dataSetsUsed" v-bind:style="{backgroundColor: set.color}" v-on:click="generateAnalogy">
+                    <h2>{{set.name}}</h2>
+                    <div class="del-container">
+                        <p><i class="fa fa-cog" aria-hidden="true"></i> <i class="fa fa-trash" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+            </div>
             <div v-if="selecting" class="full-screen-container">
                 <div class="data-selector">
                     <h1>What data set would you like to load?</h1>
                     <select v-model="currentlySelected">
-                        <option v-for="set in dataSelections" v-bind:value="set.val">{{set.name}}</option>
+                        <option v-for="set in dataSetsAvailable" v-bind:value="set.val">{{set.name}}</option>
                     </select>
                     <div class="acceptBtn" v-on:click="addDataSet"><h1><i class="fa fa-plus-circle" aria-hidden="true"></i> add this data</h1></div>
                 </div>
@@ -22,9 +28,9 @@
             <div class="add-data acceptBtn" v-on:click="selecting=true"><h1><i class="fa fa-plus-circle" aria-hidden="true"></i> add new data set</h1></div>
         </div>
         <script
-        src="https://code.jquery.com/jquery-3.2.0.min.js"
-        integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
-        crossorigin="anonymous"></script>
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
         <script src="./js/vue.js"></script>
         <script src="https://d3js.org/d3.v4.min.js"></script>
         <script src="./js/graham_scan.min.js"></script>

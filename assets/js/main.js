@@ -8,40 +8,48 @@ var app = new Vue({
         selecting: false,
         //We are binding this to our data sets selection dropdown
         currentlySelected: 'music',
+        dataSetsUsed: [],
         //An object that holds all of the relevant info for our current data sets
-        dataSelections: {
-            music: {
+        dataSetsAvailable: [
+            {
                 name: 'Music',
                 val: 'music'
             },
-            nfl: {
+            {
                 name: 'NFL',
                 val: 'nfl'
             },
-            oil: {
+            {
                 name: 'Oil',
                 val: 'oil'
             },
-            roman: {
+            {
                 name: 'Roman Empire',
                 val: 'romanEmpire1000'
             },
-            tech: {
+            {
                 name: 'Tech',
                 val: 'techdata'
             },
-            ww2: {
+            {
                 name: 'World War II',
                 val: 'ww2'
             },
-        }
+        ],
+
     },
     methods: {
         //This adds data sets to our graph using analogy graph
         addDataSet: function() {
-            console.log(this.currentlySelected);
-            this.graph.loadDataSet('js/data/' + this.currentlySelected + '.xml', this.currentlySelected);
+            var tag = this.currentlySelected;
+            this.graph.loadDataSet('js/data/' + tag + '.xml', tag);
+            var newColor = this.graph.getColor(tag);
             this.selecting = false;
+            console.log(newColor);
+            this.dataSetsUsed.push({name: this.currentlySelected, color: newColor});
+        },
+        generateAnalogy: function() {
+            this.graph.getAnalogy();
         }
     },
     mounted: function() {
@@ -49,4 +57,4 @@ var app = new Vue({
         this.graph = new AnalogyGraph();
         this.graphMounted = true;
     }
-})
+});

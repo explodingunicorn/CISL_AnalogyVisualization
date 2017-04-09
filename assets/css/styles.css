@@ -13,13 +13,16 @@ body{
     overflow-y: hidden;
 }
 .app {
+    position: relative;
     width: 100%;
     height: 100%;
 }
 svg {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    overflow-y: hidden;
 }
 .links line {
     stroke: white;
@@ -34,6 +37,13 @@ h1 {
     font-family: 'Source Sans Pro';
     font-weight: 600;
     font-size: 24px;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-size: 22px;
     margin: 0;
 }
 
@@ -90,6 +100,48 @@ h1 {
     position: fixed;
     bottom: 20px;
     right: 20px;
+}
+
+.set-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.set-selector {
+    background-color: #86BA90;
+    box-sizing: border-box;
+    color: white;
+    display: inline-block;
+    flex: 1;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    transition: all .5s;
+    z-index:99;
+}
+
+.set-selector .del-container {
+    align-items: center;
+    bottom: 0;
+    color: white !important;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: auto;
+    z-index: 100;
+}
+
+.set-selector:hover {
+    cursor: pointer;
+    flex: 1.5;
+}
+
+.set-selector:hover .del-container {
+    opacity: 1;
 }
 
 .nodeTitle {

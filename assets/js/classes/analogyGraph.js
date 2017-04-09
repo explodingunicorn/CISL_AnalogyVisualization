@@ -20,15 +20,48 @@ var AnalogyGraph = function() {
     //Use this array to hold data sets the user is adding
     var existingGraphs = [];
     //This holds filtered node groups
-    var nodeGroupsArr = [];
+    var nodeGroups = [];
     //this holds filtered link groups
-    var linkGroupsArr = [];
+    var linkGroups = [];
 
     //This is the force graph simulation
     var simulation = d3.forceSimulation()
         .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(20))
         .force("charge", d3.forceManyBody().strength(-200))
         .force("center", d3.forceCenter(width / 2, height / 2));
+
+    this.getAnalogy = function() {
+        var randNode1 = nodeGroups[0].data[Math.floor(Math.random() * nodeGroups[0].data.length)];
+        var randNode2 = nodeGroups[1].data[Math.floor(Math.random() * nodeGroups[1].data.length)];
+        var feat1 = randNode1.name;
+        var feat2 = randNode2.name;
+        var f1 = nodeGroups[0].key;
+        var f2 = nodeGroups[1].key;
+        $.ajax({
+            url: 'http://localhost:5000/find_best_analogy',
+            data: {
+                file1: f1 + '.xml',
+                file2: f2 + '.xml',
+                feature: feat1,
+            },
+            type: 'POST',
+            success: function(response) {
+                linkGroups[0].data.push({source: randNode1, target: randNode2});
+                linkGroups[1].data.push({source: randNode2, target: randNode1});
+                randNode2.dupe = true;
+                nodeGroups[0].data.push(randNode2);
+                randNode1.dupe = true;
+                nodeGroups[1].data.push(randNode1);
+                assembleGraph();
+                startGraph();
+                var analogy = JSON.parse(response);
+                console.log(analogy);
+            },
+            error: function(error) {
+                console.log(error);
+            }
+        });
+    }
 
     //Private function to filter our nodes when they are 
     var filterNodes = function(nodes) {
@@ -95,29 +128,33 @@ var AnalogyGraph = function() {
 
     //Assembles all of our nodes and links into 2 arrays
     var assembleGraph = function(index) {
-        //Filter our nodes and save the results to res
-        var res = filterNodes(existingGraphs[index]);
-        //Copy the arrays
-        var resNodes = res.nodes.slice();
-        var resLinks = res.links.slice();
-        //Push the nodes, and links to our node groups, and link groups
-        nodeGroupsArr.push(resNodes);
-        linkGroupsArr.push(resLinks);
+        if(index >= 0) {
+            //Filter our nodes and save the results to res
+            var res = filterNodes(existingGraphs[index].data);
+            //Copy the arrays
+            var resNodes = res.nodes.slice();
+            var resLinks = res.links.slice();
+            //Push the nodes, and links to our node groups, and link groups
+            nodeGroups.push({data: resNodes, key: existingGraphs[index].key});
+            linkGroups.push({data: resLinks, key: existingGraphs[index].key});
+        }
 
         //Reset our nodes and links
         _NODES = [];
         _LINKS = [];
 
         //A for loop to push our nodes and links from their groups into one array
-        for(var i = 0; i < nodeGroupsArr.length; i++) {
-            for(var j = 0; j < nodeGroupsArr[i].length; j++) {
-                _NODES.push(nodeGroupsArr[i][j]);
+        for(var i = 0; i < nodeGroups.length; i++) {
+            for(var j = 0; j < nodeGroups[i].data.length; j++) {
+                _NODES.push(nodeGroups[i].data[j]);
             }
 
-            for(var k = 0; k< linkGroupsArr[i].length; k++) {
-                _LINKS.push(linkGroupsArr[i][k]);
+            for(var k = 0; k< linkGroups[i].data.length; k++) {
+                _LINKS.push(linkGroups[i].data[k]);
             }
         }
+
+        console.log(_LINKS);
     }
 
     //This function is used to update our graph when we add new nodes and links
@@ -161,24 +198,26 @@ var AnalogyGraph = function() {
                 var id = feature.getAttribute("id");
                 //Return our data to nodes
                 return {
-                    id: id+tag,
+                    id: id,
                     name: feature.getAttribute("data"),
                     //Make another selection, this time selecting all of our connections or Neighbors
                     connections: [].map.call(feature.querySelector("neighbors").querySelectorAll("neighbor"), function(n) {
                             return {
                                 //Return the source and target
-                                source: id+tag,
-                                target: n.getAttribute('dest')+tag
+                                source: id,
+                                target: n.getAttribute('dest')
                             };
                     })
                 };
             });
 
+            console.log(nodes[0].connections[0]);
+
             //Push our nodes to our existing graphs array
-            existingGraphs.push(nodes);
+            existingGraphs.push({data: nodes, key: tag});
             //Assemble the graph 
             assembleGraph(existingGraphs.length-1);
-            _HULLS.push(new Blob(tag, nodeGroupsArr[existingGraphs.length-1], hull));
+            _HULLS.push(new Blob(tag, nodeGroups[existingGraphs.length-1].data, hull));
 
             //hull = new Blob('social network', nodesToDisplay, svg);
             //If we are running this for the first time append our zoom rect, and our node and link group to our svg
@@ -190,7 +229,14 @@ var AnalogyGraph = function() {
             else {
                 startGraph();
             }
+            
+           
         });
+    }
+
+    this.getColor = function(tag) {
+        console.log(color(tag));
+        return color(tag);
     }
 
     //Function that runs to update the graph, or on 'tick'
