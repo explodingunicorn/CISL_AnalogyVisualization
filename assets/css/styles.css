@@ -26,7 +26,7 @@ svg {
 }
 .links line {
     stroke: white;
-    stroke-opacity: 0.3;
+    opacity: .4;
 }
 
 .nodes circle {
@@ -144,13 +144,10 @@ h2 {
     opacity: 1;
 }
 
-.nodeTitle {
-    font-family: arial;
+.label {
     position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
     padding: 10px;
     background-color: white;
     border: 1px solid #999;
+    z-index: 100;
 }

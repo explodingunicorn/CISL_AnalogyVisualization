@@ -8,6 +8,26 @@ var app = new Vue({
         selecting: false,
         //We are binding this to our data sets selection dropdown
         currentlySelected: 'music',
+        nodeLabels: [
+            {
+                name: 'placeholder',
+                styles: {
+                    display: 'none',
+                    top: 0,
+                    left: 0,
+                    
+                }
+            },
+            {
+                name: 'placeholder',
+                styles: {
+                    display: 'none',
+                    top: 0,
+                    left: 0,
+                    
+                }
+            },
+        ],
         dataSetsUsed: [],
         //An object that holds all of the relevant info for our current data sets
         dataSetsAvailable: [
@@ -45,16 +65,20 @@ var app = new Vue({
             this.graph.loadDataSet('js/data/' + tag + '.xml', tag);
             var newColor = this.graph.getColor(tag);
             this.selecting = false;
-            console.log(newColor);
-            this.dataSetsUsed.push({name: this.currentlySelected, color: newColor});
+            this.dataSetsUsed.push({name: tag, color: newColor});
         },
         generateAnalogy: function() {
-            this.graph.getAnalogy();
+            this.graph.createAnalogyLinks();
         }
     },
     mounted: function() {
         //We are instantiating our Analogy Graph here because we need to wait for the app to mount in order for the svg to be available to d3
-        this.graph = new AnalogyGraph();
+        this.graph = new AnalogyGraph(this.nodeLabels);
         this.graphMounted = true;
+        var color;
+        this.currentlySelected = 'music';
+        this.addDataSet();
+        this.currentlySelected = 'romanEmpire1000';
+        this.addDataSet();
     }
 });

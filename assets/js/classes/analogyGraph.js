@@ -1,4 +1,4 @@
-var AnalogyGraph = function() {
+var AnalogyGraph = function(labels) {
     var svg = d3.select("#graph");
     var width = window.innerWidth;
     var height = window.innerHeight;
@@ -14,6 +14,7 @@ var AnalogyGraph = function() {
     var node = svg.append('g')
                     .attr('class', 'nodes')
                     .selectAll("circle");
+    var LABELS = [svg.append('text'), svg.append('text')];
         
     var color = d3.scaleOrdinal(d3.schemeCategory20);
 
@@ -30,11 +31,28 @@ var AnalogyGraph = function() {
         .force("charge", d3.forceManyBody().strength(-200))
         .force("center", d3.forceCenter(width / 2, height / 2));
 
-    this.getAnalogy = function() {
-        var randNode1 = nodeGroups[0].data[Math.floor(Math.random() * nodeGroups[0].data.length)];
-        var randNode2 = nodeGroups[1].data[Math.floor(Math.random() * nodeGroups[1].data.length)];
-        var feat1 = randNode1.name;
-        var feat2 = randNode2.name;
+    this.createBestAnalogyLinks = function() {
+        if(nodeGroups.length >=2 ) {
+            for (var i = 0; i < nodeGroups[0].data.length; i++) {
+                this.getBestAnalogy(i);
+            }
+        }
+    }
+
+    this.createAnalogyLinks = function() {
+        if(nodeGroups.length>=2) {
+            for (var i = 0; i < nodeGroups[0].data.length; i++) {
+                for (var j = 0; j < nodeGroups[1].data.length; j++) {
+                    this.getAnalogy(i, j);
+                    console.log('getting analogy');
+                }
+            }
+        }
+    }
+
+    this.getBestAnalogy = function(index) {
+        var srcNode = nodeGroups[0].data[index];
+        var feat1 = srcNode.name;
         var f1 = nodeGroups[0].key;
         var f2 = nodeGroups[1].key;
         $.ajax({
@@ -46,16 +64,75 @@ var AnalogyGraph = function() {
             },
             type: 'POST',
             success: function(response) {
-                linkGroups[0].data.push({source: randNode1, target: randNode2});
-                linkGroups[1].data.push({source: randNode2, target: randNode1});
-                randNode2.dupe = true;
-                nodeGroups[0].data.push(randNode2);
-                randNode1.dupe = true;
-                nodeGroups[1].data.push(randNode1);
-                assembleGraph();
-                startGraph();
                 var analogy = JSON.parse(response);
-                console.log(analogy);
+                if(analogy.total_score > .8) {
+                    var target = analogy.target;
+                    var targetNode;
+                    for(var i = 0; i < nodeGroups[1].data.length; i++) {
+                        if(nodeGroups[1].data[i].name === target) {
+                            targetNode = nodeGroups[1].data[i];
+                            break;
+                        }
+                    }
+
+                    if(targetNode) {
+                        linkGroups[0].data.push({source: srcNode, target: targetNode, value: analogy.total_score});
+                        _HULLS[0].nodes.push(targetNode);
+                        _HULLS[1].nodes.push(srcNode);
+                        assembleGraph();
+                        startGraph();
+                    }
+                }
+                // linkGroups[0].data.push({source: randNode1, target: randNode2});
+                // linkGroups[1].data.push({source: randNode2, target: randNode1});
+                // randNode2.dupe = true;
+                // nodeGroups[0].data.push(randNode2);
+                // randNode1.dupe = true;
+                // nodeGroups[1].data.push(randNode1);
+                // assembleGraph();
+                // startGraph();
+                
+            },
+            error: function(error) {
+                console.log(error);
+            }
+        });
+    }
+
+    this.getAnalogy = function(i, j) {
+        var srcNode = nodeGroups[0].data[i];
+        var targetNode = nodeGroups[1].data[j];
+        var feat1 = srcNode.name;
+        var feat2 = targetNode.name;
+        var f1 = nodeGroups[0].key;
+        var f2 = nodeGroups[1].key;
+        $.ajax({
+            url: 'http://localhost:5000/get_analogy',
+            data: {
+                file1: f1 + '.xml',
+                file2: f2 + '.xml',
+                feature1: feat1,
+                feature2: feat2,
+            },
+            type: 'POST',
+            success: function(response) {
+                var analogy = JSON.parse(response);
+                if(analogy.total_score > .9) {
+                    linkGroups[0].data.push({source: srcNode, target: targetNode, value: analogy.total_score});
+                    _HULLS[0].nodes.push(targetNode);
+                    _HULLS[1].nodes.push(srcNode);
+                    assembleGraph();
+                    startGraph();
+                }
+                // linkGroups[0].data.push({source: randNode1, target: randNode2});
+                // linkGroups[1].data.push({source: randNode2, target: randNode1});
+                // randNode2.dupe = true;
+                // nodeGroups[0].data.push(randNode2);
+                // randNode1.dupe = true;
+                // nodeGroups[1].data.push(randNode1);
+                // assembleGraph();
+                // startGraph();
+                
             },
             error: function(error) {
                 console.log(error);
@@ -75,7 +152,6 @@ var AnalogyGraph = function() {
                 if(nodes[i].connections.length > 5) {
                     availableTargets[parseInt(nodes[i].id)] = 1;
                     arr.push(i);
-                    console.log('pushing node');
                 }
                 else {
                     // Set our node filter place to true
@@ -127,7 +203,7 @@ var AnalogyGraph = function() {
     }
 
     //Assembles all of our nodes and links into 2 arrays
-    var assembleGraph = function(index) {
+    var assembleGraph = function(index, hull) {
         if(index >= 0) {
             //Filter our nodes and save the results to res
             var res = filterNodes(existingGraphs[index].data);
@@ -137,6 +213,9 @@ var AnalogyGraph = function() {
             //Push the nodes, and links to our node groups, and link groups
             nodeGroups.push({data: resNodes, key: existingGraphs[index].key});
             linkGroups.push({data: resLinks, key: existingGraphs[index].key});
+
+            var points = nodeGroups[index].data.slice()
+            _HULLS.push(new Blob(existingGraphs[index].key, points, hull));
         }
 
         //Reset our nodes and links
@@ -153,8 +232,6 @@ var AnalogyGraph = function() {
                 _LINKS.push(linkGroups[i].data[k]);
             }
         }
-
-        console.log(_LINKS);
     }
 
     //This function is used to update our graph when we add new nodes and links
@@ -172,8 +249,19 @@ var AnalogyGraph = function() {
         //Using D3's enter to see what links have entered, and append them
         link = link.data(_LINKS).enter().append("line")
                 .attr('stroke', 'black')
-                .attr("stroke-width", '3')
+                .attr("stroke-width", 3)
                 .merge(link);
+
+        link.attr('stroke-width', function(d) {
+            if (d.value) {
+                return d.value * 10;
+            }
+            else {
+                return 3;
+            }
+        })
+        .on('mouseover', linkHoverIn)
+        .on('mouseout', linkHoverOut);
         
         //These functions restart our force graph
         simulation
@@ -205,19 +293,17 @@ var AnalogyGraph = function() {
                             return {
                                 //Return the source and target
                                 source: id,
-                                target: n.getAttribute('dest')
+                                target: n.getAttribute('dest'),
+                                value: 0
                             };
                     })
                 };
             });
 
-            console.log(nodes[0].connections[0]);
-
             //Push our nodes to our existing graphs array
             existingGraphs.push({data: nodes, key: tag});
             //Assemble the graph 
-            assembleGraph(existingGraphs.length-1);
-            _HULLS.push(new Blob(tag, nodeGroups[existingGraphs.length-1].data, hull));
+            assembleGraph(existingGraphs.length-1, hull);
 
             //hull = new Blob('social network', nodesToDisplay, svg);
             //If we are running this for the first time append our zoom rect, and our node and link group to our svg
@@ -235,7 +321,6 @@ var AnalogyGraph = function() {
     }
 
     this.getColor = function(tag) {
-        console.log(color(tag));
         return color(tag);
     }
 
@@ -275,6 +360,10 @@ var AnalogyGraph = function() {
             for(var i = 0; i < _HULLS.length; i++) {
                 _HULLS[i].shape.attr('transform', d3.event.transform);
             }
+
+            for(var i = 0; i < LABELS.length; i++) {
+                LABELS[i].attr('transform', d3.event.transform);
+            }
         }
     }
 
@@ -294,5 +383,55 @@ var AnalogyGraph = function() {
         if (!d3.event.active) simulation.alphaTarget(0);
         d.fx = null;
         d.fy = null;
+    }
+
+    function linkHoverIn(d) {
+        var newWidth;
+        if(d.value) {
+            newWidth =  d.value * 10 + 5;
+        }
+        else {
+            newWidth = 3 + 5;
+        }
+        d3.select(this).transition()
+                .ease(d3.easeCircleOut)
+                .duration("500")
+            .attr('stroke-width', newWidth)
+            .attr('opacity', 1);
+        showLabels([d.source, d.target]);
+    }
+
+    function linkHoverOut(d) {
+        var newWidth;
+        if (d.value) {
+            newWidth = d.value * 10;
+        }
+        else {
+            newWidth = 3;
+        }
+        d3.select(this).transition()
+                .ease(d3.easeCircleOut)
+                .duration("500")
+            .attr('stroke-width', newWidth)
+            .attr('opacity', .3);
+        hideLabels();
+    }
+
+    function showLabels(nodesArr) {
+        for (var i = 0; i < nodesArr.length; i++) {
+            LABELS[i].attr('x', nodesArr[i].x)
+                .attr('y', nodesArr[i].y + 5)
+                .text(nodesArr[i].name)
+                .attr("text-anchor", "middle")
+                .attr("font-family", "Source Sans Pro")
+                .attr("font-size", "20px")
+                .attr("fill", "red");
+        }
+    }
+
+    function hideLabels() {
+        for (var i = 0; i < LABELS.length; i++) {
+            LABELS[i].text('');
+        }
     }
 };

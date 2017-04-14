@@ -13,7 +13,6 @@ ConvexHullGrahamScan.prototype.removePoints = function() {
 var Blob = function(group, nodes, svg) {
     this.group = group;
     this.nodes = nodes;
-    console.log(this.nodes);
     this.hull = new ConvexHullGrahamScan;
     this.shape = svg.append("path")
         .attr("fill", color(group))
