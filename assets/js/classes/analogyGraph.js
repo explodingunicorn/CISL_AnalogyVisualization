@@ -3,6 +3,7 @@ var AnalogyGraph = function(labels) {
     var width = window.innerWidth;
     var height = window.innerHeight;
 
+    //These are for the final assembled links and node because they need to be in the same array for d3 to read them
     var _HULLS = [], _NODES, _LINKS;
     var hull = svg.append('g')
                     .attr('class', 'hulls');
@@ -25,73 +26,39 @@ var AnalogyGraph = function(labels) {
     //this holds filtered link groups
     var linkGroups = [];
 
+    //Placeholder for our callback resolver
+    var resolver;
+
     //This is the force graph simulation
     var simulation = d3.forceSimulation()
         .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(20))
         .force("charge", d3.forceManyBody().strength(-200))
         .force("center", d3.forceCenter(width / 2, height / 2));
 
-    this.createBestAnalogyLinks = function() {
-        if(nodeGroups.length >=2 ) {
-            for (var i = 0; i < nodeGroups[0].data.length; i++) {
-                this.getBestAnalogy(i);
-            }
+    this.cacheResults = function() {
+        console.log('about to cache requests');
+        var sendKey1 = existingGraphs[0].key;
+        var sendKey2 = existingGraphs[1].key;
+        var nodes = [];
+        console.log(existingGraphs[0]);
+        for (var i = 0; i < nodeGroups.length; i++) {
+            nodes.push(stringifyObjects(nodeGroups[i].data));
         }
-    }
-
-    this.createAnalogyLinks = function() {
-        if(nodeGroups.length>=2) {
-            for (var i = 0; i < nodeGroups[0].data.length; i++) {
-                for (var j = 0; j < nodeGroups[1].data.length; j++) {
-                    this.getAnalogy(i, j);
-                    console.log('getting analogy');
-                }
-            }
-        }
-    }
-
-    this.getBestAnalogy = function(index) {
-        var srcNode = nodeGroups[0].data[index];
-        var feat1 = srcNode.name;
-        var f1 = nodeGroups[0].key;
-        var f2 = nodeGroups[1].key;
+        
+        var nGroups = nodeGroups;
+        var lGroups = linkGroups;
+        var hGroups = _HULLS;
+        console.log(sendKey1, sendKey2, nGroups, lGroups, hGroups);
         $.ajax({
-            url: 'http://localhost:5000/find_best_analogy',
+            url: '/',
             data: {
-                file1: f1 + '.xml',
-                file2: f2 + '.xml',
-                feature: feat1,
+                key1: sendKey1,
+                key2: sendKey2,
+                nodeGroups: nodes,
             },
             type: 'POST',
             success: function(response) {
-                var analogy = JSON.parse(response);
-                if(analogy.total_score > .8) {
-                    var target = analogy.target;
-                    var targetNode;
-                    for(var i = 0; i < nodeGroups[1].data.length; i++) {
-                        if(nodeGroups[1].data[i].name === target) {
-                            targetNode = nodeGroups[1].data[i];
-                            break;
-                        }
-                    }
-
-                    if(targetNode) {
-                        linkGroups[0].data.push({source: srcNode, target: targetNode, value: analogy.total_score});
-                        _HULLS[0].nodes.push(targetNode);
-                        _HULLS[1].nodes.push(srcNode);
-                        assembleGraph();
-                        startGraph();
-                    }
-                }
-                // linkGroups[0].data.push({source: randNode1, target: randNode2});
-                // linkGroups[1].data.push({source: randNode2, target: randNode1});
-                // randNode2.dupe = true;
-                // nodeGroups[0].data.push(randNode2);
-                // randNode1.dupe = true;
-                // nodeGroups[1].data.push(randNode1);
-                // assembleGraph();
-                // startGraph();
-                
+                console.log('Successfully saved json')
             },
             error: function(error) {
                 console.log(error);
@@ -99,7 +66,37 @@ var AnalogyGraph = function(labels) {
         });
     }
 
-    this.getAnalogy = function(i, j) {
+    var stringifyObjects = function(data) {
+        console.log(data);
+        var jsonResults = [];
+        for(var i = 0; i < data.length; i++) {
+            if (data[i].connections) {
+                data[i].connections = stringifyObjects(data[i].connections);
+            }
+            console.log(JSON.stringify([data[i]]));
+            jsonResults.push(JSON.stringify([data[i]]));
+        }
+        console.log('returning');
+        return jsonResults;
+    }
+
+    this.createAnalogyLinks = function() {
+        //Create a new resolver to handle our ajax calls
+        resolver = new Resolver(4, this);
+        //Check if we have more than 1 node group in the graph
+        if(nodeGroups.length>=2) {
+            for (var i = 0; i < nodeGroups[0].data.length; i++) {
+                for (var j = 0; j < nodeGroups[1].data.length; j++) {
+                    getAnalogy(i, j);
+                    console.log('getting analogy');
+                }
+            }
+        }
+    }
+
+    //Used to send our ajax call to the analogy server
+    var getAnalogy = function(i, j) {
+        //Setting variables for our object that we are posting
         var srcNode = nodeGroups[0].data[i];
         var targetNode = nodeGroups[1].data[j];
         var feat1 = srcNode.name;
@@ -117,21 +114,16 @@ var AnalogyGraph = function(labels) {
             type: 'POST',
             success: function(response) {
                 var analogy = JSON.parse(response);
+                //Push a new link with the correct target and source if the score is greater than .9
                 if(analogy.total_score > .9) {
                     linkGroups[0].data.push({source: srcNode, target: targetNode, value: analogy.total_score});
                     _HULLS[0].nodes.push(targetNode);
                     _HULLS[1].nodes.push(srcNode);
                     assembleGraph();
-                    startGraph();
                 }
-                // linkGroups[0].data.push({source: randNode1, target: randNode2});
-                // linkGroups[1].data.push({source: randNode2, target: randNode1});
-                // randNode2.dupe = true;
-                // nodeGroups[0].data.push(randNode2);
-                // randNode1.dupe = true;
-                // nodeGroups[1].data.push(randNode1);
-                // assembleGraph();
-                // startGraph();
+                //Push to our resolver which will check if this was the last callback
+                console.log('Push callback');
+                pushCallback();
                 
             },
             error: function(error) {
@@ -140,11 +132,17 @@ var AnalogyGraph = function(labels) {
         });
     }
 
+    var pushCallback = function() {
+        resolver.push(1);
+    }
+
     //Private function to filter our nodes when they are 
     var filterNodes = function(nodes) {
+        //Used to hold the nodes that will be sent back
         var nodesToDisplay = [];
+        //Used to hold true/false for available nodes
         var availableTargets = [];
-        //Filter nodes, this changes our nodes array and returns a nodes filter array
+        //Filter nodes, this changes our nodes array and returns a nodes filter array which contains the indexes of nodes to keep
         var nodesFilter = (function() {
             //Fill this array with 1's or 0's at the nodes ID depending on if the node meets the requirements
             var arr = [];
@@ -196,6 +194,8 @@ var AnalogyGraph = function(labels) {
             return linksArr;
         })();
 
+        console.log(links);
+
         return {
             nodes: nodesToDisplay,
             links: links
@@ -205,8 +205,9 @@ var AnalogyGraph = function(labels) {
     //Assembles all of our nodes and links into 2 arrays
     var assembleGraph = function(index, hull) {
         if(index >= 0) {
-            //Filter our nodes and save the results to res
-            var res = filterNodes(existingGraphs[index].data);
+            var copy = existingGraphs[index].data.slice();
+            //Filter our nodes/links and save the results to res
+            var res = filterNodes(copy);
             //Copy the arrays
             var resNodes = res.nodes.slice();
             var resLinks = res.links.slice();
@@ -232,10 +233,12 @@ var AnalogyGraph = function(labels) {
                 _LINKS.push(linkGroups[i].data[k]);
             }
         }
+
+        updateGraph();
     }
 
     //This function is used to update our graph when we add new nodes and links
-    var startGraph = function() {
+    var updateGraph = function() {
         //Using D3's enter to see what nodes have entered, and append them
         node = node.data(_NODES).enter().append("circle")
                 .attr("r", function(d) { return d.connections.length || 1 })
@@ -283,16 +286,16 @@ var AnalogyGraph = function(labels) {
             //Setting nodes to whatever is returned after we read the data, using map to create a new array
             var nodes = [].map.call(dataFeatures, function(feature) {
                 //Setting the features ID to a variable to be used elsewhere
-                var id = feature.getAttribute("id");
+                var featureId = feature.getAttribute("id");
                 //Return our data to nodes
                 return {
-                    id: id,
+                    id: featureId,
                     name: feature.getAttribute("data"),
                     //Make another selection, this time selecting all of our connections or Neighbors
                     connections: [].map.call(feature.querySelector("neighbors").querySelectorAll("neighbor"), function(n) {
                             return {
                                 //Return the source and target
-                                source: id,
+                                source: featureId,
                                 target: n.getAttribute('dest'),
                                 value: 0
                             };
@@ -302,21 +305,9 @@ var AnalogyGraph = function(labels) {
 
             //Push our nodes to our existing graphs array
             existingGraphs.push({data: nodes, key: tag});
+            console.log(existingGraphs);
             //Assemble the graph 
             assembleGraph(existingGraphs.length-1, hull);
-
-            //hull = new Blob('social network', nodesToDisplay, svg);
-            //If we are running this for the first time append our zoom rect, and our node and link group to our svg
-            if(existingGraphs.length === 1) {
-                //startZoom();
-                startGraph();
-
-            }
-            else {
-                startGraph();
-            }
-            
-           
         });
     }
 
@@ -324,7 +315,7 @@ var AnalogyGraph = function(labels) {
         return color(tag);
     }
 
-    //Function that runs to update the graph, or on 'tick'
+    //Function that runs to update the graph on 'tick'
     function ticked() {
         if(_HULLS) {
             for (var i = 0; i < _HULLS.length; i++) {

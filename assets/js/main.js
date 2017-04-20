@@ -69,6 +69,23 @@ var app = new Vue({
         },
         generateAnalogy: function() {
             this.graph.createAnalogyLinks();
+        },
+        sendTest: function() {
+            $.ajax({
+                url: '/',
+                type: 'POST',
+                contentType: "application/json",
+                data: JSON.stringify({name: 'butts'}),
+                complete: function() {
+
+                },
+                success: function(data) {
+                    console.log('success!');
+                },
+                error: function() {
+                    console.log('There was an error');
+                }
+            })
         }
     },
     mounted: function() {
