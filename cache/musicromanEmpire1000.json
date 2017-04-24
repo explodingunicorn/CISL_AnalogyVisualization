@@ -1,1 +1,383 @@
-{"key1":"music","key2":"romanEmpire1000"}
+{
+  "key1": "music",
+  "key2": "romanEmpire1000",
+  "analogyLinks": [
+    {
+      "sourceIndex": "20",
+      "targetIndex": "51",
+      "value": "0.9532379764848488"
+    },
+    {
+      "sourceIndex": "25",
+      "targetIndex": "51",
+      "value": "0.9011841402951102"
+    },
+    {
+      "sourceIndex": "26",
+      "targetIndex": "26",
+      "value": "0.9016499943109797"
+    },
+    {
+      "sourceIndex": "31",
+      "targetIndex": "22",
+      "value": "0.9022952581995137"
+    },
+    {
+      "sourceIndex": "32",
+      "targetIndex": "22",
+      "value": "0.955520458743027"
+    },
+    {
+      "sourceIndex": "33",
+      "targetIndex": "22",
+      "value": "0.920892092037461"
+    },
+    {
+      "sourceIndex": "43",
+      "targetIndex": "25",
+      "value": "0.9161301325713107"
+    },
+    {
+      "sourceIndex": "44",
+      "targetIndex": "25",
+      "value": "0.9062893669681381"
+    },
+    {
+      "sourceIndex": "49",
+      "targetIndex": "10",
+      "value": "0.9568626364264313"
+    },
+    {
+      "sourceIndex": "49",
+      "targetIndex": "11",
+      "value": "0.9586017656860073"
+    },
+    {
+      "sourceIndex": "49",
+      "targetIndex": "12",
+      "value": "0.9534519687592061"
+    },
+    {
+      "sourceIndex": "49",
+      "targetIndex": "14",
+      "value": "0.9534519687592061"
+    },
+    {
+      "sourceIndex": "49",
+      "targetIndex": "18",
+      "value": "0.9537498260358777"
+    },
+    {
+      "sourceIndex": "53",
+      "targetIndex": "25",
+      "value": "0.930852164979111"
+    },
+    {
+      "sourceIndex": "55",
+      "targetIndex": "10",
+      "value": "0.931208721892144"
+    },
+    {
+      "sourceIndex": "55",
+      "targetIndex": "11",
+      "value": "0.9328652396533607"
+    },
+    {
+      "sourceIndex": "55",
+      "targetIndex": "12",
+      "value": "0.9549023535224899"
+    },
+    {
+      "sourceIndex": "55",
+      "targetIndex": "14",
+      "value": "0.9549023535224899"
+    },
+    {
+      "sourceIndex": "55",
+      "targetIndex": "21",
+      "value": "0.9594414082783294"
+    },
+    {
+      "sourceIndex": "63",
+      "targetIndex": "10",
+      "value": "0.9598921303411029"
+    },
+    {
+      "sourceIndex": "63",
+      "targetIndex": "11",
+      "value": "0.9616258919177789"
+    },
+    {
+      "sourceIndex": "63",
+      "targetIndex": "12",
+      "value": "0.9588934955257901"
+    },
+    {
+      "sourceIndex": "63",
+      "targetIndex": "14",
+      "value": "0.9588934955257901"
+    },
+    {
+      "sourceIndex": "63",
+      "targetIndex": "18",
+      "value": "0.9455509888490455"
+    },
+    {
+      "sourceIndex": "63",
+      "targetIndex": "21",
+      "value": "0.9540327040986679"
+    }
+  ],
+  "hullPoints": [
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "51"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "20"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "51"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "25"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "26"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "26"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "22"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "31"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "22"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "32"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "22"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "33"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "25"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "43"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "25"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "44"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "10"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "49"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "11"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "49"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "12"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "49"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "14"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "49"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "18"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "49"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "25"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "53"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "10"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "55"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "11"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "55"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "12"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "55"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "14"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "55"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "21"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "55"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "10"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "63"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "11"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "63"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "12"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "63"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "14"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "63"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "18"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "63"
+    },
+    {
+      "hullNum": "0",
+      "targetNodeGroup": "1",
+      "index": "21"
+    },
+    {
+      "hullNum": "1",
+      "targetNodeGroup": "0",
+      "index": "63"
+    }
+  ]
+}

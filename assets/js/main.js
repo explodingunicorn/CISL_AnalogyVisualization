@@ -68,7 +68,7 @@ var app = new Vue({
             this.dataSetsUsed.push({name: tag, color: newColor});
         },
         generateAnalogy: function() {
-            this.graph.createAnalogyLinks();
+            this.graph.getAnalogyLinks();
         },
         sendTest: function() {
             $.ajax({

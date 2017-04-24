@@ -10,7 +10,7 @@ var Resolver = function(amt, graph) {
         
         if(checkComplete()) {
             console.log('Callbacks done');
-            //graph.cacheResults();
+            graph.cacheResults();
         }
     }
 

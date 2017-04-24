@@ -5,6 +5,10 @@ var AnalogyGraph = function(labels) {
 
     //These are for the final assembled links and node because they need to be in the same array for d3 to read them
     var _HULLS = [], _NODES, _LINKS;
+    var _NODE_GROUPS_SAVED = [];
+    var _LINK_GROUPS_SAVED = [];
+    var _ANALOGY_LINKS_SAVED = [];
+    var _HULL_POINTS_SAVED = [];
     var hull = svg.append('g')
                     .attr('class', 'hulls');
     //Start our zoom with it's own rect before we create our nodes and links group
@@ -36,29 +40,18 @@ var AnalogyGraph = function(labels) {
         .force("center", d3.forceCenter(width / 2, height / 2));
 
     this.cacheResults = function() {
-        console.log('about to cache requests');
-        var sendKey1 = existingGraphs[0].key;
-        var sendKey2 = existingGraphs[1].key;
-        var nodes = [];
-        console.log(existingGraphs[0]);
-        for (var i = 0; i < nodeGroups.length; i++) {
-            nodes.push(stringifyObjects(nodeGroups[i].data));
-        }
-        
-        var nGroups = nodeGroups;
-        var lGroups = linkGroups;
-        var hGroups = _HULLS;
-        console.log(sendKey1, sendKey2, nGroups, lGroups, hGroups);
+        console.log(existingGraphs);
         $.ajax({
             url: '/',
             data: {
-                key1: sendKey1,
-                key2: sendKey2,
-                nodeGroups: nodes,
+                key1: existingGraphs[0].key,
+                key2: existingGraphs[1].key,
+                analogyLinks: _ANALOGY_LINKS_SAVED,
+                hullPoints: _HULL_POINTS_SAVED
             },
             type: 'POST',
             success: function(response) {
-                console.log('Successfully saved json')
+                console.log(response)
             },
             error: function(error) {
                 console.log(error);
@@ -66,23 +59,33 @@ var AnalogyGraph = function(labels) {
         });
     }
 
-    var stringifyObjects = function(data) {
-        console.log(data);
-        var jsonResults = [];
-        for(var i = 0; i < data.length; i++) {
-            if (data[i].connections) {
-                data[i].connections = stringifyObjects(data[i].connections);
+    this.getAnalogyLinks = function() {
+        var graph = this;
+        $.ajax({
+            url: '/requestAnalogy',
+            data: {
+                key1: existingGraphs[0].key,
+                key2: existingGraphs[1].key,
+            },
+            type: 'POST',
+            success: function(response) {
+                if(response) {
+                    graph.loadSaveData(JSON.parse(response));
+                }
+
+                else {
+                    graph.createAnalogyLinks();
+                }
+            },
+            error: function(error) {
+                console.log(error);
             }
-            console.log(JSON.stringify([data[i]]));
-            jsonResults.push(JSON.stringify([data[i]]));
-        }
-        console.log('returning');
-        return jsonResults;
+        });
     }
 
     this.createAnalogyLinks = function() {
         //Create a new resolver to handle our ajax calls
-        resolver = new Resolver(4, this);
+        resolver = new Resolver(nodeGroups[0].data.length * nodeGroups[1].data.length, this);
         //Check if we have more than 1 node group in the graph
         if(nodeGroups.length>=2) {
             for (var i = 0; i < nodeGroups[0].data.length; i++) {
@@ -94,8 +97,34 @@ var AnalogyGraph = function(labels) {
         }
     }
 
+    this.loadSaveData = function(saveObj) {
+        //linkGroups.push({data: saveObj.analogyLinks, key: 'Analogies'});
+        //console.log(linkGroups);
+        linkGroups.push({data: [], key: 'Analogies'});
+        var links = saveObj.analogyLinks;
+        for(var i = 0; i < links.length; i++) {
+            var srcNode = nodeGroups[0].data[links[i].sourceIndex];
+            var targetNode = nodeGroups[1].data[links[i].targetIndex];
+            var linkValue = links[i].value;
+            linkGroups[2].data.push({source: srcNode, target: targetNode, value: linkValue});
+            linkGroups[2].data.push({source: srcNode, target: targetNode, value: linkValue});
+            linkGroups[2].data.push({source: srcNode, target: targetNode, value: linkValue});
+        }
+
+        var hullPoints = saveObj.hullPoints;
+        for(var i = 0; i < hullPoints.length; i++) {
+            _HULLS[hullPoints[i].hullNum].nodes.push(nodeGroups[hullPoints[i].targetNodeGroup].data[hullPoints[i].index]);
+        }
+
+        assembleGraph();
+    }
+
     //Used to send our ajax call to the analogy server
     var getAnalogy = function(i, j) {
+        //Use our saved data for the data we push back to our server
+        var srcNodeSave = _NODE_GROUPS_SAVED[0].data[i];
+        var targetNodeSave = _NODE_GROUPS_SAVED[1].data[j];
+
         //Setting variables for our object that we are posting
         var srcNode = nodeGroups[0].data[i];
         var targetNode = nodeGroups[1].data[j];
@@ -116,6 +145,13 @@ var AnalogyGraph = function(labels) {
                 var analogy = JSON.parse(response);
                 //Push a new link with the correct target and source if the score is greater than .9
                 if(analogy.total_score > .9) {
+                    //Add a link to our links saved group
+                    _ANALOGY_LINKS_SAVED.push({sourceIndex: i, targetIndex: j, value: analogy.total_score});
+                    //Add a reference index number, the hull group number and target group number to hulls saved
+                    _HULL_POINTS_SAVED.push({hullNum: 0, targetNodeGroup: 1, index: j});
+                    _HULL_POINTS_SAVED.push({hullNum: 1, targetNodeGroup: 0, index: i});
+
+                    //Also do this stuff for the graph currently on screen.
                     linkGroups[0].data.push({source: srcNode, target: targetNode, value: analogy.total_score});
                     _HULLS[0].nodes.push(targetNode);
                     _HULLS[1].nodes.push(srcNode);
@@ -194,8 +230,6 @@ var AnalogyGraph = function(labels) {
             return linksArr;
         })();
 
-        console.log(links);
-
         return {
             nodes: nodesToDisplay,
             links: links
@@ -203,7 +237,8 @@ var AnalogyGraph = function(labels) {
     }
 
     //Assembles all of our nodes and links into 2 arrays
-    var assembleGraph = function(index, hull) {
+    var assembleGraph = function(index) {
+        //This makes sure the nodes are filtered over one time
         if(index >= 0) {
             var copy = existingGraphs[index].data.slice();
             //Filter our nodes/links and save the results to res
@@ -223,15 +258,25 @@ var AnalogyGraph = function(labels) {
         _NODES = [];
         _LINKS = [];
 
-        //A for loop to push our nodes and links from their groups into one array
+        //A for loop to push our nodes and links from their groups into single arrays
         for(var i = 0; i < nodeGroups.length; i++) {
             for(var j = 0; j < nodeGroups[i].data.length; j++) {
                 _NODES.push(nodeGroups[i].data[j]);
-            }
+            }            
+        }
 
-            for(var k = 0; k< linkGroups[i].data.length; k++) {
-                _LINKS.push(linkGroups[i].data[k]);
+        for(var i = 0; i < linkGroups.length; i++) {
+            for(var j = 0; j< linkGroups[i].data.length; j++) {
+                _LINKS.push(linkGroups[i].data[j]);
             }
+        }
+        
+        //On the initial assemble copy our nodes and links to be cached
+        if(index >= 0 ) {
+            _NODE_GROUPS_SAVED.push(JSON.parse(JSON.stringify(nodeGroups[index])));
+            _LINK_GROUPS_SAVED.push(JSON.parse(JSON.stringify(linkGroups[index])));
+            console.log(_LINK_GROUPS_SAVED);
+
         }
 
         updateGraph();
@@ -307,7 +352,7 @@ var AnalogyGraph = function(labels) {
             existingGraphs.push({data: nodes, key: tag});
             console.log(existingGraphs);
             //Assemble the graph 
-            assembleGraph(existingGraphs.length-1, hull);
+            assembleGraph(existingGraphs.length-1);
         });
     }
 
