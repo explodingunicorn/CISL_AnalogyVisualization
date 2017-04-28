@@ -461,7 +461,7 @@ var AnalogyGraph = function(labels) {
                 .attr("text-anchor", "middle")
                 .attr("font-family", "Source Sans Pro")
                 .attr("font-size", "20px")
-                .attr("fill", "red");
+                .attr("fill", "#343434");
         }
     }
 

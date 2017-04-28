@@ -9,12 +9,16 @@
         <div class="app">
             <svg id="graph"></svg>
             <div class="set-container">
-                <div class="set-selector" v-for="set in dataSetsUsed" v-bind:style="{backgroundColor: set.color}" v-on:click="generateAnalogy">
+                <div class="set-selector" v-for="set in dataSetsUsed" v-bind:style="{backgroundColor: set.color}">
                     <h2>{{set.name}}</h2>
                     <div class="del-container">
                         <p><i class="fa fa-cog" aria-hidden="true"></i> <i class="fa fa-trash" aria-hidden="true"></i></p>
                     </div>
                 </div>
+            </div>
+            <div class="welcome-screen" v-if="dataSetsUsed.length < 1">
+                <h1>Welcome to the Analogy Visualization</h1>
+                <h2>Please add a data set below to get started</h2>
             </div>
             <div v-if="selecting" class="full-screen-container">
                 <div class="data-selector">
@@ -25,10 +29,8 @@
                     <div class="acceptBtn" v-on:click="addDataSet"><h1><i class="fa fa-plus-circle" aria-hidden="true"></i> add this data</h1></div>
                 </div>
             </div>
-            <div class="label" v-for="label in nodeLabels" v-bind:style="label.styles">
-                <h2>{{label.name}}</h2>
-            </div>
             <div class="add-data acceptBtn" v-on:click="selecting=true"><h1><i class="fa fa-plus-circle" aria-hidden="true"></i> add new data set</h1></div>
+            <div class="connect-data connectBtn" v-if="dataSetsUsed.length > 1" v-on:click="generateAnalogy"><h1><i class="fa fa fa-connectdevelop" aria-hidden="true"></i> connect data sets</h1></div>
         </div>
         <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"

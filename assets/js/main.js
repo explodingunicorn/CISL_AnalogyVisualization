@@ -33,27 +33,33 @@ var app = new Vue({
         dataSetsAvailable: [
             {
                 name: 'Music',
-                val: 'music'
+                val: 'music',
+                color: ''
             },
             {
                 name: 'NFL',
-                val: 'nfl'
+                val: 'nfl',
+                color: ''
             },
             {
                 name: 'Oil',
-                val: 'oil'
+                val: 'oil',
+                color: ''
             },
             {
                 name: 'Roman Empire',
-                val: 'romanEmpire1000'
+                val: 'romanEmpire1000',
+                color: ''
             },
             {
                 name: 'Tech',
-                val: 'techdata'
+                val: 'techdata',
+                color: ''
             },
             {
                 name: 'World War II',
-                val: 'ww2'
+                val: 'ww2',
+                color: ''
             },
         ],
 
@@ -65,7 +71,14 @@ var app = new Vue({
             this.graph.loadDataSet('js/data/' + tag + '.xml', tag);
             var newColor = this.graph.getColor(tag);
             this.selecting = false;
-            this.dataSetsUsed.push({name: tag, color: newColor});
+            for (var i = 0; i < this.dataSetsAvailable.length; i++) {
+                if (tag === this.dataSetsAvailable[i].val) {
+                    this.dataSetsAvailable[i].color = newColor;
+                    this.dataSetsUsed.push(this.dataSetsAvailable[i]);
+                    this.dataSetsAvailable.splice(i, 1);
+                    break;
+                }
+            }
         },
         generateAnalogy: function() {
             this.graph.getAnalogyLinks();
@@ -92,10 +105,5 @@ var app = new Vue({
         //We are instantiating our Analogy Graph here because we need to wait for the app to mount in order for the svg to be available to d3
         this.graph = new AnalogyGraph(this.nodeLabels);
         this.graphMounted = true;
-        var color;
-        this.currentlySelected = 'music';
-        this.addDataSet();
-        this.currentlySelected = 'romanEmpire1000';
-        this.addDataSet();
     }
 });
