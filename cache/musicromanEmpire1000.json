@@ -1,383 +1,3728 @@
 {
   "key1": "music",
   "key2": "romanEmpire1000",
-  "analogyLinks": [
-    {
-      "sourceIndex": "20",
-      "targetIndex": "51",
-      "value": "0.9532379764848488"
-    },
-    {
-      "sourceIndex": "25",
-      "targetIndex": "51",
-      "value": "0.9011841402951102"
-    },
-    {
-      "sourceIndex": "26",
-      "targetIndex": "26",
-      "value": "0.9016499943109797"
-    },
-    {
-      "sourceIndex": "31",
-      "targetIndex": "22",
-      "value": "0.9022952581995137"
-    },
-    {
-      "sourceIndex": "32",
-      "targetIndex": "22",
-      "value": "0.955520458743027"
-    },
-    {
-      "sourceIndex": "33",
-      "targetIndex": "22",
-      "value": "0.920892092037461"
-    },
-    {
-      "sourceIndex": "43",
-      "targetIndex": "25",
-      "value": "0.9161301325713107"
-    },
-    {
-      "sourceIndex": "44",
-      "targetIndex": "25",
-      "value": "0.9062893669681381"
-    },
-    {
-      "sourceIndex": "49",
-      "targetIndex": "10",
-      "value": "0.9568626364264313"
-    },
-    {
-      "sourceIndex": "49",
-      "targetIndex": "11",
-      "value": "0.9586017656860073"
-    },
-    {
-      "sourceIndex": "49",
-      "targetIndex": "12",
-      "value": "0.9534519687592061"
-    },
-    {
-      "sourceIndex": "49",
-      "targetIndex": "14",
-      "value": "0.9534519687592061"
-    },
-    {
-      "sourceIndex": "49",
-      "targetIndex": "18",
-      "value": "0.9537498260358777"
-    },
-    {
-      "sourceIndex": "53",
-      "targetIndex": "25",
-      "value": "0.930852164979111"
-    },
-    {
-      "sourceIndex": "55",
-      "targetIndex": "10",
-      "value": "0.931208721892144"
-    },
-    {
-      "sourceIndex": "55",
-      "targetIndex": "11",
-      "value": "0.9328652396533607"
-    },
-    {
-      "sourceIndex": "55",
-      "targetIndex": "12",
-      "value": "0.9549023535224899"
-    },
-    {
-      "sourceIndex": "55",
-      "targetIndex": "14",
-      "value": "0.9549023535224899"
-    },
-    {
-      "sourceIndex": "55",
-      "targetIndex": "21",
-      "value": "0.9594414082783294"
-    },
-    {
-      "sourceIndex": "63",
-      "targetIndex": "10",
-      "value": "0.9598921303411029"
-    },
-    {
-      "sourceIndex": "63",
-      "targetIndex": "11",
-      "value": "0.9616258919177789"
-    },
-    {
-      "sourceIndex": "63",
-      "targetIndex": "12",
-      "value": "0.9588934955257901"
-    },
-    {
-      "sourceIndex": "63",
-      "targetIndex": "14",
-      "value": "0.9588934955257901"
-    },
-    {
-      "sourceIndex": "63",
-      "targetIndex": "18",
-      "value": "0.9455509888490455"
-    },
-    {
-      "sourceIndex": "63",
-      "targetIndex": "21",
-      "value": "0.9540327040986679"
-    }
-  ],
-  "hullPoints": [
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "51"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "20"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "51"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "25"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "26"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "26"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "22"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "31"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "22"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "32"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "22"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "33"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "25"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "43"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "25"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "44"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "10"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "49"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "11"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "49"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "12"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "49"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "14"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "49"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "18"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "49"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "25"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "53"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "10"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "55"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "11"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "55"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "12"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "55"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "14"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "55"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "21"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "55"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "10"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "63"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "11"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "63"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "12"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "63"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "14"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "63"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "18"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "63"
-    },
-    {
-      "hullNum": "0",
-      "targetNodeGroup": "1",
-      "index": "21"
-    },
-    {
-      "hullNum": "1",
-      "targetNodeGroup": "0",
-      "index": "63"
+  "analogies": [
+    {
+      "total_score": "0.8772333155145353",
+      "confidence": "1",
+      "rating": "0.8772333155145353",
+      "src": "Thrash metal",
+      "target": "Maximinus II",
+      "asserts": {
+        "stylistic origin": "regent",
+        "instrument": "title",
+        "derivative": "predecessor"
+      },
+      "mapping": [
+        [
+          [
+            "INCOMING",
+            "stylistic origin",
+            "Black metal"
+          ],
+          [
+            "regent",
+            "Licinius",
+            "1.9024572806414517",
+            "0.9512286403207258"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Punk rock"
+          ],
+          [
+            "regent",
+            "Constantine the Great",
+            "1.8393777863278633",
+            "0.9196888931639317"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Singing"
+          ],
+          [
+            "title",
+            "Roman emperor",
+            "1.7415553638907635",
+            "0.8707776819453817"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Hardcore punk"
+          ],
+          [
+            "regent",
+            "Maximian",
+            "1.7392927700973497",
+            "0.8696463850486749"
+          ]
+        ],
+        [
+          [
+            "INCOMING",
+            "stylistic origin",
+            "Industrial metal"
+          ],
+          [
+            "regent",
+            "Flavius Valerius Severus",
+            "1.66589851722057",
+            "0.832949258610285"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "derivative",
+            "Black metal"
+          ],
+          [
+            "predecessor",
+            "Galerius",
+            "1.6382180679964242",
+            "0.8191090339982121"
+          ]
+        ]
+      ],
+      "explanation": "\tThrash metal is like Maximinus II. This is because 'Black metal' <stylistic origin> 'Thrash metal' in the same way that 'Licinius' <regent> 'Maximinus II', 'Thrash metal' <instrument> 'Singing' in the same way that 'Maximinus II' <title> 'Roman emperor', and 'Thrash metal' <derivative> 'Black metal' in the same way that 'Maximinus II' <predecessor> 'Galerius'.\n"
+    },
+    {
+      "total_score": "0.838316271210858",
+      "confidence": "1",
+      "rating": "0.838316271210858",
+      "src": "Death metal",
+      "target": "Maximinus II",
+      "asserts": {
+        "stylistic origin": "regent",
+        "instrument": "title",
+        "music fusion genre": "alongside"
+      },
+      "mapping": [
+        [
+          [
+            "INCOMING",
+            "stylistic origin",
+            "Amerind metal"
+          ],
+          [
+            "regent",
+            "Licinius",
+            "1.8172334012216234",
+            "0.9086167006108117"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "title",
+            "Roman emperor",
+            "1.7034393702100137",
+            "0.8517196851050068"
+          ]
+        ],
+        [
+          [
+            "INCOMING",
+            "music fusion genre",
+            "Black metal"
+          ],
+          [
+            "alongside",
+            "Galerius",
+            "1.6816775650167397",
+            "0.8408387825083699"
+          ]
+        ],
+        [
+          [
+            "INCOMING",
+            "stylistic origin",
+            "Swedish death metal"
+          ],
+          [
+            "regent",
+            "Maximian",
+            "1.6601143467615844",
+            "0.8300571733807922"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Black metal"
+          ],
+          [
+            "regent",
+            "Constantine the Great",
+            "1.6158834866375664",
+            "0.8079417433187832"
+          ]
+        ],
+        [
+          [
+            "INCOMING",
+            "stylistic origin",
+            "Melodic death metal"
+          ],
+          [
+            "regent",
+            "Flavius Valerius Severus",
+            "1.5814470846827708",
+            "0.7907235423413854"
+          ]
+        ]
+      ],
+      "explanation": "\tDeath metal is like Maximinus II. This is because 'Amerind metal' <stylistic origin> 'Death metal' in the same way that 'Licinius' <regent> 'Maximinus II', 'Death metal' <instrument> 'Electric guitar' in the same way that 'Maximinus II' <title> 'Roman emperor', and 'Black metal' <music fusion genre> 'Death metal' in the same way that 'Galerius' <alongside> 'Maximinus II'.\n"
+    },
+    {
+      "total_score": "0.8279145233176234",
+      "confidence": "0.9444444444444444",
+      "rating": "0.8766153776304247",
+      "src": "Symphonic rock",
+      "target": "Maximinus II",
+      "asserts": {
+        "music fusion genre": "successor",
+        "instrument": "regent",
+        "stylistic origins": "title",
+        "stylistic origin": "alongside"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "music fusion genre",
+            "Symphonic metal"
+          ],
+          [
+            "successor",
+            "Licinius",
+            "1.917642914177571",
+            "0.9588214570887855"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Guitar"
+          ],
+          [
+            "regent",
+            "Constantine the Great",
+            "1.8317289989768608",
+            "0.9158644994884304"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origins",
+            "Classical music"
+          ],
+          [
+            "title",
+            "Roman emperor",
+            "1.7498460403992393",
+            "0.8749230201996196"
+          ]
+        ],
+        [
+          [
+            "INCOMING",
+            "stylistic origin",
+            "Symphonic metal"
+          ],
+          [
+            "alongside",
+            "Galerius",
+            "1.7390188949769207",
+            "0.8695094474884604"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Piano"
+          ],
+          [
+            "regent",
+            "Flavius Valerius Severus",
+            "1.6684531055305518",
+            "0.8342265527652759"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Violin"
+          ],
+          [
+            "regent",
+            "Maximian",
+            "1.6126945775039538",
+            "0.8063472887519769"
+          ]
+        ]
+      ],
+      "explanation": "\tSymphonic rock is like Maximinus II. This is because 'Symphonic rock' <music fusion genre> 'Symphonic metal' in the same way that 'Maximinus II' <successor> 'Licinius', 'Symphonic rock' <instrument> 'Guitar' in the same way that 'Maximinus II' <regent> 'Constantine the Great', 'Symphonic rock' <stylistic origins> 'Classical music' in the same way that 'Maximinus II' <title> 'Roman emperor', and 'Symphonic metal' <stylistic origin> 'Symphonic rock' in the same way that 'Galerius' <alongside> 'Maximinus II'.\n"
+    },
+    {
+      "total_score": "0.9532379764848488",
+      "confidence": "1",
+      "rating": "0.9532379764848488",
+      "src": "Alternative metal",
+      "target": "Helena (empress)",
+      "asserts": {
+        "instrument": "venerated in",
+        "derivative": "spouse",
+        "music fusion genre": "mother",
+        "stylistic origin": "death place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electronic keyboard"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.9468405515436022",
+            "0.9734202757718011"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.94605753215274",
+            "0.97302876607637"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Singing"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.9410742015784437",
+            "0.9705371007892218"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated in",
+            "Anglican Communion",
+            "1.9355967082522234",
+            "0.9677983541261117"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Drum kit"
+          ],
+          [
+            "venerated in",
+            "Oriental Orthodoxy",
+            "1.9299410629855265",
+            "0.9649705314927632"
+          ]
+        ],
+        [
+          [
+            "INCOMING",
+            "derivative",
+            "Hardcore punk"
+          ],
+          [
+            "spouse",
+            "Constantius Chlorus",
+            "1.8991177539847874",
+            "0.9495588769923937"
+          ]
+        ],
+        [
+          [
+            "INCOMING",
+            "music fusion genre",
+            "Heavy metal music"
+          ],
+          [
+            "mother",
+            "Constantine the Great",
+            "1.8582101951827448",
+            "0.9291050975913724"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Heavy metal music"
+          ],
+          [
+            "death place",
+            "Rome",
+            "1.794969618077511",
+            "0.8974848090387555"
+          ]
+        ]
+      ],
+      "explanation": "\tAlternative metal is like Helena (empress). This is because 'Alternative metal' <instrument> 'Electronic keyboard' in the same way that 'Helena (empress)' <venerated in> 'Catholic Church', 'Hardcore punk' <derivative> 'Alternative metal' in the same way that 'Constantius Chlorus' <spouse> 'Helena (empress)', 'Heavy metal music' <music fusion genre> 'Alternative metal' in the same way that 'Constantine the Great' <mother> 'Helena (empress)', and 'Alternative metal' <stylistic origin> 'Heavy metal music' in the same way that 'Helena (empress)' <death place> 'Rome'.\n"
+    },
+    {
+      "total_score": "0.9011841402951102",
+      "confidence": "1",
+      "rating": "0.9011841402951102",
+      "src": "Surf music",
+      "target": "Helena (empress)",
+      "asserts": {
+        "stylistic origin": "spouse",
+        "music subgenre": "mother",
+        "instrument": "venerated in",
+        "derivative": "death place"
+      },
+      "mapping": [
+        [
+          [
+            "INCOMING",
+            "stylistic origin",
+            "Garage rock"
+          ],
+          [
+            "spouse",
+            "Constantius Chlorus",
+            "1.8622116339839292",
+            "0.9311058169919646"
+          ]
+        ],
+        [
+          [
+            "INCOMING",
+            "music subgenre",
+            "Rock music"
+          ],
+          [
+            "mother",
+            "Constantine the Great",
+            "1.8502868636960708",
+            "0.9251434318480354"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Lap steel guitar"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.8452324576397157",
+            "0.9226162288198578"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Keyboard instrument"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.8300981958668683",
+            "0.9150490979334341"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated in",
+            "Anglican Communion",
+            "1.8279981790596755",
+            "0.9139990895298378"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Drum kit"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.8224573394756576",
+            "0.9112286697378288"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "derivative",
+            "Heavy metal music"
+          ],
+          [
+            "death place",
+            "Rome",
+            "1.798636644924219",
+            "0.8993183224621095"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Guitar"
+          ],
+          [
+            "venerated in",
+            "Oriental Orthodoxy",
+            "1.5820249300756264",
+            "0.7910124650378132"
+          ]
+        ]
+      ],
+      "explanation": "\tSurf music is like Helena (empress). This is because 'Garage rock' <stylistic origin> 'Surf music' in the same way that 'Constantius Chlorus' <spouse> 'Helena (empress)', 'Rock music' <music subgenre> 'Surf music' in the same way that 'Constantine the Great' <mother> 'Helena (empress)', 'Surf music' <instrument> 'Lap steel guitar' in the same way that 'Helena (empress)' <venerated in> 'Catholic Church', and 'Surf music' <derivative> 'Heavy metal music' in the same way that 'Helena (empress)' <death place> 'Rome'.\n"
+    },
+    {
+      "total_score": "0.8276664773937753",
+      "confidence": "0.9454545454545454",
+      "rating": "0.8754164664741855",
+      "src": "Celtic metal",
+      "target": "Pope Telesphorus",
+      "asserts": {
+        "music subgenre": "predecessor",
+        "music fusion genre": "successor",
+        "regional scenes": "venerated",
+        "instrument": "death place"
+      },
+      "mapping": [
+        [
+          [
+            "INCOMING",
+            "music subgenre",
+            "Celtic fusion"
+          ],
+          [
+            "predecessor",
+            "Pope Hyginus",
+            "1.9284538922578756",
+            "0.9642269461289378"
+          ]
+        ],
+        [
+          [
+            "INCOMING",
+            "music fusion genre",
+            "Celtic rock"
+          ],
+          [
+            "successor",
+            "Pope Sixtus I",
+            "1.90597769706834",
+            "0.95298884853417"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "regional scenes",
+            "Ireland"
+          ],
+          [
+            "venerated",
+            "Catholic Church",
+            "1.8033716696682618",
+            "0.9016858348341309"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "death place",
+            "Roman Empire",
+            "1.6785341431582999",
+            "0.8392670715791499"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Singing"
+          ],
+          [
+            "death place",
+            "Rome",
+            "1.6088224309927872",
+            "0.8044112154963936"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "death place",
+            "Italy",
+            "1.5798377645446617",
+            "0.7899188822723309"
+          ]
+        ]
+      ],
+      "explanation": "\tCeltic metal is like Pope Telesphorus. This is because 'Celtic fusion' <music subgenre> 'Celtic metal' in the same way that 'Pope Hyginus' <predecessor> 'Pope Telesphorus', 'Celtic rock' <music fusion genre> 'Celtic metal' in the same way that 'Pope Sixtus I' <successor> 'Pope Telesphorus', 'Celtic metal' <regional scenes> 'Ireland' in the same way that 'Pope Telesphorus' <venerated> 'Catholic Church', and 'Celtic metal' <instrument> 'Electric guitar' in the same way that 'Pope Telesphorus' <death place> 'Roman Empire'.\n"
+    },
+    {
+      "total_score": "0.9016499943109797",
+      "confidence": "0.9818181818181818",
+      "rating": "0.9183472164278497",
+      "src": "Celtic metal",
+      "target": "Pope Clement I",
+      "asserts": {
+        "music fusion genre": "predecessor",
+        "instrument": "venerated",
+        "music subgenre": "successor",
+        "stylistic origin": "birth place"
+      },
+      "mapping": [
+        [
+          [
+            "INCOMING",
+            "music fusion genre",
+            "Celtic rock"
+          ],
+          [
+            "predecessor",
+            "Pope Evaristus",
+            "1.9401884652562755",
+            "0.9700942326281378"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated",
+            "Anglican Communion",
+            "1.93454970270647",
+            "0.967274851353235"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Singing"
+          ],
+          [
+            "venerated",
+            "Lutheranism",
+            "1.928171048098958",
+            "0.964085524049479"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated",
+            "Catholic Church",
+            "1.916151278372682",
+            "0.958075639186341"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Drum kit"
+          ],
+          [
+            "venerated",
+            "Eastern Orthodox Church",
+            "1.9105863073528506",
+            "0.9552931536764253"
+          ]
+        ],
+        [
+          [
+            "INCOMING",
+            "music subgenre",
+            "Folk metal"
+          ],
+          [
+            "successor",
+            "Pope Anacletus",
+            "1.8192505171438058",
+            "0.9096252585719029"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Folk metal"
+          ],
+          [
+            "birth place",
+            "Roman Empire",
+            "1.6639832220538242",
+            "0.8319916110269121"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Celtic music"
+          ],
+          [
+            "birth place",
+            "Rome",
+            "1.5806749218607283",
+            "0.7903374609303642"
+          ]
+        ]
+      ],
+      "explanation": "\tCeltic metal is like Pope Clement I. This is because 'Celtic rock' <music fusion genre> 'Celtic metal' in the same way that 'Pope Evaristus' <predecessor> 'Pope Clement I', 'Celtic metal' <instrument> 'Electric guitar' in the same way that 'Pope Clement I' <venerated> 'Anglican Communion', 'Folk metal' <music subgenre> 'Celtic metal' in the same way that 'Pope Anacletus' <successor> 'Pope Clement I', and 'Celtic metal' <stylistic origin> 'Folk metal' in the same way that 'Pope Clement I' <birth place> 'Roman Empire'.\n"
+    },
+    {
+      "total_score": "0.8974096037756939",
+      "confidence": "0.9454545454545454",
+      "rating": "0.9491832347627532",
+      "src": "Celtic metal",
+      "target": "Helena (empress)",
+      "asserts": {
+        "music fusion genre": "spouse",
+        "instrument": "venerated in",
+        "music subgenre": "mother",
+        "stylistic origin": "death place"
+      },
+      "mapping": [
+        [
+          [
+            "INCOMING",
+            "music fusion genre",
+            "Celtic rock"
+          ],
+          [
+            "spouse",
+            "Constantius Chlorus",
+            "1.936100668997096",
+            "0.968050334498548"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.9318340587581169",
+            "0.9659170293790584"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Singing"
+          ],
+          [
+            "venerated in",
+            "Anglican Communion",
+            "1.927643938140629",
+            "0.9638219690703145"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.9207880396553132",
+            "0.9603940198276566"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Drum kit"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.9159910448222592",
+            "0.9579955224111296"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Folk instrument"
+          ],
+          [
+            "venerated in",
+            "Oriental Orthodoxy",
+            "1.9152213048261109",
+            "0.9576106524130554"
+          ]
+        ],
+        [
+          [
+            "INCOMING",
+            "music subgenre",
+            "Folk metal"
+          ],
+          [
+            "mother",
+            "Constantine the Great",
+            "1.8764789218648477",
+            "0.9382394609324238"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Folk metal"
+          ],
+          [
+            "death place",
+            "Rome",
+            "1.7628737791396767",
+            "0.8814368895698383"
+          ]
+        ]
+      ],
+      "explanation": "\tCeltic metal is like Helena (empress). This is because 'Celtic rock' <music fusion genre> 'Celtic metal' in the same way that 'Constantius Chlorus' <spouse> 'Helena (empress)', 'Celtic metal' <instrument> 'Electric guitar' in the same way that 'Helena (empress)' <venerated in> 'Lutheranism', 'Folk metal' <music subgenre> 'Celtic metal' in the same way that 'Constantine the Great' <mother> 'Helena (empress)', and 'Celtic metal' <stylistic origin> 'Folk metal' in the same way that 'Helena (empress)' <death place> 'Rome'.\n"
+    },
+    {
+      "total_score": "0.8252760021918188",
+      "confidence": "0.8888888888888888",
+      "rating": "0.9284355024657963",
+      "src": "Swedish death metal",
+      "target": "Saint Monica",
+      "asserts": {
+        "instrument": "venerated in",
+        "stylistic origin": "death place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated in",
+            "Anglican Communion",
+            "1.8904111425528467",
+            "0.9452055712764234"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Singing"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.8854789679551462",
+            "0.9427394839775731"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.8756214649056329",
+            "0.9378107324528164"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Drum kit"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.8733922674516448",
+            "0.9366961337258224"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Black metal"
+          ],
+          [
+            "death place",
+            "Rome",
+            "1.833326824456619",
+            "0.9166634122283095"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Punk rock"
+          ],
+          [
+            "death place",
+            "Roman Empire",
+            "1.7829953622676662",
+            "0.8914976811338331"
+          ]
+        ]
+      ],
+      "explanation": "\tSwedish death metal is like Saint Monica. This is because 'Swedish death metal' <instrument> 'Electric guitar' in the same way that 'Saint Monica' <venerated in> 'Anglican Communion', and 'Swedish death metal' <stylistic origin> 'Black metal' in the same way that 'Saint Monica' <death place> 'Rome'.\n"
+    },
+    {
+      "total_score": "0.9022952581995138",
+      "confidence": "1",
+      "rating": "0.9022952581995138",
+      "src": "Swedish death metal",
+      "target": "Patronages of Saint George",
+      "asserts": {
+        "instrument": "venerated in",
+        "music fusion genre": "death place",
+        "stylistic origin": "birth place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.877679005836408",
+            "0.938839502918204"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Singing"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.8688515765953477",
+            "0.9344257882976739"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.8634700951055865",
+            "0.9317350475527932"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Drum kit"
+          ],
+          [
+            "venerated in",
+            "Oriental Orthodoxy",
+            "1.8614742043177464",
+            "0.9307371021588732"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "music fusion genre",
+            "Melodic death metal"
+          ],
+          [
+            "death place",
+            "Roman Empire",
+            "1.7410680119538187",
+            "0.8705340059769093"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Black metal"
+          ],
+          [
+            "birth place",
+            "Nicomedia",
+            "1.615000204585259",
+            "0.8075001022926295"
+          ]
+        ]
+      ],
+      "explanation": "\tSwedish death metal is like Patronages of Saint George. This is because 'Swedish death metal' <instrument> 'Electric guitar' in the same way that 'Patronages of Saint George' <venerated in> 'Lutheranism', 'Swedish death metal' <music fusion genre> 'Melodic death metal' in the same way that 'Patronages of Saint George' <death place> 'Roman Empire', and 'Swedish death metal' <stylistic origin> 'Black metal' in the same way that 'Patronages of Saint George' <birth place> 'Nicomedia'.\n"
+    },
+    {
+      "total_score": "0.8599222094361302",
+      "confidence": "1",
+      "rating": "0.8599222094361302",
+      "src": "Swedish death metal",
+      "target": "Walls of Constantinople",
+      "asserts": {
+        "stylistic origin": "builder",
+        "instrument": "controlledby",
+        "music fusion genre": "location"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Punk rock"
+          ],
+          [
+            "builder",
+            "Theodosius II",
+            "1.7581327050405764",
+            "0.8790663525202882"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Death metal"
+          ],
+          [
+            "builder",
+            "Constantius II",
+            "1.7214139532104071",
+            "0.8607069766052036"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "controlledby",
+            "Roman Empire",
+            "1.714418958502399",
+            "0.8572094792511995"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Singing"
+          ],
+          [
+            "controlledby",
+            "Byzantine Empire",
+            "1.712112494233109",
+            "0.8560562471165545"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "music fusion genre",
+            "Melodic death metal"
+          ],
+          [
+            "location",
+            "Turkey",
+            "1.7118204521578073",
+            "0.8559102260789037"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Black metal"
+          ],
+          [
+            "builder",
+            "Constantine the Great",
+            "1.7011679500892618",
+            "0.8505839750446309"
+          ]
+        ]
+      ],
+      "explanation": "\tSwedish death metal is like Walls of Constantinople. This is because 'Swedish death metal' <stylistic origin> 'Punk rock' in the same way that 'Walls of Constantinople' <builder> 'Theodosius II', 'Swedish death metal' <instrument> 'Electric guitar' in the same way that 'Walls of Constantinople' <controlledby> 'Roman Empire', and 'Swedish death metal' <music fusion genre> 'Melodic death metal' in the same way that 'Walls of Constantinople' <location> 'Turkey'.\n"
+    },
+    {
+      "total_score": "0.955520458743027",
+      "confidence": "1",
+      "rating": "0.955520458743027",
+      "src": "Unblack metal",
+      "target": "Patronages of Saint George",
+      "asserts": {
+        "instrument": "venerated in",
+        "format": "birth place",
+        "stylistic origin": "death place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.9490207556637986",
+            "0.9745103778318993"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Singing"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.9389809514627996",
+            "0.9694904757313998"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Keyboard instrument"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.9340385172981702",
+            "0.9670192586490851"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated in",
+            "Oriental Orthodoxy",
+            "1.9318195705504553",
+            "0.9659097852752276"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "format",
+            "Ogg"
+          ],
+          [
+            "birth place",
+            "Nicomedia",
+            "1.890298295146934",
+            "0.945149147573467"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Black metal"
+          ],
+          [
+            "death place",
+            "Roman Empire",
+            "1.8220874147941672",
+            "0.9110437073970836"
+          ]
+        ]
+      ],
+      "explanation": "\tUnblack metal is like Patronages of Saint George. This is because 'Unblack metal' <instrument> 'Electric guitar' in the same way that 'Patronages of Saint George' <venerated in> 'Lutheranism', 'Unblack metal' <format> 'Ogg' in the same way that 'Patronages of Saint George' <birth place> 'Nicomedia', and 'Unblack metal' <stylistic origin> 'Black metal' in the same way that 'Patronages of Saint George' <death place> 'Roman Empire'.\n"
+    },
+    {
+      "total_score": "0.8237916679519196",
+      "confidence": "0.9375",
+      "rating": "0.8787111124820476",
+      "src": "Unblack metal",
+      "target": "Siege of Constantinople (1204)",
+      "asserts": {
+        "stylistic origin": "is part of military conflict",
+        "format": "place of military conflict",
+        "instrument": "commander"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Black metal"
+          ],
+          [
+            "is part of military conflict",
+            "Fourth Crusade",
+            "1.9084047014332612",
+            "0.9542023507166306"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "format",
+            "Ogg"
+          ],
+          [
+            "place of military conflict",
+            "Constantinople",
+            "1.830919308447423",
+            "0.9154596542237114"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Singing"
+          ],
+          [
+            "commander",
+            "Boniface I, Marquess of Montferrat",
+            "1.7911660640562668",
+            "0.8955830320281334"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Keyboard instrument"
+          ],
+          [
+            "commander",
+            "Alexios IV Angelos",
+            "1.7005911001073142",
+            "0.8502955500536571"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "commander",
+            "Alexios V Doukas",
+            "1.6823805733468147",
+            "0.8411902866734073"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "commander",
+            "Enrico Dandolo",
+            "1.631071602393492",
+            "0.815535801196746"
+          ]
+        ]
+      ],
+      "explanation": "\tUnblack metal is like Siege of Constantinople (1204). This is because 'Unblack metal' <stylistic origin> 'Black metal' in the same way that 'Siege of Constantinople (1204)' <is part of military conflict> 'Fourth Crusade', 'Unblack metal' <format> 'Ogg' in the same way that 'Siege of Constantinople (1204)' <place of military conflict> 'Constantinople', and 'Unblack metal' <instrument> 'Singing' in the same way that 'Siege of Constantinople (1204)' <commander> 'Boniface I, Marquess of Montferrat'.\n"
+    },
+    {
+      "total_score": "0.920892092037461",
+      "confidence": "1",
+      "rating": "0.920892092037461",
+      "src": "Amerind metal",
+      "target": "Patronages of Saint George",
+      "asserts": {
+        "regional scenes": "birth place",
+        "instrument": "venerated in",
+        "stylistic origin": "death place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "regional scenes",
+            "United States"
+          ],
+          [
+            "birth place",
+            "Nicomedia",
+            "1.8767757855593288",
+            "0.9383878927796644"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.8746539078268225",
+            "0.9373269539134113"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Singing"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.8655777939575076",
+            "0.9327888969787538"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.8597502262461418",
+            "0.9298751131230709"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Folk instrument"
+          ],
+          [
+            "venerated in",
+            "Oriental Orthodoxy",
+            "1.8586985683228767",
+            "0.9293492841614384"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Black metal"
+          ],
+          [
+            "death place",
+            "Roman Empire",
+            "1.715248822536856",
+            "0.857624411268428"
+          ]
+        ]
+      ],
+      "explanation": "\tAmerind metal is like Patronages of Saint George. This is because 'Amerind metal' <regional scenes> 'United States' in the same way that 'Patronages of Saint George' <birth place> 'Nicomedia', 'Amerind metal' <instrument> 'Electric guitar' in the same way that 'Patronages of Saint George' <venerated in> 'Lutheranism', and 'Amerind metal' <stylistic origin> 'Black metal' in the same way that 'Patronages of Saint George' <death place> 'Roman Empire'.\n"
+    },
+    {
+      "total_score": "0.8283017848435827",
+      "confidence": "0.9066666666666666",
+      "rating": "0.9135681450480693",
+      "src": "Melodic death metal",
+      "target": "Helena (empress)",
+      "asserts": {
+        "music fusion genre": "spouse",
+        "instrument": "venerated in",
+        "stylistic origins": "death place",
+        "music subgenre": "mother"
+      },
+      "mapping": [
+        [
+          [
+            "INCOMING",
+            "music fusion genre",
+            "New Wave of British Heavy Metal"
+          ],
+          [
+            "spouse",
+            "Constantius Chlorus",
+            "1.8535388180543648",
+            "0.9267694090271824"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.853450994954606",
+            "0.926725497477303"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Singing"
+          ],
+          [
+            "venerated in",
+            "Anglican Communion",
+            "1.846279578016237",
+            "0.9231397890081185"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Keyboard instrument"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.8328441455247968",
+            "0.9164220727623984"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.8296384856557295",
+            "0.9148192428278648"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Drum kit"
+          ],
+          [
+            "venerated in",
+            "Oriental Orthodoxy",
+            "1.8243201243361453",
+            "0.9121600621680727"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origins",
+            "Power metal"
+          ],
+          [
+            "death place",
+            "Rome",
+            "1.7952420483172462",
+            "0.8976210241586231"
+          ]
+        ],
+        [
+          [
+            "INCOMING",
+            "music subgenre",
+            "Death metal"
+          ],
+          [
+            "mother",
+            "Constantine the Great",
+            "1.7817761259099818",
+            "0.8908880629549909"
+          ]
+        ]
+      ],
+      "explanation": "\tMelodic death metal is like Helena (empress). This is because 'New Wave of British Heavy Metal' <music fusion genre> 'Melodic death metal' in the same way that 'Constantius Chlorus' <spouse> 'Helena (empress)', 'Melodic death metal' <instrument> 'Electric guitar' in the same way that 'Helena (empress)' <venerated in> 'Lutheranism', 'Melodic death metal' <stylistic origins> 'Power metal' in the same way that 'Helena (empress)' <death place> 'Rome', and 'Death metal' <music subgenre> 'Melodic death metal' in the same way that 'Constantine the Great' <mother> 'Helena (empress)'.\n"
+    },
+    {
+      "total_score": "0.8918085007607018",
+      "confidence": "1",
+      "rating": "0.8918085007607018",
+      "src": "Nosound",
+      "target": "Patronages of Saint George",
+      "asserts": {
+        "former band member": "birth place",
+        "genre": "death place",
+        "band member": "venerated in"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "former band member",
+            "Percussion instrument"
+          ],
+          [
+            "birth place",
+            "Nicomedia",
+            "1.959604414017722",
+            "0.979802207008861"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "genre",
+            "Psychedelic rock"
+          ],
+          [
+            "death place",
+            "Roman Empire",
+            "1.8797520420283598",
+            "0.9398760210141799"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "band member",
+            "Singing"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.7608279589741556",
+            "0.8804139794870778"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "band member",
+            "Keyboard instrument"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.7511344735942793",
+            "0.8755672367971397"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "band member",
+            "Bass guitar"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.7488454999268206",
+            "0.8744227499634103"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "band member",
+            "Guitar"
+          ],
+          [
+            "venerated in",
+            "Oriental Orthodoxy",
+            "1.601537620587085",
+            "0.8007688102935425"
+          ]
+        ]
+      ],
+      "explanation": "\tNosound is like Patronages of Saint George. This is because 'Nosound' <former band member> 'Percussion instrument' in the same way that 'Patronages of Saint George' <birth place> 'Nicomedia', 'Nosound' <genre> 'Psychedelic rock' in the same way that 'Patronages of Saint George' <death place> 'Roman Empire', and 'Nosound' <band member> 'Singing' in the same way that 'Patronages of Saint George' <venerated in> 'Lutheranism'.\n"
+    },
+    {
+      "total_score": "0.9161301325713107",
+      "confidence": "1",
+      "rating": "0.9161301325713107",
+      "src": "Nosound",
+      "target": "Legio V Macedonica",
+      "asserts": {
+        "former band member": "garrison",
+        "genre": "battles",
+        "band member": "country"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "former band member",
+            "Percussion instrument"
+          ],
+          [
+            "garrison",
+            "Moesia",
+            "1.9704112022975082",
+            "0.9852056011487541"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "genre",
+            "Progressive rock"
+          ],
+          [
+            "battles",
+            "Battle of Actium",
+            "1.9188684726393128",
+            "0.9594342363196564"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "genre",
+            "Psychedelic rock"
+          ],
+          [
+            "battles",
+            "Trajan's Dacian Wars",
+            "1.8939257193166432",
+            "0.9469628596583216"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "band member",
+            "Guitar"
+          ],
+          [
+            "country",
+            "Roman Empire",
+            "1.8294987375738514",
+            "0.9147493687869257"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "band member",
+            "Singing"
+          ],
+          [
+            "country",
+            "Byzantine Empire",
+            "1.6987781820496388",
+            "0.8493890910248194"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "band member",
+            "Keyboard instrument"
+          ],
+          [
+            "country",
+            "Roman Republic",
+            "1.6820792769787734",
+            "0.8410396384893867"
+          ]
+        ]
+      ],
+      "explanation": "\tNosound is like Legio V Macedonica. This is because 'Nosound' <former band member> 'Percussion instrument' in the same way that 'Legio V Macedonica' <garrison> 'Moesia', 'Nosound' <genre> 'Progressive rock' in the same way that 'Legio V Macedonica' <battles> 'Battle of Actium', and 'Nosound' <band member> 'Guitar' in the same way that 'Legio V Macedonica' <country> 'Roman Empire'.\n"
+    },
+    {
+      "total_score": "0.9062893669681381",
+      "confidence": "1",
+      "rating": "0.9062893669681381",
+      "src": "Irritant (band)",
+      "target": "Legio V Macedonica",
+      "asserts": {
+        "former band member": "garrison",
+        "genre": "battles",
+        "band member": "country"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "former band member",
+            "Percussion instrument"
+          ],
+          [
+            "garrison",
+            "Moesia",
+            "1.964516107563648",
+            "0.982258053781824"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "genre",
+            "Progressive rock"
+          ],
+          [
+            "battles",
+            "Battle of Actium",
+            "1.9206252674711732",
+            "0.9603126337355866"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "genre",
+            "Heavy metal music"
+          ],
+          [
+            "battles",
+            "Trajan's Dacian Wars",
+            "1.9000673515294013",
+            "0.9500336757647007"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "band member",
+            "Singing"
+          ],
+          [
+            "country",
+            "Roman Empire",
+            "1.7047577110030119",
+            "0.8523788555015059"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "band member",
+            "Bass guitar"
+          ],
+          [
+            "country",
+            "Byzantine Empire",
+            "1.7009929619172364",
+            "0.8504964809586182"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "band member",
+            "Drum kit"
+          ],
+          [
+            "country",
+            "Roman Republic",
+            "1.6845130041331875",
+            "0.8422565020665937"
+          ]
+        ]
+      ],
+      "explanation": "\tIrritant (band) is like Legio V Macedonica. This is because 'Irritant (band)' <former band member> 'Percussion instrument' in the same way that 'Legio V Macedonica' <garrison> 'Moesia', 'Irritant (band)' <genre> 'Progressive rock' in the same way that 'Legio V Macedonica' <battles> 'Battle of Actium', and 'Irritant (band)' <band member> 'Singing' in the same way that 'Legio V Macedonica' <country> 'Roman Empire'.\n"
+    },
+    {
+      "total_score": "0.8008435354877349",
+      "confidence": "1",
+      "rating": "0.8008435354877349",
+      "src": "Pop music",
+      "target": "Legio XI Claudia",
+      "asserts": {
+        "format": "garrison",
+        "other topics": "patron",
+        "music subgenre": "notable commanders",
+        "stylistic origin": "country",
+        "music fusion genre": "battles"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "format",
+            "Ogg"
+          ],
+          [
+            "garrison",
+            "Moesia",
+            "1.8340951642042576",
+            "0.9170475821021288"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "other topics",
+            "Rock music"
+          ],
+          [
+            "patron",
+            "Roman emperor",
+            "1.7276221413669022",
+            "0.8638110706834511"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "music subgenre",
+            "Baroque pop"
+          ],
+          [
+            "notable commanders",
+            "Augustus",
+            "1.6024399785995898",
+            "0.8012199892997949"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Folk music"
+          ],
+          [
+            "country",
+            "Roman Empire",
+            "1.5373327407495978",
+            "0.7686663703747989"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "music fusion genre",
+            "Psychedelic pop"
+          ],
+          [
+            "battles",
+            "Final War of the Roman Republic",
+            "1.4896754052081818",
+            "0.7448377026040909"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Classical music"
+          ],
+          [
+            "country",
+            "Roman Republic",
+            "1.4189569957242907",
+            "0.7094784978621453"
+          ]
+        ]
+      ],
+      "explanation": "\tPop music is like Legio XI Claudia. This is because 'Pop music' <format> 'Ogg' in the same way that 'Legio XI Claudia' <garrison> 'Moesia', 'Pop music' <other topics> 'Rock music' in the same way that 'Legio XI Claudia' <patron> 'Roman emperor', 'Pop music' <music subgenre> 'Baroque pop' in the same way that 'Legio XI Claudia' <notable commanders> 'Augustus', 'Pop music' <stylistic origin> 'Folk music' in the same way that 'Legio XI Claudia' <country> 'Roman Empire', and 'Pop music' <music fusion genre> 'Psychedelic pop' in the same way that 'Legio XI Claudia' <battles> 'Final War of the Roman Republic'.\n"
+    },
+    {
+      "total_score": "0.9568626364264312",
+      "confidence": "1",
+      "rating": "0.9568626364264312",
+      "src": "Pirate metal",
+      "target": "Luke the Evangelist",
+      "asserts": {
+        "instrument": "venerated in",
+        "stylistic origin": "birth place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated in",
+            "Anglican Communion",
+            "1.9509410145630477",
+            "0.9754705072815238"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Keyboard instrument"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.9422506777553412",
+            "0.9711253388776706"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.932785657541403",
+            "0.9663928287707015"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Folk instrument"
+          ],
+          [
+            "venerated in",
+            "Oriental Orthodoxy",
+            "1.9305209181050962",
+            "0.9652604590525481"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Drum kit"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.9301783976818658",
+            "0.9650891988409329"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Folk metal"
+          ],
+          [
+            "birth place",
+            "Roman Empire",
+            "1.7956749714704205",
+            "0.8978374857352103"
+          ]
+        ]
+      ],
+      "explanation": "\tPirate metal is like Luke the Evangelist. This is because 'Pirate metal' <instrument> 'Electric guitar' in the same way that 'Luke the Evangelist' <venerated in> 'Anglican Communion', and 'Pirate metal' <stylistic origin> 'Folk metal' in the same way that 'Luke the Evangelist' <birth place> 'Roman Empire'.\n"
+    },
+    {
+      "total_score": "0.9586017656860072",
+      "confidence": "1",
+      "rating": "0.9586017656860072",
+      "src": "Pirate metal",
+      "target": "Ambrose",
+      "asserts": {
+        "instrument": "venerated",
+        "stylistic origin": "death place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated",
+            "Anglican Communion",
+            "1.9509410145630477",
+            "0.9754705072815238"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Keyboard instrument"
+          ],
+          [
+            "venerated",
+            "Lutheranism",
+            "1.9422506777553412",
+            "0.9711253388776706"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated",
+            "Catholic Church",
+            "1.932785657541403",
+            "0.9663928287707015"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Folk instrument"
+          ],
+          [
+            "venerated",
+            "Oriental Orthodoxy",
+            "1.9305209181050962",
+            "0.9652604590525481"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Drum kit"
+          ],
+          [
+            "venerated",
+            "Eastern Orthodox Church",
+            "1.9301783976818658",
+            "0.9650891988409329"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Folk metal"
+          ],
+          [
+            "death place",
+            "Roman Empire",
+            "1.8165445225853314",
+            "0.9082722612926657"
+          ]
+        ]
+      ],
+      "explanation": "\tPirate metal is like Ambrose. This is because 'Pirate metal' <instrument> 'Electric guitar' in the same way that 'Ambrose' <venerated> 'Anglican Communion', and 'Pirate metal' <stylistic origin> 'Folk metal' in the same way that 'Ambrose' <death place> 'Roman Empire'.\n"
+    },
+    {
+      "total_score": "0.9534519687592061",
+      "confidence": "1",
+      "rating": "0.9534519687592061",
+      "src": "Pirate metal",
+      "target": "Agnes of Rome",
+      "asserts": {
+        "instrument": "venerated in",
+        "stylistic origin": "death place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated in",
+            "Anglican Communion",
+            "1.9397391288916213",
+            "0.9698695644458106"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Keyboard instrument"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.9310182649663008",
+            "0.9655091324831504"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.9218413712222435",
+            "0.9609206856111218"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Folk instrument"
+          ],
+          [
+            "venerated in",
+            "Oriental Orthodoxy",
+            "1.9193520071326602",
+            "0.9596760035663301"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Drum kit"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.9191422025312534",
+            "0.9595711012656267"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Folk metal"
+          ],
+          [
+            "death place",
+            "Rome",
+            "1.810330650366396",
+            "0.905165325183198"
+          ]
+        ]
+      ],
+      "explanation": "\tPirate metal is like Agnes of Rome. This is because 'Pirate metal' <instrument> 'Electric guitar' in the same way that 'Agnes of Rome' <venerated in> 'Anglican Communion', and 'Pirate metal' <stylistic origin> 'Folk metal' in the same way that 'Agnes of Rome' <death place> 'Rome'.\n"
+    },
+    {
+      "total_score": "0.9534519687592061",
+      "confidence": "1",
+      "rating": "0.9534519687592061",
+      "src": "Pirate metal",
+      "target": "Justin Martyr",
+      "asserts": {
+        "instrument": "venerated in",
+        "stylistic origin": "death place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated in",
+            "Anglican Communion",
+            "1.9397391288916213",
+            "0.9698695644458106"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Keyboard instrument"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.9310182649663008",
+            "0.9655091324831504"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.9218413712222435",
+            "0.9609206856111218"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Folk instrument"
+          ],
+          [
+            "venerated in",
+            "Oriental Orthodoxy",
+            "1.9193520071326602",
+            "0.9596760035663301"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Drum kit"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.9191422025312534",
+            "0.9595711012656267"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Folk metal"
+          ],
+          [
+            "death place",
+            "Rome",
+            "1.810330650366396",
+            "0.905165325183198"
+          ]
+        ]
+      ],
+      "explanation": "\tPirate metal is like Justin Martyr. This is because 'Pirate metal' <instrument> 'Electric guitar' in the same way that 'Justin Martyr' <venerated in> 'Anglican Communion', and 'Pirate metal' <stylistic origin> 'Folk metal' in the same way that 'Justin Martyr' <death place> 'Rome'.\n"
+    },
+    {
+      "total_score": "0.9537498260358777",
+      "confidence": "1",
+      "rating": "0.9537498260358777",
+      "src": "Pirate metal",
+      "target": "Saint George",
+      "asserts": {
+        "instrument": "venerated in",
+        "stylistic origin": "death place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated in",
+            "Anglican Communion",
+            "1.9397590724096845",
+            "0.9698795362048422"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Keyboard instrument"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.9310424779974302",
+            "0.9655212389987151"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.9219500232771898",
+            "0.9609750116385949"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Folk instrument"
+          ],
+          [
+            "venerated in",
+            "Oriental Orthodoxy",
+            "1.9194341843872893",
+            "0.9597170921936446"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Drum kit"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.9192355489509194",
+            "0.9596177744754597"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Folk metal"
+          ],
+          [
+            "death place",
+            "Roman Empire",
+            "1.8135766054080182",
+            "0.9067883027040091"
+          ]
+        ]
+      ],
+      "explanation": "\tPirate metal is like Saint George. This is because 'Pirate metal' <instrument> 'Electric guitar' in the same way that 'Saint George' <venerated in> 'Anglican Communion', and 'Pirate metal' <stylistic origin> 'Folk metal' in the same way that 'Saint George' <death place> 'Roman Empire'.\n"
+    },
+    {
+      "total_score": "0.8208096865119452",
+      "confidence": "0.9375",
+      "rating": "0.8755303322794082",
+      "src": "Electric folk",
+      "target": "Maximinus II",
+      "asserts": {
+        "fusiongenres": "successor",
+        "stylistic origin": "regent",
+        "instrument": "title",
+        "music subgenre": "predecessor"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "fusiongenres",
+            "Folk metal"
+          ],
+          [
+            "successor",
+            "Licinius",
+            "1.910711189426586",
+            "0.955355594713293"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Folk music"
+          ],
+          [
+            "regent",
+            "Constantine the Great",
+            "1.7857128989479851",
+            "0.8928564494739926"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Recorder (musical instrument)"
+          ],
+          [
+            "title",
+            "Roman emperor",
+            "1.7443907525981597",
+            "0.8721953762990798"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Rock music"
+          ],
+          [
+            "regent",
+            "Maximian",
+            "1.6959209214033089",
+            "0.8479604607016544"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "music subgenre",
+            "Medieval folk rock"
+          ],
+          [
+            "predecessor",
+            "Galerius",
+            "1.6913917575778699",
+            "0.8456958787889349"
+          ]
+        ],
+        [
+          [
+            "INCOMING",
+            "stylistic origin",
+            "Celtic rock"
+          ],
+          [
+            "regent",
+            "Flavius Valerius Severus",
+            "1.6782364673989898",
+            "0.8391182336994949"
+          ]
+        ]
+      ],
+      "explanation": "\tElectric folk is like Maximinus II. This is because 'Electric folk' <fusiongenres> 'Folk metal' in the same way that 'Maximinus II' <successor> 'Licinius', 'Electric folk' <stylistic origin> 'Folk music' in the same way that 'Maximinus II' <regent> 'Constantine the Great', 'Electric folk' <instrument> 'Recorder (musical instrument)' in the same way that 'Maximinus II' <title> 'Roman emperor', and 'Electric folk' <music subgenre> 'Medieval folk rock' in the same way that 'Maximinus II' <predecessor> 'Galerius'.\n"
+    },
+    {
+      "total_score": "0.930852164979111",
+      "confidence": "1",
+      "rating": "0.930852164979111",
+      "src": "Michael Baiardi",
+      "target": "Legio V Macedonica",
+      "asserts": {
+        "genre": "battles",
+        "instrument": "country",
+        "occupation": "garrison"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "genre",
+            "Pop music"
+          ],
+          [
+            "battles",
+            "Battle of Actium",
+            "1.9218084463052745",
+            "0.9609042231526372"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "genre",
+            "Rock music"
+          ],
+          [
+            "battles",
+            "Trajan's Dacian Wars",
+            "1.887473429774995",
+            "0.9437367148874976"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Guitar"
+          ],
+          [
+            "country",
+            "Roman Empire",
+            "1.8863307454603613",
+            "0.9431653727301806"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "occupation",
+            "Record producer"
+          ],
+          [
+            "garrison",
+            "Moesia",
+            "1.870579570119377",
+            "0.9352897850596885"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Piano"
+          ],
+          [
+            "country",
+            "Byzantine Empire",
+            "1.8468230448499696",
+            "0.9234115224249848"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Orchestra"
+          ],
+          [
+            "country",
+            "Roman Republic",
+            "1.757210743239356",
+            "0.878605371619678"
+          ]
+        ]
+      ],
+      "explanation": "\tMichael Baiardi is like Legio V Macedonica. This is because 'Michael Baiardi' <genre> 'Pop music' in the same way that 'Legio V Macedonica' <battles> 'Battle of Actium', 'Michael Baiardi' <instrument> 'Guitar' in the same way that 'Legio V Macedonica' <country> 'Roman Empire', and 'Michael Baiardi' <occupation> 'Record producer' in the same way that 'Legio V Macedonica' <garrison> 'Moesia'.\n"
+    },
+    {
+      "total_score": "0.931208721892144",
+      "confidence": "1",
+      "rating": "0.931208721892144",
+      "src": "Tejano music",
+      "target": "Luke the Evangelist",
+      "asserts": {
+        "instrument": "venerated in",
+        "stylistic origin": "birth place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Musical instrument"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.8964600968011625",
+            "0.9482300484005812"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated in",
+            "Anglican Communion",
+            "1.8871389387306787",
+            "0.9435694693653394"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Singing"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.8821186015747777",
+            "0.9410593007873889"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Keyboard instrument"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.8719535110066148",
+            "0.9359767555033074"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated in",
+            "Oriental Orthodoxy",
+            "1.8700233527809447",
+            "0.9350116763904723"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Pop music"
+          ],
+          [
+            "birth place",
+            "Roman Empire",
+            "1.766810161811551",
+            "0.8834050809057755"
+          ]
+        ]
+      ],
+      "explanation": "\tTejano music is like Luke the Evangelist. This is because 'Tejano music' <instrument> 'Musical instrument' in the same way that 'Luke the Evangelist' <venerated in> 'Catholic Church', and 'Tejano music' <stylistic origin> 'Pop music' in the same way that 'Luke the Evangelist' <birth place> 'Roman Empire'.\n"
+    },
+    {
+      "total_score": "0.9328652396533607",
+      "confidence": "1",
+      "rating": "0.9328652396533607",
+      "src": "Tejano music",
+      "target": "Ambrose",
+      "asserts": {
+        "instrument": "venerated",
+        "stylistic origin": "death place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Musical instrument"
+          ],
+          [
+            "venerated",
+            "Catholic Church",
+            "1.8964600968011625",
+            "0.9482300484005812"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated",
+            "Anglican Communion",
+            "1.8871389387306787",
+            "0.9435694693653394"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Singing"
+          ],
+          [
+            "venerated",
+            "Lutheranism",
+            "1.8821186015747777",
+            "0.9410593007873889"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Keyboard instrument"
+          ],
+          [
+            "venerated",
+            "Eastern Orthodox Church",
+            "1.8719535110066148",
+            "0.9359767555033074"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated",
+            "Oriental Orthodoxy",
+            "1.8700233527809447",
+            "0.9350116763904723"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Pop music"
+          ],
+          [
+            "death place",
+            "Roman Empire",
+            "1.786688374946151",
+            "0.8933441874730755"
+          ]
+        ]
+      ],
+      "explanation": "\tTejano music is like Ambrose. This is because 'Tejano music' <instrument> 'Musical instrument' in the same way that 'Ambrose' <venerated> 'Catholic Church', and 'Tejano music' <stylistic origin> 'Pop music' in the same way that 'Ambrose' <death place> 'Roman Empire'.\n"
+    },
+    {
+      "total_score": "0.9549023535224899",
+      "confidence": "1",
+      "rating": "0.9549023535224899",
+      "src": "Tejano music",
+      "target": "Agnes of Rome",
+      "asserts": {
+        "instrument": "venerated in",
+        "stylistic origin": "death place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Musical instrument"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.9469270004521126",
+            "0.9734635002260563"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated in",
+            "Anglican Communion",
+            "1.935866870079742",
+            "0.967933435039871"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Singing"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.930843301116909",
+            "0.9654216505584545"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Keyboard instrument"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.9210817803518772",
+            "0.9605408901759386"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated in",
+            "Oriental Orthodoxy",
+            "1.9187189088695633",
+            "0.9593594544347817"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Jazz"
+          ],
+          [
+            "death place",
+            "Rome",
+            "1.8778572692301863",
+            "0.9389286346150931"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Pop music"
+          ],
+          [
+            "death place",
+            "Roman Empire",
+            "1.8373378192144685",
+            "0.9186689096072342"
+          ]
+        ]
+      ],
+      "explanation": "\tTejano music is like Agnes of Rome. This is because 'Tejano music' <instrument> 'Musical instrument' in the same way that 'Agnes of Rome' <venerated in> 'Catholic Church', and 'Tejano music' <stylistic origin> 'Jazz' in the same way that 'Agnes of Rome' <death place> 'Rome'.\n"
+    },
+    {
+      "total_score": "0.9549023535224899",
+      "confidence": "1",
+      "rating": "0.9549023535224899",
+      "src": "Tejano music",
+      "target": "Justin Martyr",
+      "asserts": {
+        "instrument": "venerated in",
+        "stylistic origin": "death place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Musical instrument"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.9469270004521126",
+            "0.9734635002260563"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated in",
+            "Anglican Communion",
+            "1.935866870079742",
+            "0.967933435039871"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Singing"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.930843301116909",
+            "0.9654216505584545"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Keyboard instrument"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.9210817803518772",
+            "0.9605408901759386"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated in",
+            "Oriental Orthodoxy",
+            "1.9187189088695633",
+            "0.9593594544347817"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Jazz"
+          ],
+          [
+            "death place",
+            "Rome",
+            "1.8778572692301863",
+            "0.9389286346150931"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Pop music"
+          ],
+          [
+            "death place",
+            "Roman Empire",
+            "1.8373378192144685",
+            "0.9186689096072342"
+          ]
+        ]
+      ],
+      "explanation": "\tTejano music is like Justin Martyr. This is because 'Tejano music' <instrument> 'Musical instrument' in the same way that 'Justin Martyr' <venerated in> 'Catholic Church', and 'Tejano music' <stylistic origin> 'Jazz' in the same way that 'Justin Martyr' <death place> 'Rome'.\n"
+    },
+    {
+      "total_score": "0.9594414082783294",
+      "confidence": "1",
+      "rating": "0.9594414082783294",
+      "src": "Tejano music",
+      "target": "Saint Monica",
+      "asserts": {
+        "instrument": "venerated in",
+        "stylistic origin": "death place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Musical instrument"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.9580009422689195",
+            "0.9790004711344598"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated in",
+            "Anglican Communion",
+            "1.9464193623928852",
+            "0.9732096811964426"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Singing"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.9413918922313669",
+            "0.9706959461156834"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Keyboard instrument"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.9317691348813568",
+            "0.9658845674406784"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Jazz"
+          ],
+          [
+            "death place",
+            "Rome",
+            "1.8864564570559952",
+            "0.9432282285279976"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Pop music"
+          ],
+          [
+            "death place",
+            "Roman Empire",
+            "1.8492591105094287",
+            "0.9246295552547144"
+          ]
+        ]
+      ],
+      "explanation": "\tTejano music is like Saint Monica. This is because 'Tejano music' <instrument> 'Musical instrument' in the same way that 'Saint Monica' <venerated in> 'Catholic Church', and 'Tejano music' <stylistic origin> 'Jazz' in the same way that 'Saint Monica' <death place> 'Rome'.\n"
+    },
+    {
+      "total_score": "0.8133799079363645",
+      "confidence": "1",
+      "rating": "0.8133799079363645",
+      "src": "Embryo (band)",
+      "target": "Patronages of Saint George",
+      "asserts": {
+        "former band member": "birth place",
+        "band member": "venerated in",
+        "genre": "death place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "former band member",
+            "Electronic organ"
+          ],
+          [
+            "birth place",
+            "Nicomedia",
+            "1.7587292834411354",
+            "0.8793646417205677"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "band member",
+            "Keyboard instrument"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.6316333924943112",
+            "0.8158166962471556"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "band member",
+            "Bass guitar"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.627664225135273",
+            "0.8138321125676365"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "band member",
+            "Singing"
+          ],
+          [
+            "venerated in",
+            "Oriental Orthodoxy",
+            "1.6234531535159922",
+            "0.8117265767579961"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "genre",
+            "Progressive rock"
+          ],
+          [
+            "death place",
+            "Roman Empire",
+            "1.5773433846031681",
+            "0.7886716923015841"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "band member",
+            "Percussion instrument"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.5417354560464922",
+            "0.7708677280232461"
+          ]
+        ]
+      ],
+      "explanation": "\tEmbryo (band) is like Patronages of Saint George. This is because 'Embryo (band)' <former band member> 'Electronic organ' in the same way that 'Patronages of Saint George' <birth place> 'Nicomedia', 'Embryo (band)' <band member> 'Keyboard instrument' in the same way that 'Patronages of Saint George' <venerated in> 'Eastern Orthodox Church', and 'Embryo (band)' <genre> 'Progressive rock' in the same way that 'Patronages of Saint George' <death place> 'Roman Empire'.\n"
+    },
+    {
+      "total_score": "0.9598921303411029",
+      "confidence": "1",
+      "rating": "0.9598921303411029",
+      "src": "Mexican pop music",
+      "target": "Luke the Evangelist",
+      "asserts": {
+        "instrument": "venerated in",
+        "stylistic origin": "birth place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Hip hop"
+          ],
+          [
+            "venerated in",
+            "Oriental Orthodoxy",
+            "1.9576442198506805",
+            "0.9788221099253402"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated in",
+            "Anglican Communion",
+            "1.944811009382926",
+            "0.972405504691463"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Drum machine"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.94260585923741",
+            "0.971302929618705"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Keyboard instrument"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.9291316620260548",
+            "0.9645658310130274"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.9270698218868083",
+            "0.9635349109434042"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Jazz"
+          ],
+          [
+            "birth place",
+            "Roman Empire",
+            "1.8174429917093549",
+            "0.9087214958546774"
+          ]
+        ]
+      ],
+      "explanation": "\tMexican pop music is like Luke the Evangelist. This is because 'Mexican pop music' <instrument> 'Hip hop' in the same way that 'Luke the Evangelist' <venerated in> 'Oriental Orthodoxy', and 'Mexican pop music' <stylistic origin> 'Jazz' in the same way that 'Luke the Evangelist' <birth place> 'Roman Empire'.\n"
+    },
+    {
+      "total_score": "0.9616258919177789",
+      "confidence": "1",
+      "rating": "0.9616258919177789",
+      "src": "Mexican pop music",
+      "target": "Ambrose",
+      "asserts": {
+        "instrument": "venerated",
+        "stylistic origin": "death place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Hip hop"
+          ],
+          [
+            "venerated",
+            "Oriental Orthodoxy",
+            "1.9576442198506805",
+            "0.9788221099253402"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated",
+            "Anglican Communion",
+            "1.944811009382926",
+            "0.972405504691463"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Drum machine"
+          ],
+          [
+            "venerated",
+            "Lutheranism",
+            "1.94260585923741",
+            "0.971302929618705"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Keyboard instrument"
+          ],
+          [
+            "venerated",
+            "Catholic Church",
+            "1.9291316620260548",
+            "0.9645658310130274"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated",
+            "Eastern Orthodox Church",
+            "1.9270698218868083",
+            "0.9635349109434042"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Jazz"
+          ],
+          [
+            "death place",
+            "Roman Empire",
+            "1.8382481306294665",
+            "0.9191240653147332"
+          ]
+        ]
+      ],
+      "explanation": "\tMexican pop music is like Ambrose. This is because 'Mexican pop music' <instrument> 'Hip hop' in the same way that 'Ambrose' <venerated> 'Oriental Orthodoxy', and 'Mexican pop music' <stylistic origin> 'Jazz' in the same way that 'Ambrose' <death place> 'Roman Empire'.\n"
+    },
+    {
+      "total_score": "0.9588934955257901",
+      "confidence": "1",
+      "rating": "0.9588934955257901",
+      "src": "Mexican pop music",
+      "target": "Agnes of Rome",
+      "asserts": {
+        "instrument": "venerated in",
+        "stylistic origin": "death place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Hip hop"
+          ],
+          [
+            "venerated in",
+            "Oriental Orthodoxy",
+            "1.963788256632095",
+            "0.9818941283160475"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated in",
+            "Anglican Communion",
+            "1.9505410059176302",
+            "0.9752705029588151"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Drum machine"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.9483493464288382",
+            "0.9741746732144191"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Keyboard instrument"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.9352894064711657",
+            "0.9676447032355828"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.933055281066446",
+            "0.966527640533223"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Jazz"
+          ],
+          [
+            "death place",
+            "Rome",
+            "1.880223480377325",
+            "0.9401117401886625"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Rhythm and blues"
+          ],
+          [
+            "death place",
+            "Roman Empire",
+            "1.8132621604675605",
+            "0.9066310802337803"
+          ]
+        ]
+      ],
+      "explanation": "\tMexican pop music is like Agnes of Rome. This is because 'Mexican pop music' <instrument> 'Hip hop' in the same way that 'Agnes of Rome' <venerated in> 'Oriental Orthodoxy', and 'Mexican pop music' <stylistic origin> 'Jazz' in the same way that 'Agnes of Rome' <death place> 'Rome'.\n"
+    },
+    {
+      "total_score": "0.9588934955257901",
+      "confidence": "1",
+      "rating": "0.9588934955257901",
+      "src": "Mexican pop music",
+      "target": "Justin Martyr",
+      "asserts": {
+        "instrument": "venerated in",
+        "stylistic origin": "death place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Hip hop"
+          ],
+          [
+            "venerated in",
+            "Oriental Orthodoxy",
+            "1.963788256632095",
+            "0.9818941283160475"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated in",
+            "Anglican Communion",
+            "1.9505410059176302",
+            "0.9752705029588151"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Drum machine"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.9483493464288382",
+            "0.9741746732144191"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Keyboard instrument"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.9352894064711657",
+            "0.9676447032355828"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.933055281066446",
+            "0.966527640533223"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Jazz"
+          ],
+          [
+            "death place",
+            "Rome",
+            "1.880223480377325",
+            "0.9401117401886625"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Rhythm and blues"
+          ],
+          [
+            "death place",
+            "Roman Empire",
+            "1.8132621604675605",
+            "0.9066310802337803"
+          ]
+        ]
+      ],
+      "explanation": "\tMexican pop music is like Justin Martyr. This is because 'Mexican pop music' <instrument> 'Hip hop' in the same way that 'Justin Martyr' <venerated in> 'Oriental Orthodoxy', and 'Mexican pop music' <stylistic origin> 'Jazz' in the same way that 'Justin Martyr' <death place> 'Rome'.\n"
+    },
+    {
+      "total_score": "0.9455509888490455",
+      "confidence": "1",
+      "rating": "0.9455509888490455",
+      "src": "Mexican pop music",
+      "target": "Saint George",
+      "asserts": {
+        "instrument": "venerated in",
+        "stylistic origin": "death place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Hip hop"
+          ],
+          [
+            "venerated in",
+            "Oriental Orthodoxy",
+            "1.9586948956747148",
+            "0.9793474478373574"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated in",
+            "Anglican Communion",
+            "1.945904791373134",
+            "0.972952395686567"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Drum machine"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.9435944739749416",
+            "0.9717972369874708"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Keyboard instrument"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.930604915953098",
+            "0.965302457976549"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Bass guitar"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.928357211094992",
+            "0.964178605547496"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Jazz"
+          ],
+          [
+            "death place",
+            "Roman Empire",
+            "1.8468745610934802",
+            "0.9234372805467401"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Rhythm and blues"
+          ],
+          [
+            "death place",
+            "Nicomedia",
+            "1.6836829947222773",
+            "0.8418414973611387"
+          ]
+        ]
+      ],
+      "explanation": "\tMexican pop music is like Saint George. This is because 'Mexican pop music' <instrument> 'Hip hop' in the same way that 'Saint George' <venerated in> 'Oriental Orthodoxy', and 'Mexican pop music' <stylistic origin> 'Jazz' in the same way that 'Saint George' <death place> 'Roman Empire'.\n"
+    },
+    {
+      "total_score": "0.9540327040986679",
+      "confidence": "1",
+      "rating": "0.9540327040986679",
+      "src": "Mexican pop music",
+      "target": "Saint Monica",
+      "asserts": {
+        "instrument": "venerated in",
+        "stylistic origin": "death place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Hip hop"
+          ],
+          [
+            "venerated in",
+            "Eastern Orthodox Church",
+            "1.9562793463301011",
+            "0.9781396731650506"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Electric guitar"
+          ],
+          [
+            "venerated in",
+            "Anglican Communion",
+            "1.9439447477582525",
+            "0.9719723738791263"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Drum machine"
+          ],
+          [
+            "venerated in",
+            "Lutheranism",
+            "1.9417455815118805",
+            "0.9708727907559402"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "instrument",
+            "Keyboard instrument"
+          ],
+          [
+            "venerated in",
+            "Catholic Church",
+            "1.9288244191086166",
+            "0.9644122095543083"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Jazz"
+          ],
+          [
+            "death place",
+            "Rome",
+            "1.868852942212607",
+            "0.9344264711063035"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "stylistic origin",
+            "Rhythm and blues"
+          ],
+          [
+            "death place",
+            "Roman Empire",
+            "1.8087454122625568",
+            "0.9043727061312784"
+          ]
+        ]
+      ],
+      "explanation": "\tMexican pop music is like Saint Monica. This is because 'Mexican pop music' <instrument> 'Hip hop' in the same way that 'Saint Monica' <venerated in> 'Eastern Orthodox Church', and 'Mexican pop music' <stylistic origin> 'Jazz' in the same way that 'Saint Monica' <death place> 'Rome'.\n"
     }
   ]
 }

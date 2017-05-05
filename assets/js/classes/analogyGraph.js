@@ -5,10 +5,7 @@ var AnalogyGraph = function(labels) {
 
     //These are for the final assembled links and node because they need to be in the same array for d3 to read them
     var _HULLS = [], _NODES, _LINKS;
-    var _NODE_GROUPS_SAVED = [];
-    var _LINK_GROUPS_SAVED = [];
-    var _ANALOGY_LINKS_SAVED = [];
-    var _HULL_POINTS_SAVED = [];
+    var _ANALOGIES = [];
     var hull = svg.append('g')
                     .attr('class', 'hulls');
     //Start our zoom with it's own rect before we create our nodes and links group
@@ -46,8 +43,7 @@ var AnalogyGraph = function(labels) {
             data: {
                 key1: existingGraphs[0].key,
                 key2: existingGraphs[1].key,
-                analogyLinks: _ANALOGY_LINKS_SAVED,
-                hullPoints: _HULL_POINTS_SAVED
+                analogies: _ANALOGIES
             },
             type: 'POST',
             success: function(response) {
@@ -98,33 +94,40 @@ var AnalogyGraph = function(labels) {
     }
 
     this.loadSaveData = function(saveObj) {
-        //linkGroups.push({data: saveObj.analogyLinks, key: 'Analogies'});
-        //console.log(linkGroups);
+        //Create a new link group
         linkGroups.push({data: [], key: 'Analogies'});
-        var links = saveObj.analogyLinks;
-        for(var i = 0; i < links.length; i++) {
-            var srcNode = nodeGroups[0].data[links[i].sourceIndex];
-            var targetNode = nodeGroups[1].data[links[i].targetIndex];
-            var linkValue = links[i].value;
-            linkGroups[2].data.push({source: srcNode, target: targetNode, value: linkValue});
-            linkGroups[2].data.push({source: srcNode, target: targetNode, value: linkValue});
-            linkGroups[2].data.push({source: srcNode, target: targetNode, value: linkValue});
+        //Get our cached analogies in order to create new links in our graph
+        _ANALOGIES = saveObj.analogies;
+        console.log(_ANALOGIES);
+        for (var i = 0; i < _ANALOGIES.length; i++) {
+            var src, target
+            for (var j = 0; j < nodeGroups[0].data.length; j++) {
+                if (_ANALOGIES[i].src === nodeGroups[0].data[j].name) {
+                    src = nodeGroups[0].data[j];
+                }
+            }
+
+            for (var j = 0; j < nodeGroups[1].data.length; j++) {
+                if (_ANALOGIES[i].target === nodeGroups[1].data[j].name) {
+                    target = nodeGroups[1].data[j];
+                }
+            }
+
+            linkGroups[2].data.push({source: src, target: target, value: _ANALOGIES[i].total_score, strength: .5});
+            _HULLS[0].nodes.push(target);
+            _HULLS[1].nodes.push(src);
         }
 
-        var hullPoints = saveObj.hullPoints;
-        for(var i = 0; i < hullPoints.length; i++) {
-            _HULLS[hullPoints[i].hullNum].nodes.push(nodeGroups[hullPoints[i].targetNodeGroup].data[hullPoints[i].index]);
-        }
+        // var hullPoints = saveObj.hullPoints;
+        // for(var i = 0; i < hullPoints.length; i++) {
+        //     _HULLS[hullPoints[i].hullNum].nodes.push(nodeGroups[hullPoints[i].targetNodeGroup].data[hullPoints[i].index]);
+        // }
 
         assembleGraph();
     }
 
     //Used to send our ajax call to the analogy server
     var getAnalogy = function(i, j) {
-        //Use our saved data for the data we push back to our server
-        var srcNodeSave = _NODE_GROUPS_SAVED[0].data[i];
-        var targetNodeSave = _NODE_GROUPS_SAVED[1].data[j];
-
         //Setting variables for our object that we are posting
         var srcNode = nodeGroups[0].data[i];
         var targetNode = nodeGroups[1].data[j];
@@ -144,12 +147,9 @@ var AnalogyGraph = function(labels) {
             success: function(response) {
                 var analogy = JSON.parse(response);
                 //Push a new link with the correct target and source if the score is greater than .9
-                if(analogy.total_score > .9) {
-                    //Add a link to our links saved group
-                    _ANALOGY_LINKS_SAVED.push({sourceIndex: i, targetIndex: j, value: analogy.total_score});
-                    //Add a reference index number, the hull group number and target group number to hulls saved
-                    _HULL_POINTS_SAVED.push({hullNum: 0, targetNodeGroup: 1, index: j});
-                    _HULL_POINTS_SAVED.push({hullNum: 1, targetNodeGroup: 0, index: i});
+                console.log(analogy);
+                if(analogy.total_score > .8) {
+                    _ANALOGIES.push(analogy);
 
                     //Also do this stuff for the graph currently on screen.
                     linkGroups[0].data.push({source: srcNode, target: targetNode, value: analogy.total_score});
@@ -254,6 +254,8 @@ var AnalogyGraph = function(labels) {
             _HULLS.push(new Blob(existingGraphs[index].key, points, hull));
         }
 
+        console.log(nodeGroups);
+
         //Reset our nodes and links
         _NODES = [];
         _LINKS = [];
@@ -270,14 +272,6 @@ var AnalogyGraph = function(labels) {
                 _LINKS.push(linkGroups[i].data[j]);
             }
         }
-        
-        //On the initial assemble copy our nodes and links to be cached
-        if(index >= 0 ) {
-            _NODE_GROUPS_SAVED.push(JSON.parse(JSON.stringify(nodeGroups[index])));
-            _LINK_GROUPS_SAVED.push(JSON.parse(JSON.stringify(linkGroups[index])));
-            console.log(_LINK_GROUPS_SAVED);
-
-        }
 
         updateGraph();
     }
@@ -286,7 +280,14 @@ var AnalogyGraph = function(labels) {
     var updateGraph = function() {
         //Using D3's enter to see what nodes have entered, and append them
         node = node.data(_NODES).enter().append("circle")
-                .attr("r", function(d) { return d.connections.length || 1 })
+                .attr("r", function(d) { 
+                    if (d.connections.length < 20) {
+                        return d.connections.length || 1;
+                    }
+                    else {
+                        return 21;
+                    }
+                })
                 .attr("fill", function(d) { return 'white'; })
                 .call(d3.drag()
                     .on("start", dragstarted)
@@ -350,7 +351,6 @@ var AnalogyGraph = function(labels) {
 
             //Push our nodes to our existing graphs array
             existingGraphs.push({data: nodes, key: tag});
-            console.log(existingGraphs);
             //Assemble the graph 
             assembleGraph(existingGraphs.length-1);
         });

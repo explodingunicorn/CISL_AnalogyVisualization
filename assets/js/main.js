@@ -71,8 +71,11 @@ var app = new Vue({
             this.graph.loadDataSet('js/data/' + tag + '.xml', tag);
             var newColor = this.graph.getColor(tag);
             this.selecting = false;
+            console.log(tag);
             for (var i = 0; i < this.dataSetsAvailable.length; i++) {
+                console.log('hi');
                 if (tag === this.dataSetsAvailable[i].val) {
+                    console.log('hi');
                     this.dataSetsAvailable[i].color = newColor;
                     this.dataSetsUsed.push(this.dataSetsAvailable[i]);
                     this.dataSetsAvailable.splice(i, 1);
@@ -105,5 +108,10 @@ var app = new Vue({
         //We are instantiating our Analogy Graph here because we need to wait for the app to mount in order for the svg to be available to d3
         this.graph = new AnalogyGraph(this.nodeLabels);
         this.graphMounted = true;
+        this.currentlySelected = "music"
+        this.addDataSet();
+        this.currentlySelected = "romanEmpire1000"
+        this.addDataSet();
+        console.log(this.dataSetsUsed);
     }
 });
