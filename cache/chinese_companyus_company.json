@@ -1,0 +1,4843 @@
+{
+  "key1": "chinese_company",
+  "key2": "us_company",
+  "analogies": [
+    {
+      "total_score": "0.9537017052013098",
+      "confidence": "1",
+      "rating": "0.9537017052013098",
+      "src": "SoftBank",
+      "target": "Slide.com",
+      "asserts": {
+        "product": "key person",
+        "subsidiary": "parent",
+        "industry": "foundation place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Public company"
+          ],
+          [
+            "type",
+            "Subsidiary",
+            "1.9752674256693734",
+            "0.9876337128346867"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Digital television"
+          ],
+          [
+            "key person",
+            "Chief executive officer",
+            "1.9594277815355645",
+            "0.9797138907677823"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Landline"
+          ],
+          [
+            "key person",
+            "Chief technology officer",
+            "1.9590646308858946",
+            "0.9795323154429473"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Internet"
+          ],
+          [
+            "key person",
+            "Chairman",
+            "1.956690333621601",
+            "0.9783451668108005"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Mobile phone"
+          ],
+          [
+            "key person",
+            "Entrepreneurship",
+            "1.9558594299780245",
+            "0.9779297149890123"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "subsidiary",
+            "Alibaba Group"
+          ],
+          [
+            "parent",
+            "Google",
+            "1.8563487687260023",
+            "0.9281743843630011"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Telecommunication"
+          ],
+          [
+            "foundation place",
+            "San Francisco",
+            "1.689165502401877",
+            "0.8445827512009385"
+          ]
+        ]
+      ],
+      "explanation": "\tSoftBank is like Slide.com. This is because 'SoftBank' <type> 'Public company' in the same way that 'Slide.com' <type> 'Subsidiary', 'SoftBank' <product> 'Digital television' in the same way that 'Slide.com' <key person> 'Chief executive officer', 'SoftBank' <subsidiary> 'Alibaba Group' in the same way that 'Slide.com' <parent> 'Google', and 'SoftBank' <industry> 'Telecommunication' in the same way that 'Slide.com' <foundation place> 'San Francisco'.\n"
+    },
+    {
+      "total_score": "0.9424569224597736",
+      "confidence": "1",
+      "rating": "0.9424569224597736",
+      "src": "SoftBank",
+      "target": "Sovran Bank",
+      "asserts": {
+        "subsidiary": "location",
+        "type": "successor"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Telecommunication"
+          ],
+          [
+            "industry",
+            "Financial services",
+            "1.9810068974871313",
+            "0.9905034487435657"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Landline"
+          ],
+          [
+            "product",
+            "Retail banking",
+            "1.9215250478461408",
+            "0.9607625239230704"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Mobile phone"
+          ],
+          [
+            "product",
+            "Commercial bank",
+            "1.9211088398198457",
+            "0.9605544199099229"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "subsidiary",
+            "Alibaba Group"
+          ],
+          [
+            "location",
+            "United States",
+            "1.8647446803759467",
+            "0.9323723401879733"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Public company"
+          ],
+          [
+            "successor",
+            "Bank of America",
+            "1.7361837590686706",
+            "0.8680918795343353"
+          ]
+        ]
+      ],
+      "explanation": "\tSoftBank is like Sovran Bank. This is because 'SoftBank' <industry> 'Telecommunication' in the same way that 'Sovran Bank' <industry> 'Financial services', 'SoftBank' <product> 'Landline' in the same way that 'Sovran Bank' <product> 'Retail banking', 'SoftBank' <subsidiary> 'Alibaba Group' in the same way that 'Sovran Bank' <location> 'United States', and 'SoftBank' <type> 'Public company' in the same way that 'Sovran Bank' <successor> 'Bank of America'.\n"
+    },
+    {
+      "total_score": "0.9352264281695387",
+      "confidence": "1",
+      "rating": "0.9352264281695387",
+      "src": "SoftBank",
+      "target": "Van der Moolen",
+      "asserts": {
+        "subsidiary": "foundation place",
+        "product": "location"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Telecommunication"
+          ],
+          [
+            "industry",
+            "Financial services",
+            "1.969431689657572",
+            "0.984715844828786"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Public company"
+          ],
+          [
+            "type",
+            "Public company",
+            "1.9592423560341587",
+            "0.9796211780170794"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "subsidiary",
+            "Alibaba Group"
+          ],
+          [
+            "foundation place",
+            "Amsterdam",
+            "1.840763842476958",
+            "0.920381921238479"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Landline"
+          ],
+          [
+            "location",
+            "Amsterdam Airport Schiphol",
+            "1.7975610759471372",
+            "0.8987805379735686"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Digital television"
+          ],
+          [
+            "location",
+            "Netherlands",
+            "1.7852653175795599",
+            "0.8926326587897799"
+          ]
+        ]
+      ],
+      "explanation": "\tSoftBank is like Van der Moolen. This is because 'SoftBank' <industry> 'Telecommunication' in the same way that 'Van der Moolen' <industry> 'Financial services', 'SoftBank' <type> 'Public company' in the same way that 'Van der Moolen' <type> 'Public company', 'SoftBank' <subsidiary> 'Alibaba Group' in the same way that 'Van der Moolen' <foundation place> 'Amsterdam', and 'SoftBank' <product> 'Landline' in the same way that 'Van der Moolen' <location> 'Amsterdam Airport Schiphol'.\n"
+    },
+    {
+      "total_score": "0.9026138127353123",
+      "confidence": "1",
+      "rating": "0.9026138127353123",
+      "src": "SoftBank",
+      "target": "Pan American World Airways",
+      "asserts": {
+        "product": "target airport",
+        "subsidiary": "headquarter",
+        "type": "hub airport"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Telecommunication"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.9265074436933873",
+            "0.9632537218466937"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Landline"
+          ],
+          [
+            "target airport",
+            "Washington Dulles International Airport",
+            "1.891151057368127",
+            "0.9455755286840635"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Mobile phone"
+          ],
+          [
+            "target airport",
+            "George Bush Intercontinental Airport",
+            "1.8281542419001253",
+            "0.9140771209500627"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "subsidiary",
+            "Alibaba Group"
+          ],
+          [
+            "headquarter",
+            "New York City",
+            "1.8251393107779488",
+            "0.9125696553889744"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Digital television"
+          ],
+          [
+            "target airport",
+            "Los Angeles International Airport",
+            "1.7536300204638104",
+            "0.8768150102319052"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Internet"
+          ],
+          [
+            "target airport",
+            "O'Hare International Airport",
+            "1.7091182351856025",
+            "0.8545591175928012"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Public company"
+          ],
+          [
+            "hub airport",
+            "John F. Kennedy International Airport",
+            "1.702893068905368",
+            "0.851446534452684"
+          ]
+        ]
+      ],
+      "explanation": "\tSoftBank is like Pan American World Airways. This is because 'SoftBank' <industry> 'Telecommunication' in the same way that 'Pan American World Airways' <industry> 'Aviation', 'SoftBank' <product> 'Landline' in the same way that 'Pan American World Airways' <target airport> 'Washington Dulles International Airport', 'SoftBank' <subsidiary> 'Alibaba Group' in the same way that 'Pan American World Airways' <headquarter> 'New York City', and 'SoftBank' <type> 'Public company' in the same way that 'Pan American World Airways' <hub airport> 'John F. Kennedy International Airport'.\n"
+    },
+    {
+      "total_score": "0.9496605803164708",
+      "confidence": "1",
+      "rating": "0.9496605803164708",
+      "src": "WeBank (China)",
+      "target": "The Man in the High Castle (TV series)",
+      "asserts": {
+        "key person": "company",
+        "parent company": "distributor",
+        "product": "channel"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "location",
+            "China"
+          ],
+          [
+            "location",
+            "Washington (state)",
+            "1.961067665878803",
+            "0.9805338329394016"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "key person",
+            "Chairman"
+          ],
+          [
+            "company",
+            "Amazon Studios",
+            "1.9552969566056615",
+            "0.9776484783028307"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location",
+            "Shenzhen"
+          ],
+          [
+            "location",
+            "Seattle",
+            "1.9344773400347797",
+            "0.9672386700173898"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Tencent"
+          ],
+          [
+            "distributor",
+            "Amazon.com",
+            "1.8352255017586325",
+            "0.9176127508793163"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Bank"
+          ],
+          [
+            "channel",
+            "Amazon Video",
+            "1.8105383388868324",
+            "0.9052691694434162"
+          ]
+        ]
+      ],
+      "explanation": "\tWeBank (China) is like The Man in the High Castle (TV series). This is because 'WeBank (China)' <location> 'China' in the same way that 'The Man in the High Castle (TV series)' <location> 'Washington (state)', 'WeBank (China)' <key person> 'Chairman' in the same way that 'The Man in the High Castle (TV series)' <company> 'Amazon Studios', 'WeBank (China)' <parent company> 'Tencent' in the same way that 'The Man in the High Castle (TV series)' <distributor> 'Amazon.com', and 'WeBank (China)' <product> 'Bank' in the same way that 'The Man in the High Castle (TV series)' <channel> 'Amazon Video'.\n"
+    },
+    {
+      "total_score": "0.9632156173042254",
+      "confidence": "1",
+      "rating": "0.9632156173042254",
+      "src": "WeBank (China)",
+      "target": "Tribune Media",
+      "asserts": {
+        "product": "type",
+        "parent company": "owner",
+        "location": "location city",
+        "key person": "industry"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Bank"
+          ],
+          [
+            "type",
+            "Public company",
+            "1.9734860928991564",
+            "0.9867430464495782"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Tencent"
+          ],
+          [
+            "owner",
+            "JPMorgan Chase",
+            "1.9579663094135098",
+            "0.9789831547067549"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location",
+            "China"
+          ],
+          [
+            "location city",
+            "Chicago",
+            "1.915050925935947",
+            "0.9575254629679735"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location",
+            "Shenzhen"
+          ],
+          [
+            "location city",
+            "Illinois",
+            "1.908971632984753",
+            "0.9544858164923765"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "key person",
+            "Chairman"
+          ],
+          [
+            "industry",
+            "Broadcasting",
+            "1.8766812118088894",
+            "0.9383406059044447"
+          ]
+        ]
+      ],
+      "explanation": "\tWeBank (China) is like Tribune Media. This is because 'WeBank (China)' <product> 'Bank' in the same way that 'Tribune Media' <type> 'Public company', 'WeBank (China)' <parent company> 'Tencent' in the same way that 'Tribune Media' <owner> 'JPMorgan Chase', 'WeBank (China)' <location> 'China' in the same way that 'Tribune Media' <location city> 'Chicago', and 'WeBank (China)' <key person> 'Chairman' in the same way that 'Tribune Media' <industry> 'Broadcasting'.\n"
+    },
+    {
+      "total_score": "0.9747775738056736",
+      "confidence": "1",
+      "rating": "0.9747775738056736",
+      "src": "WeBank (China)",
+      "target": "Merkur",
+      "asserts": {
+        "key person": "industry"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "location",
+            "China"
+          ],
+          [
+            "location",
+            "Dearborn, Michigan",
+            "1.9810402799275424",
+            "0.9905201399637712"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Tencent"
+          ],
+          [
+            "parent company",
+            "Ford Motor Company",
+            "1.9778863502244426",
+            "0.9889431751122213"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Bank"
+          ],
+          [
+            "product",
+            "Luxury vehicle",
+            "1.9602679315325329",
+            "0.9801339657662664"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location",
+            "Shenzhen"
+          ],
+          [
+            "location",
+            "United States",
+            "1.935931634671223",
+            "0.9679658173356115"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "key person",
+            "Chairman"
+          ],
+          [
+            "industry",
+            "Car",
+            "1.892649541700995",
+            "0.9463247708504975"
+          ]
+        ]
+      ],
+      "explanation": "\tWeBank (China) is like Merkur. This is because 'WeBank (China)' <location> 'China' in the same way that 'Merkur' <location> 'Dearborn, Michigan', 'WeBank (China)' <parent company> 'Tencent' in the same way that 'Merkur' <parent company> 'Ford Motor Company', 'WeBank (China)' <product> 'Bank' in the same way that 'Merkur' <product> 'Luxury vehicle', and 'WeBank (China)' <key person> 'Chairman' in the same way that 'Merkur' <industry> 'Car'.\n"
+    },
+    {
+      "total_score": "0.9067034148451872",
+      "confidence": "0.9666666666666667",
+      "rating": "0.9379690498398489",
+      "src": "WeBank (China)",
+      "target": "Compass Airlines (North America)",
+      "asserts": {
+        "key person": "headquarter",
+        "product": "alliance",
+        "location": "hub airport",
+        "parent company": "lounge"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "key person",
+            "Chairman"
+          ],
+          [
+            "headquarter",
+            "Minneapolis–Saint Paul International Airport",
+            "1.9800948010463162",
+            "0.9900474005231581"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Bank"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.8918996121446974",
+            "0.9459498060723487"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location",
+            "China"
+          ],
+          [
+            "hub airport",
+            "Seattle–Tacoma International Airport",
+            "1.8854051935000706",
+            "0.9427025967500353"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location",
+            "Shenzhen"
+          ],
+          [
+            "hub airport",
+            "Los Angeles International Airport",
+            "1.8275150895443009",
+            "0.9137575447721504"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Tencent"
+          ],
+          [
+            "lounge",
+            "Delta Air Lines",
+            "1.7947758021631035",
+            "0.8973879010815518"
+          ]
+        ]
+      ],
+      "explanation": "\tWeBank (China) is like Compass Airlines (North America). This is because 'WeBank (China)' <key person> 'Chairman' in the same way that 'Compass Airlines (North America)' <headquarter> 'Minneapolis–Saint Paul International Airport', 'WeBank (China)' <product> 'Bank' in the same way that 'Compass Airlines (North America)' <alliance> 'SkyTeam', 'WeBank (China)' <location> 'China' in the same way that 'Compass Airlines (North America)' <hub airport> 'Seattle–Tacoma International Airport', and 'WeBank (China)' <parent company> 'Tencent' in the same way that 'Compass Airlines (North America)' <lounge> 'Delta Air Lines'.\n"
+    },
+    {
+      "total_score": "0.9491151667022194",
+      "confidence": "1",
+      "rating": "0.9491151667022194",
+      "src": "WeBank (China)",
+      "target": "Braniff International Airways",
+      "asserts": {
+        "location": "target airport",
+        "key person": "hub airport",
+        "product": "industry",
+        "parent company": "headquarter"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "location",
+            "China"
+          ],
+          [
+            "target airport",
+            "George Bush Intercontinental Airport",
+            "1.9469153777387755",
+            "0.9734576888693878"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "key person",
+            "Chairman"
+          ],
+          [
+            "hub airport",
+            "Washington Dulles International Airport",
+            "1.943171207564726",
+            "0.971585603782363"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location",
+            "Shenzhen"
+          ],
+          [
+            "target airport",
+            "O'Hare International Airport",
+            "1.9380591502180353",
+            "0.9690295751090177"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Bank"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.8831141100100015",
+            "0.9415570550050008"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Tencent"
+          ],
+          [
+            "headquarter",
+            "United States",
+            "1.779891821490656",
+            "0.889945910745328"
+          ]
+        ]
+      ],
+      "explanation": "\tWeBank (China) is like Braniff International Airways. This is because 'WeBank (China)' <location> 'China' in the same way that 'Braniff International Airways' <target airport> 'George Bush Intercontinental Airport', 'WeBank (China)' <key person> 'Chairman' in the same way that 'Braniff International Airways' <hub airport> 'Washington Dulles International Airport', 'WeBank (China)' <product> 'Bank' in the same way that 'Braniff International Airways' <industry> 'Aviation', and 'WeBank (China)' <parent company> 'Tencent' in the same way that 'Braniff International Airways' <headquarter> 'United States'.\n"
+    },
+    {
+      "total_score": "0.9160335511075676",
+      "confidence": "1",
+      "rating": "0.9160335511075676",
+      "src": "China Petrochemical Corporation",
+      "target": "Mental Images",
+      "asserts": {
+        "subsidiary": "parent company",
+        "area served": "location",
+        "location city": "product"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Petroleum industry"
+          ],
+          [
+            "industry",
+            "Software",
+            "1.964162430969484",
+            "0.982081215484742"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "State-owned enterprise"
+          ],
+          [
+            "type",
+            "Subsidiary",
+            "1.9614166125734727",
+            "0.9807083062867363"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "subsidiary",
+            "Sinopec"
+          ],
+          [
+            "parent company",
+            "Nvidia",
+            "1.916640326053606",
+            "0.958320163026803"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "area served",
+            "China"
+          ],
+          [
+            "location",
+            "Germany",
+            "1.7253366979008016",
+            "0.8626683489504008"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location city",
+            "Beijing"
+          ],
+          [
+            "product",
+            "Mental Ray",
+            "1.5927794435783111",
+            "0.7963897217891556"
+          ]
+        ]
+      ],
+      "explanation": "\tChina Petrochemical Corporation is like Mental Images. This is because 'China Petrochemical Corporation' <industry> 'Petroleum industry' in the same way that 'Mental Images' <industry> 'Software', 'China Petrochemical Corporation' <type> 'State-owned enterprise' in the same way that 'Mental Images' <type> 'Subsidiary', 'China Petrochemical Corporation' <subsidiary> 'Sinopec' in the same way that 'Mental Images' <parent company> 'Nvidia', 'China Petrochemical Corporation' <area served> 'China' in the same way that 'Mental Images' <location> 'Germany', and 'China Petrochemical Corporation' <location city> 'Beijing' in the same way that 'Mental Images' <product> 'Mental Ray'.\n"
+    },
+    {
+      "total_score": "0.929285626695522",
+      "confidence": "1",
+      "rating": "0.929285626695522",
+      "src": "China Petrochemical Corporation",
+      "target": "Lab126",
+      "asserts": {
+        "location city": "państwo",
+        "subsidiary": "parent company",
+        "area served": "product"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Petroleum industry"
+          ],
+          [
+            "industry",
+            "Computer hardware",
+            "1.9837321279961888",
+            "0.9918660639980944"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "State-owned enterprise"
+          ],
+          [
+            "type",
+            "Subsidiary",
+            "1.972878854797211",
+            "0.9864394273986055"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location city",
+            "Beijing"
+          ],
+          [
+            "państwo",
+            "United States",
+            "1.9052207763644837",
+            "0.9526103881822419"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "subsidiary",
+            "Sinopec"
+          ],
+          [
+            "parent company",
+            "Amazon.com",
+            "1.8001332286202059",
+            "0.9000666143101029"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "area served",
+            "China"
+          ],
+          [
+            "product",
+            "Amazon Kindle",
+            "1.63089127917713",
+            "0.815445639588565"
+          ]
+        ]
+      ],
+      "explanation": "\tChina Petrochemical Corporation is like Lab126. This is because 'China Petrochemical Corporation' <industry> 'Petroleum industry' in the same way that 'Lab126' <industry> 'Computer hardware', 'China Petrochemical Corporation' <type> 'State-owned enterprise' in the same way that 'Lab126' <type> 'Subsidiary', 'China Petrochemical Corporation' <location city> 'Beijing' in the same way that 'Lab126' <państwo> 'United States', 'China Petrochemical Corporation' <subsidiary> 'Sinopec' in the same way that 'Lab126' <parent company> 'Amazon.com', and 'China Petrochemical Corporation' <area served> 'China' in the same way that 'Lab126' <product> 'Amazon Kindle'.\n"
+    },
+    {
+      "total_score": "0.9859837919430137",
+      "confidence": "1",
+      "rating": "0.9859837919430137",
+      "src": "Shanghai Petrochemical",
+      "target": "Barnett Bank",
+      "asserts": {
+        "key person": "genre",
+        "location city": "service"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "type",
+            "State-owned enterprise"
+          ],
+          [
+            "type",
+            "Bank",
+            "1.9907053471164389",
+            "0.9953526735582194"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "key person",
+            "Chairman"
+          ],
+          [
+            "genre",
+            "Financial services",
+            "1.9902394584602296",
+            "0.9951197292301148"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location city",
+            "Shanghai"
+          ],
+          [
+            "service",
+            "Finance",
+            "1.9858621453256466",
+            "0.9929310726628233"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Sinopec"
+          ],
+          [
+            "parent company",
+            "Bank of America",
+            "1.9499907897708446",
+            "0.9749953948854223"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "państwo",
+            "China"
+          ],
+          [
+            "państwo",
+            "United States",
+            "1.9430401787569767",
+            "0.9715200893784883"
+          ]
+        ]
+      ],
+      "explanation": "\tShanghai Petrochemical is like Barnett Bank. This is because 'Shanghai Petrochemical' <type> 'State-owned enterprise' in the same way that 'Barnett Bank' <type> 'Bank', 'Shanghai Petrochemical' <key person> 'Chairman' in the same way that 'Barnett Bank' <genre> 'Financial services', 'Shanghai Petrochemical' <location city> 'Shanghai' in the same way that 'Barnett Bank' <service> 'Finance', 'Shanghai Petrochemical' <parent company> 'Sinopec' in the same way that 'Barnett Bank' <parent company> 'Bank of America', and 'Shanghai Petrochemical' <państwo> 'China' in the same way that 'Barnett Bank' <państwo> 'United States'.\n"
+    },
+    {
+      "total_score": "0.943235001625213",
+      "confidence": "1",
+      "rating": "0.943235001625213",
+      "src": "Shanghai Petrochemical",
+      "target": "Freedom Airlines",
+      "asserts": {
+        "państwo": "headquarter",
+        "type": "alliance",
+        "key person": "industry",
+        "location city": "hub airport"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "państwo",
+            "China"
+          ],
+          [
+            "headquarter",
+            "United States",
+            "1.9437831232963083",
+            "0.9718915616481542"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "State-owned enterprise"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.9256410706244398",
+            "0.9628205353122199"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Sinopec"
+          ],
+          [
+            "parent company",
+            "Delta Air Lines",
+            "1.9032480070335025",
+            "0.9516240035167512"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "key person",
+            "Chairman"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.8867390076708974",
+            "0.9433695038354487"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location city",
+            "Shanghai"
+          ],
+          [
+            "hub airport",
+            "Cincinnati/Northern Kentucky International Airport",
+            "1.7729388076269827",
+            "0.8864694038134914"
+          ]
+        ]
+      ],
+      "explanation": "\tShanghai Petrochemical is like Freedom Airlines. This is because 'Shanghai Petrochemical' <państwo> 'China' in the same way that 'Freedom Airlines' <headquarter> 'United States', 'Shanghai Petrochemical' <type> 'State-owned enterprise' in the same way that 'Freedom Airlines' <alliance> 'SkyTeam', 'Shanghai Petrochemical' <parent company> 'Sinopec' in the same way that 'Freedom Airlines' <parent company> 'Delta Air Lines', 'Shanghai Petrochemical' <key person> 'Chairman' in the same way that 'Freedom Airlines' <industry> 'Aviation', and 'Shanghai Petrochemical' <location city> 'Shanghai' in the same way that 'Freedom Airlines' <hub airport> 'Cincinnati/Northern Kentucky International Airport'.\n"
+    },
+    {
+      "total_score": "0.9394966231708255",
+      "confidence": "1",
+      "rating": "0.9394966231708255",
+      "src": "Shanghai Petrochemical",
+      "target": "Comair",
+      "asserts": {
+        "type": "alliance",
+        "państwo": "target airport",
+        "key person": "industry",
+        "location city": "hub airport"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Sinopec"
+          ],
+          [
+            "parent company",
+            "Delta Air Lines",
+            "1.934092964738702",
+            "0.967046482369351"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "State-owned enterprise"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.911711068335558",
+            "0.955855534167779"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "państwo",
+            "China"
+          ],
+          [
+            "target airport",
+            "Hartsfield–Jackson Atlanta International Airport",
+            "1.8913203709854625",
+            "0.9456601854927312"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "key person",
+            "Chairman"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.8720943289088616",
+            "0.9360471644544308"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location city",
+            "Shanghai"
+          ],
+          [
+            "hub airport",
+            "John F. Kennedy International Airport",
+            "1.7857474987396702",
+            "0.8928737493698351"
+          ]
+        ]
+      ],
+      "explanation": "\tShanghai Petrochemical is like Comair. This is because 'Shanghai Petrochemical' <parent company> 'Sinopec' in the same way that 'Comair' <parent company> 'Delta Air Lines', 'Shanghai Petrochemical' <type> 'State-owned enterprise' in the same way that 'Comair' <alliance> 'SkyTeam', 'Shanghai Petrochemical' <państwo> 'China' in the same way that 'Comair' <target airport> 'Hartsfield–Jackson Atlanta International Airport', 'Shanghai Petrochemical' <key person> 'Chairman' in the same way that 'Comair' <industry> 'Aviation', and 'Shanghai Petrochemical' <location city> 'Shanghai' in the same way that 'Comair' <hub airport> 'John F. Kennedy International Airport'.\n"
+    },
+    {
+      "total_score": "0.955540056524377",
+      "confidence": "1",
+      "rating": "0.955540056524377",
+      "src": "Shanghai Petrochemical",
+      "target": "Compass Airlines (North America)",
+      "asserts": {
+        "key person": "headquarter",
+        "type": "alliance",
+        "państwo": "hub airport",
+        "location city": "industry",
+        "parent company": "lounge"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "key person",
+            "Chairman"
+          ],
+          [
+            "headquarter",
+            "Minneapolis–Saint Paul International Airport",
+            "1.9825028962177142",
+            "0.9912514481088571"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "State-owned enterprise"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.9317695243325947",
+            "0.9658847621662974"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "państwo",
+            "China"
+          ],
+          [
+            "hub airport",
+            "Seattle–Tacoma International Airport",
+            "1.903834328038923",
+            "0.9519171640194615"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location city",
+            "Shanghai"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.888653635729316",
+            "0.944326817864658"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Sinopec"
+          ],
+          [
+            "lounge",
+            "Delta Air Lines",
+            "1.848640180925223",
+            "0.9243200904626115"
+          ]
+        ]
+      ],
+      "explanation": "\tShanghai Petrochemical is like Compass Airlines (North America). This is because 'Shanghai Petrochemical' <key person> 'Chairman' in the same way that 'Compass Airlines (North America)' <headquarter> 'Minneapolis–Saint Paul International Airport', 'Shanghai Petrochemical' <type> 'State-owned enterprise' in the same way that 'Compass Airlines (North America)' <alliance> 'SkyTeam', 'Shanghai Petrochemical' <państwo> 'China' in the same way that 'Compass Airlines (North America)' <hub airport> 'Seattle–Tacoma International Airport', 'Shanghai Petrochemical' <location city> 'Shanghai' in the same way that 'Compass Airlines (North America)' <industry> 'Aviation', and 'Shanghai Petrochemical' <parent company> 'Sinopec' in the same way that 'Compass Airlines (North America)' <lounge> 'Delta Air Lines'.\n"
+    },
+    {
+      "total_score": "0.9520521645808501",
+      "confidence": "1",
+      "rating": "0.9520521645808501",
+      "src": "Shanghai Petrochemical",
+      "target": "Endeavor Air",
+      "asserts": {
+        "key person": "headquarter",
+        "type": "alliance",
+        "location city": "industry",
+        "państwo": "hub airport",
+        "parent company": "lounge"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "key person",
+            "Chairman"
+          ],
+          [
+            "headquarter",
+            "Minneapolis–Saint Paul International Airport",
+            "1.9794632818787008",
+            "0.9897316409393504"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "State-owned enterprise"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.9288101382362304",
+            "0.9644050691181152"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location city",
+            "Shanghai"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.8857180402229514",
+            "0.9428590201114757"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "państwo",
+            "China"
+          ],
+          [
+            "hub airport",
+            "John F. Kennedy International Airport",
+            "1.8641779963682328",
+            "0.9320889981841164"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Sinopec"
+          ],
+          [
+            "lounge",
+            "Delta Air Lines",
+            "1.8623521891023853",
+            "0.9311760945511927"
+          ]
+        ]
+      ],
+      "explanation": "\tShanghai Petrochemical is like Endeavor Air. This is because 'Shanghai Petrochemical' <key person> 'Chairman' in the same way that 'Endeavor Air' <headquarter> 'Minneapolis–Saint Paul International Airport', 'Shanghai Petrochemical' <type> 'State-owned enterprise' in the same way that 'Endeavor Air' <alliance> 'SkyTeam', 'Shanghai Petrochemical' <location city> 'Shanghai' in the same way that 'Endeavor Air' <industry> 'Aviation', 'Shanghai Petrochemical' <państwo> 'China' in the same way that 'Endeavor Air' <hub airport> 'John F. Kennedy International Airport', and 'Shanghai Petrochemical' <parent company> 'Sinopec' in the same way that 'Endeavor Air' <lounge> 'Delta Air Lines'.\n"
+    },
+    {
+      "total_score": "0.9036369154722751",
+      "confidence": "0.9428571428571428",
+      "rating": "0.9584027891372615",
+      "src": "ICBC Turkey",
+      "target": "Sovran Bank",
+      "asserts": {
+        "parent company": "successor",
+        "type": "location"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Financial services"
+          ],
+          [
+            "industry",
+            "Financial services",
+            "1.9814483262791562",
+            "0.9907241631395781"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Commercial bank"
+          ],
+          [
+            "product",
+            "Retail banking",
+            "1.9484203711494648",
+            "0.9742101855747324"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Investment banking"
+          ],
+          [
+            "product",
+            "Commercial bank",
+            "1.9481338488505946",
+            "0.9740669244252973"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Industrial and Commercial Bank of China"
+          ],
+          [
+            "successor",
+            "Bank of America",
+            "1.897057106440089",
+            "0.9485285532200445"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Public company"
+          ],
+          [
+            "location",
+            "United States",
+            "1.8089682386533101",
+            "0.9044841193266551"
+          ]
+        ]
+      ],
+      "explanation": "\tICBC Turkey is like Sovran Bank. This is because 'ICBC Turkey' <industry> 'Financial services' in the same way that 'Sovran Bank' <industry> 'Financial services', 'ICBC Turkey' <product> 'Commercial bank' in the same way that 'Sovran Bank' <product> 'Retail banking', 'ICBC Turkey' <parent company> 'Industrial and Commercial Bank of China' in the same way that 'Sovran Bank' <successor> 'Bank of America', and 'ICBC Turkey' <type> 'Public company' in the same way that 'Sovran Bank' <location> 'United States'.\n"
+    },
+    {
+      "total_score": "0.928508317712442",
+      "confidence": "1",
+      "rating": "0.928508317712442",
+      "src": "ICBC Turkey",
+      "target": "Freedom Airlines",
+      "asserts": {
+        "type": "alliance",
+        "key person": "headquarter",
+        "product": "hub airport"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Financial services"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.9638592901670124",
+            "0.9819296450835062"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Industrial and Commercial Bank of China"
+          ],
+          [
+            "parent company",
+            "Delta Air Lines",
+            "1.9097720236117968",
+            "0.9548860118058984"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Public company"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.904750332160605",
+            "0.9523751660803025"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "key person",
+            "Chairman"
+          ],
+          [
+            "headquarter",
+            "United States",
+            "1.828356684306571",
+            "0.9141783421532855"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Investment management"
+          ],
+          [
+            "hub airport",
+            "Cincinnati/Northern Kentucky International Airport",
+            "1.6783448468784348",
+            "0.8391724234392174"
+          ]
+        ]
+      ],
+      "explanation": "\tICBC Turkey is like Freedom Airlines. This is because 'ICBC Turkey' <industry> 'Financial services' in the same way that 'Freedom Airlines' <industry> 'Aviation', 'ICBC Turkey' <parent company> 'Industrial and Commercial Bank of China' in the same way that 'Freedom Airlines' <parent company> 'Delta Air Lines', 'ICBC Turkey' <type> 'Public company' in the same way that 'Freedom Airlines' <alliance> 'SkyTeam', 'ICBC Turkey' <key person> 'Chairman' in the same way that 'Freedom Airlines' <headquarter> 'United States', and 'ICBC Turkey' <product> 'Investment management' in the same way that 'Freedom Airlines' <hub airport> 'Cincinnati/Northern Kentucky International Airport'.\n"
+    },
+    {
+      "total_score": "0.915479820537459",
+      "confidence": "1",
+      "rating": "0.915479820537459",
+      "src": "ICBC Turkey",
+      "target": "Comair",
+      "asserts": {
+        "type": "alliance",
+        "product": "target airport",
+        "key person": "hub airport"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Financial services"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.9479990367350548",
+            "0.9739995183675274"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Industrial and Commercial Bank of China"
+          ],
+          [
+            "parent company",
+            "Delta Air Lines",
+            "1.9379292187965604",
+            "0.9689646093982802"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Public company"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.8909896048782397",
+            "0.9454948024391199"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Investment management"
+          ],
+          [
+            "target airport",
+            "Hartsfield–Jackson Atlanta International Airport",
+            "1.80098910850199",
+            "0.900494554250995"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Investment banking"
+          ],
+          [
+            "target airport",
+            "LaGuardia Airport",
+            "1.798931467681586",
+            "0.899465733840793"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "key person",
+            "Chairman"
+          ],
+          [
+            "hub airport",
+            "John F. Kennedy International Airport",
+            "1.7839843123324215",
+            "0.8919921561662107"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Commercial bank"
+          ],
+          [
+            "target airport",
+            "Logan International Airport",
+            "1.6558947385985738",
+            "0.8279473692992869"
+          ]
+        ]
+      ],
+      "explanation": "\tICBC Turkey is like Comair. This is because 'ICBC Turkey' <industry> 'Financial services' in the same way that 'Comair' <industry> 'Aviation', 'ICBC Turkey' <parent company> 'Industrial and Commercial Bank of China' in the same way that 'Comair' <parent company> 'Delta Air Lines', 'ICBC Turkey' <type> 'Public company' in the same way that 'Comair' <alliance> 'SkyTeam', 'ICBC Turkey' <product> 'Investment management' in the same way that 'Comair' <target airport> 'Hartsfield–Jackson Atlanta International Airport', and 'ICBC Turkey' <key person> 'Chairman' in the same way that 'Comair' <hub airport> 'John F. Kennedy International Airport'.\n"
+    },
+    {
+      "total_score": "0.9363278259481206",
+      "confidence": "1",
+      "rating": "0.9363278259481206",
+      "src": "ICBC Turkey",
+      "target": "Compass Airlines (North America)",
+      "asserts": {
+        "key person": "headquarter",
+        "type": "alliance",
+        "parent company": "lounge",
+        "product": "hub airport"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Financial services"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.9785697320493676",
+            "0.9892848660246838"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "key person",
+            "Chairman"
+          ],
+          [
+            "headquarter",
+            "Minneapolis–Saint Paul International Airport",
+            "1.97314577442566",
+            "0.98657288721283"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Public company"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.9192003791342547",
+            "0.9596001895671273"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Industrial and Commercial Bank of China"
+          ],
+          [
+            "lounge",
+            "Delta Air Lines",
+            "1.8555592606437772",
+            "0.9277796303218886"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Investment management"
+          ],
+          [
+            "hub airport",
+            "Seattle–Tacoma International Airport",
+            "1.7614350141457886",
+            "0.8807175070728943"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Investment banking"
+          ],
+          [
+            "hub airport",
+            "Los Angeles International Airport",
+            "1.7480237509785996",
+            "0.8740118754892998"
+          ]
+        ]
+      ],
+      "explanation": "\tICBC Turkey is like Compass Airlines (North America). This is because 'ICBC Turkey' <industry> 'Financial services' in the same way that 'Compass Airlines (North America)' <industry> 'Aviation', 'ICBC Turkey' <key person> 'Chairman' in the same way that 'Compass Airlines (North America)' <headquarter> 'Minneapolis–Saint Paul International Airport', 'ICBC Turkey' <type> 'Public company' in the same way that 'Compass Airlines (North America)' <alliance> 'SkyTeam', 'ICBC Turkey' <parent company> 'Industrial and Commercial Bank of China' in the same way that 'Compass Airlines (North America)' <lounge> 'Delta Air Lines', and 'ICBC Turkey' <product> 'Investment management' in the same way that 'Compass Airlines (North America)' <hub airport> 'Seattle–Tacoma International Airport'.\n"
+    },
+    {
+      "total_score": "0.9326855958773047",
+      "confidence": "1",
+      "rating": "0.9326855958773047",
+      "src": "ICBC Turkey",
+      "target": "Endeavor Air",
+      "asserts": {
+        "key person": "headquarter",
+        "type": "alliance",
+        "parent company": "lounge",
+        "product": "hub airport"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Financial services"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.974412127751899",
+            "0.9872060638759494"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "key person",
+            "Chairman"
+          ],
+          [
+            "headquarter",
+            "Minneapolis–Saint Paul International Airport",
+            "1.9692360027590199",
+            "0.9846180013795099"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Public company"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.915552585897985",
+            "0.9577762929489925"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Industrial and Commercial Bank of China"
+          ],
+          [
+            "lounge",
+            "Delta Air Lines",
+            "1.8687156229347732",
+            "0.9343578114673866"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Investment banking"
+          ],
+          [
+            "hub airport",
+            "John F. Kennedy International Airport",
+            "1.7808148278875235",
+            "0.8904074139437618"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Commercial bank"
+          ],
+          [
+            "hub airport",
+            "LaGuardia Airport",
+            "1.7769425670486363",
+            "0.8884712835243181"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Investment management"
+          ],
+          [
+            "hub airport",
+            "Detroit Metropolitan Airport",
+            "1.7719246080024282",
+            "0.8859623040012141"
+          ]
+        ]
+      ],
+      "explanation": "\tICBC Turkey is like Endeavor Air. This is because 'ICBC Turkey' <industry> 'Financial services' in the same way that 'Endeavor Air' <industry> 'Aviation', 'ICBC Turkey' <key person> 'Chairman' in the same way that 'Endeavor Air' <headquarter> 'Minneapolis–Saint Paul International Airport', 'ICBC Turkey' <type> 'Public company' in the same way that 'Endeavor Air' <alliance> 'SkyTeam', 'ICBC Turkey' <parent company> 'Industrial and Commercial Bank of China' in the same way that 'Endeavor Air' <lounge> 'Delta Air Lines', and 'ICBC Turkey' <product> 'Investment banking' in the same way that 'Endeavor Air' <hub airport> 'John F. Kennedy International Airport'.\n"
+    },
+    {
+      "total_score": "0.9677534503785651",
+      "confidence": "1",
+      "rating": "0.9677534503785651",
+      "src": "Weibo (company)",
+      "target": "Providian",
+      "asserts": {
+        "product": "type",
+        "location city": "location",
+        "państwo": "key person"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Internet"
+          ],
+          [
+            "industry",
+            "Financial services",
+            "1.9826756230233247",
+            "0.9913378115116623"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Social network"
+          ],
+          [
+            "type",
+            "Public company",
+            "1.9721130394256505",
+            "0.9860565197128253"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Sina Corp"
+          ],
+          [
+            "parent company",
+            "JPMorgan Chase",
+            "1.9628796018995969",
+            "0.9814398009497984"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location city",
+            "Beijing"
+          ],
+          [
+            "location",
+            "San Francisco",
+            "1.9611578888918797",
+            "0.9805789444459398"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "państwo",
+            "China"
+          ],
+          [
+            "key person",
+            "President",
+            "1.7987083505451995",
+            "0.8993541752725998"
+          ]
+        ]
+      ],
+      "explanation": "\tWeibo (company) is like Providian. This is because 'Weibo (company)' <industry> 'Internet' in the same way that 'Providian' <industry> 'Financial services', 'Weibo (company)' <product> 'Social network' in the same way that 'Providian' <type> 'Public company', 'Weibo (company)' <parent company> 'Sina Corp' in the same way that 'Providian' <parent company> 'JPMorgan Chase', 'Weibo (company)' <location city> 'Beijing' in the same way that 'Providian' <location> 'San Francisco', and 'Weibo (company)' <państwo> 'China' in the same way that 'Providian' <key person> 'President'.\n"
+    },
+    {
+      "total_score": "0.9602575204934041",
+      "confidence": "1",
+      "rating": "0.9602575204934041",
+      "src": "Weibo (company)",
+      "target": "Freedom Airlines",
+      "asserts": {
+        "location city": "headquarter",
+        "product": "alliance",
+        "państwo": "hub airport"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Internet"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.9900610472966807",
+            "0.9950305236483403"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location city",
+            "Beijing"
+          ],
+          [
+            "headquarter",
+            "United States",
+            "1.9651573298804772",
+            "0.9825786649402386"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Sina Corp"
+          ],
+          [
+            "parent company",
+            "Delta Air Lines",
+            "1.9163763570048997",
+            "0.9581881785024499"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Social network"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.8956505304535975",
+            "0.9478252652267988"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "państwo",
+            "China"
+          ],
+          [
+            "hub airport",
+            "Cincinnati/Northern Kentucky International Airport",
+            "1.8353299402983865",
+            "0.9176649701491932"
+          ]
+        ]
+      ],
+      "explanation": "\tWeibo (company) is like Freedom Airlines. This is because 'Weibo (company)' <industry> 'Internet' in the same way that 'Freedom Airlines' <industry> 'Aviation', 'Weibo (company)' <location city> 'Beijing' in the same way that 'Freedom Airlines' <headquarter> 'United States', 'Weibo (company)' <parent company> 'Sina Corp' in the same way that 'Freedom Airlines' <parent company> 'Delta Air Lines', 'Weibo (company)' <product> 'Social network' in the same way that 'Freedom Airlines' <alliance> 'SkyTeam', and 'Weibo (company)' <państwo> 'China' in the same way that 'Freedom Airlines' <hub airport> 'Cincinnati/Northern Kentucky International Airport'.\n"
+    },
+    {
+      "total_score": "0.9330933824862413",
+      "confidence": "0.9722222222222222",
+      "rating": "0.9597531934144197",
+      "src": "China Communications Services Corporation",
+      "target": "Freedom Airlines",
+      "asserts": {
+        "location city": "headquarter",
+        "type": "alliance",
+        "państwo": "hub airport"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Telecommunication"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.987437292903632",
+            "0.993718646451816"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location city",
+            "Beijing"
+          ],
+          [
+            "headquarter",
+            "United States",
+            "1.966116425491816",
+            "0.983058212745908"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "State-owned enterprise"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.9308085837606341",
+            "0.9654042918803171"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "China Telecom"
+          ],
+          [
+            "parent company",
+            "Delta Air Lines",
+            "1.893592474458909",
+            "0.9467962372294545"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "państwo",
+            "China"
+          ],
+          [
+            "hub airport",
+            "Cincinnati/Northern Kentucky International Airport",
+            "1.819577157529207",
+            "0.9097885787646035"
+          ]
+        ]
+      ],
+      "explanation": "\tChina Communications Services Corporation is like Freedom Airlines. This is because 'China Communications Services Corporation' <industry> 'Telecommunication' in the same way that 'Freedom Airlines' <industry> 'Aviation', 'China Communications Services Corporation' <location city> 'Beijing' in the same way that 'Freedom Airlines' <headquarter> 'United States', 'China Communications Services Corporation' <type> 'State-owned enterprise' in the same way that 'Freedom Airlines' <alliance> 'SkyTeam', 'China Communications Services Corporation' <parent company> 'China Telecom' in the same way that 'Freedom Airlines' <parent company> 'Delta Air Lines', and 'China Communications Services Corporation' <państwo> 'China' in the same way that 'Freedom Airlines' <hub airport> 'Cincinnati/Northern Kentucky International Airport'.\n"
+    },
+    {
+      "total_score": "0.9570795536435174",
+      "confidence": "0.9895833333333334",
+      "rating": "0.9671540752608175",
+      "src": "Brilliance Auto",
+      "target": "Amazon Video",
+      "asserts": {
+        "product": "genre",
+        "manufacturer": "channel",
+        "location city": "area served",
+        "industry": "region served",
+        "państwo": "developer"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Privately held company"
+          ],
+          [
+            "type",
+            "Subsidiary",
+            "1.9806548455573485",
+            "0.9903274227786742"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Car"
+          ],
+          [
+            "genre",
+            "Digital distribution",
+            "1.9748940866633564",
+            "0.9874470433316782"
+          ]
+        ],
+        [
+          [
+            "INCOMING",
+            "manufacturer",
+            "Brilliance BS6"
+          ],
+          [
+            "channel",
+            "The Man in the High Castle (TV series)",
+            "1.9683503976733299",
+            "0.9841751988366649"
+          ]
+        ],
+        [
+          [
+            "INCOMING",
+            "manufacturer",
+            "Brilliance BS4"
+          ],
+          [
+            "channel",
+            "Sneaky Pete",
+            "1.9504292224391229",
+            "0.9752146112195614"
+          ]
+        ],
+        [
+          [
+            "INCOMING",
+            "manufacturer",
+            "Brilliance BS2"
+          ],
+          [
+            "channel",
+            "Red Oaks",
+            "1.9504292224391229",
+            "0.9752146112195614"
+          ]
+        ],
+        [
+          [
+            "INCOMING",
+            "manufacturer",
+            "Brilliance BC3"
+          ],
+          [
+            "channel",
+            "Mozart in the Jungle",
+            "1.9504292224391229",
+            "0.9752146112195614"
+          ]
+        ],
+        [
+          [
+            "INCOMING",
+            "manufacturer",
+            "BMW 5 Series (F10)"
+          ],
+          [
+            "channel",
+            "Gortimer Gibbon's Life on Normal Street",
+            "1.9504292224391229",
+            "0.9752146112195614"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location city",
+            "Shenyang"
+          ],
+          [
+            "area served",
+            "United States",
+            "1.9290195490471187",
+            "0.9645097745235593"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Automotive industry"
+          ],
+          [
+            "region served",
+            "Germany",
+            "1.8644496688291152",
+            "0.9322248344145576"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "państwo",
+            "China"
+          ],
+          [
+            "developer",
+            "Amazon.com",
+            "1.8239960676895886",
+            "0.9119980338447943"
+          ]
+        ]
+      ],
+      "explanation": "\tBrilliance Auto is like Amazon Video. This is because 'Brilliance Auto' <type> 'Privately held company' in the same way that 'Amazon Video' <type> 'Subsidiary', 'Brilliance Auto' <product> 'Car' in the same way that 'Amazon Video' <genre> 'Digital distribution', 'Brilliance BS6' <manufacturer> 'Brilliance Auto' in the same way that 'The Man in the High Castle (TV series)' <channel> 'Amazon Video', 'Brilliance Auto' <location city> 'Shenyang' in the same way that 'Amazon Video' <area served> 'United States', 'Brilliance Auto' <industry> 'Automotive industry' in the same way that 'Amazon Video' <region served> 'Germany', and 'Brilliance Auto' <państwo> 'China' in the same way that 'Amazon Video' <developer> 'Amazon.com'.\n"
+    },
+    {
+      "total_score": "0.9481295667251641",
+      "confidence": "0.9722222222222222",
+      "rating": "0.9752189829173117",
+      "src": "BMW Brilliance",
+      "target": "Barnett Bank",
+      "asserts": {
+        "product": "genre",
+        "location city": "państwo",
+        "owner": "parent company",
+        "industry": "service"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Privately held company"
+          ],
+          [
+            "type",
+            "Bank",
+            "1.9914723509718675",
+            "0.9957361754859337"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Car"
+          ],
+          [
+            "genre",
+            "Financial services",
+            "1.9806554420913396",
+            "0.9903277210456698"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location city",
+            "Shenyang"
+          ],
+          [
+            "państwo",
+            "United States",
+            "1.960315513429422",
+            "0.980157756714711"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "owner",
+            "Brilliance Auto"
+          ],
+          [
+            "parent company",
+            "Bank of America",
+            "1.9365941332665293",
+            "0.9682970666332646"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Automotive industry"
+          ],
+          [
+            "service",
+            "Finance",
+            "1.8831523894139597",
+            "0.9415761947069798"
+          ]
+        ]
+      ],
+      "explanation": "\tBMW Brilliance is like Barnett Bank. This is because 'BMW Brilliance' <type> 'Privately held company' in the same way that 'Barnett Bank' <type> 'Bank', 'BMW Brilliance' <product> 'Car' in the same way that 'Barnett Bank' <genre> 'Financial services', 'BMW Brilliance' <location city> 'Shenyang' in the same way that 'Barnett Bank' <państwo> 'United States', 'BMW Brilliance' <owner> 'Brilliance Auto' in the same way that 'Barnett Bank' <parent company> 'Bank of America', and 'BMW Brilliance' <industry> 'Automotive industry' in the same way that 'Barnett Bank' <service> 'Finance'.\n"
+    },
+    {
+      "total_score": "0.9234954181736261",
+      "confidence": "0.9722222222222222",
+      "rating": "0.9498810015500154",
+      "src": "BMW Brilliance",
+      "target": "Freedom Airlines",
+      "asserts": {
+        "region served": "headquarter",
+        "type": "alliance",
+        "owner": "parent company",
+        "product": "hub airport"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Automotive industry"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.9688964089735999",
+            "0.9844482044867999"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "region served",
+            "China"
+          ],
+          [
+            "headquarter",
+            "United States",
+            "1.9375030556383672",
+            "0.9687515278191836"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Privately held company"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.9308045798792381",
+            "0.9654022899396191"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "owner",
+            "Brilliance Auto"
+          ],
+          [
+            "parent company",
+            "Delta Air Lines",
+            "1.8836322636129637",
+            "0.9418161318064818"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Car"
+          ],
+          [
+            "hub airport",
+            "Cincinnati/Northern Kentucky International Airport",
+            "1.777973707395985",
+            "0.8889868536979925"
+          ]
+        ]
+      ],
+      "explanation": "\tBMW Brilliance is like Freedom Airlines. This is because 'BMW Brilliance' <industry> 'Automotive industry' in the same way that 'Freedom Airlines' <industry> 'Aviation', 'BMW Brilliance' <region served> 'China' in the same way that 'Freedom Airlines' <headquarter> 'United States', 'BMW Brilliance' <type> 'Privately held company' in the same way that 'Freedom Airlines' <alliance> 'SkyTeam', 'BMW Brilliance' <owner> 'Brilliance Auto' in the same way that 'Freedom Airlines' <parent company> 'Delta Air Lines', and 'BMW Brilliance' <product> 'Car' in the same way that 'Freedom Airlines' <hub airport> 'Cincinnati/Northern Kentucky International Airport'.\n"
+    },
+    {
+      "total_score": "0.9309037898370819",
+      "confidence": "0.9642857142857143",
+      "rating": "0.965381707979196",
+      "src": "Denza",
+      "target": "Lincoln Motor Company",
+      "asserts": {
+        "type": "key person",
+        "subsidiary": "division",
+        "region served": "foundation place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Automotive industry"
+          ],
+          [
+            "industry",
+            "Automotive industry",
+            "1.9914339612156942",
+            "0.9957169806078471"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Privately held company"
+          ],
+          [
+            "key person",
+            "President",
+            "1.9757566051357542",
+            "0.9878783025678771"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Car"
+          ],
+          [
+            "product",
+            "Luxury vehicle",
+            "1.9589370235154928",
+            "0.9794685117577464"
+          ]
+        ],
+        [
+          [
+            "INCOMING",
+            "subsidiary",
+            "BYD Auto"
+          ],
+          [
+            "division",
+            "Ford Motor Company",
+            "1.8788232422876163",
+            "0.9394116211438082"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "region served",
+            "China"
+          ],
+          [
+            "foundation place",
+            "Dearborn, Michigan",
+            "1.8488662476374031",
+            "0.9244331238187016"
+          ]
+        ]
+      ],
+      "explanation": "\tDenza is like Lincoln Motor Company. This is because 'Denza' <industry> 'Automotive industry' in the same way that 'Lincoln Motor Company' <industry> 'Automotive industry', 'Denza' <type> 'Privately held company' in the same way that 'Lincoln Motor Company' <key person> 'President', 'Denza' <product> 'Car' in the same way that 'Lincoln Motor Company' <product> 'Luxury vehicle', 'BYD Auto' <subsidiary> 'Denza' in the same way that 'Ford Motor Company' <division> 'Lincoln Motor Company', and 'Denza' <region served> 'China' in the same way that 'Lincoln Motor Company' <foundation place> 'Dearborn, Michigan'.\n"
+    },
+    {
+      "total_score": "0.9071074820653736",
+      "confidence": "1",
+      "rating": "0.9071074820653736",
+      "src": "Hafei",
+      "target": "Oculus VR",
+      "asserts": {
+        "product": "key person",
+        "państwo": "foundation place",
+        "industry": "location city"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Subsidiary"
+          ],
+          [
+            "type",
+            "Subsidiary",
+            "1.970069163707728",
+            "0.985034581853864"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Changan Automobile"
+          ],
+          [
+            "parent company",
+            "Facebook",
+            "1.961900642490703",
+            "0.9809503212453515"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Motor vehicle"
+          ],
+          [
+            "key person",
+            "Chief executive officer",
+            "1.9203561000372185",
+            "0.9601780500186092"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "państwo",
+            "China"
+          ],
+          [
+            "foundation place",
+            "United States",
+            "1.8089042835731326",
+            "0.9044521417865663"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Automotive industry"
+          ],
+          [
+            "location city",
+            "Menlo Park, California",
+            "1.4098446308449541",
+            "0.7049223154224771"
+          ]
+        ]
+      ],
+      "explanation": "\tHafei is like Oculus VR. This is because 'Hafei' <type> 'Subsidiary' in the same way that 'Oculus VR' <type> 'Subsidiary', 'Hafei' <parent company> 'Changan Automobile' in the same way that 'Oculus VR' <parent company> 'Facebook', 'Hafei' <product> 'Motor vehicle' in the same way that 'Oculus VR' <key person> 'Chief executive officer', 'Hafei' <państwo> 'China' in the same way that 'Oculus VR' <foundation place> 'United States', and 'Hafei' <industry> 'Automotive industry' in the same way that 'Oculus VR' <location city> 'Menlo Park, California'.\n"
+    },
+    {
+      "total_score": "0.9551411816496372",
+      "confidence": "1",
+      "rating": "0.9551411816496372",
+      "src": "Hafei",
+      "target": "Lab126",
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Automotive industry"
+          ],
+          [
+            "industry",
+            "Computer hardware",
+            "1.978901236331778",
+            "0.989450618165889"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Subsidiary"
+          ],
+          [
+            "type",
+            "Subsidiary",
+            "1.9731815849932441",
+            "0.9865907924966221"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Motor vehicle"
+          ],
+          [
+            "product",
+            "Amazon Kindle",
+            "1.8988711044048983",
+            "0.9494355522024491"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Changan Automobile"
+          ],
+          [
+            "parent company",
+            "Amazon.com",
+            "1.8575329132064378",
+            "0.9287664566032189"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "państwo",
+            "China"
+          ],
+          [
+            "państwo",
+            "United States",
+            "1.8429249775600147",
+            "0.9214624887800074"
+          ]
+        ]
+      ],
+      "explanation": "\tHafei is like Lab126. This is because 'Hafei' <industry> 'Automotive industry' in the same way that 'Lab126' <industry> 'Computer hardware', 'Hafei' <type> 'Subsidiary' in the same way that 'Lab126' <type> 'Subsidiary', 'Hafei' <product> 'Motor vehicle' in the same way that 'Lab126' <product> 'Amazon Kindle', 'Hafei' <parent company> 'Changan Automobile' in the same way that 'Lab126' <parent company> 'Amazon.com', and 'Hafei' <państwo> 'China' in the same way that 'Lab126' <państwo> 'United States'.\n"
+    },
+    {
+      "total_score": "0.9483256328884726",
+      "confidence": "1",
+      "rating": "0.9483256328884726",
+      "src": "Hafei",
+      "target": "Lincoln Motor Company",
+      "asserts": {
+        "type": "key person",
+        "państwo": "foundation place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Automotive industry"
+          ],
+          [
+            "industry",
+            "Automotive industry",
+            "1.97527094861483",
+            "0.987635474307415"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Subsidiary"
+          ],
+          [
+            "key person",
+            "President",
+            "1.9654707687461976",
+            "0.9827353843730988"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Motor vehicle"
+          ],
+          [
+            "product",
+            "Luxury vehicle",
+            "1.9390410811315368",
+            "0.9695205405657684"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Changan Automobile"
+          ],
+          [
+            "parent company",
+            "Ford Motor Company",
+            "1.9115351546289023",
+            "0.9557675773144512"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "państwo",
+            "China"
+          ],
+          [
+            "foundation place",
+            "Dearborn, Michigan",
+            "1.6919383757632598",
+            "0.8459691878816299"
+          ]
+        ]
+      ],
+      "explanation": "\tHafei is like Lincoln Motor Company. This is because 'Hafei' <industry> 'Automotive industry' in the same way that 'Lincoln Motor Company' <industry> 'Automotive industry', 'Hafei' <type> 'Subsidiary' in the same way that 'Lincoln Motor Company' <key person> 'President', 'Hafei' <product> 'Motor vehicle' in the same way that 'Lincoln Motor Company' <product> 'Luxury vehicle', 'Hafei' <parent company> 'Changan Automobile' in the same way that 'Lincoln Motor Company' <parent company> 'Ford Motor Company', and 'Hafei' <państwo> 'China' in the same way that 'Lincoln Motor Company' <foundation place> 'Dearborn, Michigan'.\n"
+    },
+    {
+      "total_score": "0.96277914798747",
+      "confidence": "0.9722222222222222",
+      "rating": "0.9902871236442549",
+      "src": "Changan Suzuki",
+      "target": "Barnett Bank",
+      "asserts": {
+        "location city": "service",
+        "product": "genre",
+        "location country": "państwo"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Privately held company"
+          ],
+          [
+            "type",
+            "Bank",
+            "1.9935021191716324",
+            "0.9967510595858162"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location city",
+            "Chongqing"
+          ],
+          [
+            "service",
+            "Finance",
+            "1.992923133211212",
+            "0.996461566605606"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Car"
+          ],
+          [
+            "genre",
+            "Financial services",
+            "1.9824589737048108",
+            "0.9912294868524054"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Changan Automobile"
+          ],
+          [
+            "parent company",
+            "Bank of America",
+            "1.9754013013456628",
+            "0.9877006506728314"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location country",
+            "China"
+          ],
+          [
+            "państwo",
+            "United States",
+            "1.9585857090092298",
+            "0.9792928545046149"
+          ]
+        ]
+      ],
+      "explanation": "\tChangan Suzuki is like Barnett Bank. This is because 'Changan Suzuki' <type> 'Privately held company' in the same way that 'Barnett Bank' <type> 'Bank', 'Changan Suzuki' <location city> 'Chongqing' in the same way that 'Barnett Bank' <service> 'Finance', 'Changan Suzuki' <product> 'Car' in the same way that 'Barnett Bank' <genre> 'Financial services', 'Changan Suzuki' <parent company> 'Changan Automobile' in the same way that 'Barnett Bank' <parent company> 'Bank of America', and 'Changan Suzuki' <location country> 'China' in the same way that 'Barnett Bank' <państwo> 'United States'.\n"
+    },
+    {
+      "total_score": "0.9271515116699117",
+      "confidence": "0.9722222222222222",
+      "rating": "0.9536415548604806",
+      "src": "Changan Suzuki",
+      "target": "Freedom Airlines",
+      "asserts": {
+        "location country": "headquarter",
+        "type": "alliance",
+        "product": "hub airport"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Automotive industry"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.9647466058312206",
+            "0.9823733029156103"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location country",
+            "China"
+          ],
+          [
+            "headquarter",
+            "United States",
+            "1.9602347598620051",
+            "0.9801173799310026"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Changan Automobile"
+          ],
+          [
+            "parent company",
+            "Delta Air Lines",
+            "1.9285306883034778",
+            "0.9642653441517389"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Privately held company"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.9269089430447042",
+            "0.9634544715223521"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Car"
+          ],
+          [
+            "hub airport",
+            "Cincinnati/Northern Kentucky International Airport",
+            "1.7559945515633988",
+            "0.8779972757816994"
+          ]
+        ]
+      ],
+      "explanation": "\tChangan Suzuki is like Freedom Airlines. This is because 'Changan Suzuki' <industry> 'Automotive industry' in the same way that 'Freedom Airlines' <industry> 'Aviation', 'Changan Suzuki' <location country> 'China' in the same way that 'Freedom Airlines' <headquarter> 'United States', 'Changan Suzuki' <parent company> 'Changan Automobile' in the same way that 'Freedom Airlines' <parent company> 'Delta Air Lines', 'Changan Suzuki' <type> 'Privately held company' in the same way that 'Freedom Airlines' <alliance> 'SkyTeam', and 'Changan Suzuki' <product> 'Car' in the same way that 'Freedom Airlines' <hub airport> 'Cincinnati/Northern Kentucky International Airport'.\n"
+    },
+    {
+      "total_score": "0.9625602700747546",
+      "confidence": "0.9722222222222222",
+      "rating": "0.9900619920768905",
+      "src": "Changan Ford Mazda",
+      "target": "Barnett Bank",
+      "asserts": {
+        "foundation place": "genre",
+        "owning company": "parent company",
+        "product": "service",
+        "region served": "państwo"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Privately held company"
+          ],
+          [
+            "type",
+            "Bank",
+            "1.9935021191716324",
+            "0.9967510595858162"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "foundation place",
+            "Chongqing"
+          ],
+          [
+            "genre",
+            "Financial services",
+            "1.9933627621620018",
+            "0.9966813810810009"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "owning company",
+            "Changan Automobile"
+          ],
+          [
+            "parent company",
+            "Bank of America",
+            "1.9789662357552706",
+            "0.9894831178776353"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Car"
+          ],
+          [
+            "service",
+            "Finance",
+            "1.9759542836624624",
+            "0.9879771418312312"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "region served",
+            "China"
+          ],
+          [
+            "państwo",
+            "United States",
+            "1.9588345200175372",
+            "0.9794172600087686"
+          ]
+        ]
+      ],
+      "explanation": "\tChangan Ford Mazda is like Barnett Bank. This is because 'Changan Ford Mazda' <type> 'Privately held company' in the same way that 'Barnett Bank' <type> 'Bank', 'Changan Ford Mazda' <foundation place> 'Chongqing' in the same way that 'Barnett Bank' <genre> 'Financial services', 'Changan Ford Mazda' <owning company> 'Changan Automobile' in the same way that 'Barnett Bank' <parent company> 'Bank of America', 'Changan Ford Mazda' <product> 'Car' in the same way that 'Barnett Bank' <service> 'Finance', and 'Changan Ford Mazda' <region served> 'China' in the same way that 'Barnett Bank' <państwo> 'United States'.\n"
+    },
+    {
+      "total_score": "0.926879321025549",
+      "confidence": "0.9722222222222222",
+      "rating": "0.9533615873405648",
+      "src": "Changan Ford Mazda",
+      "target": "Freedom Airlines",
+      "asserts": {
+        "region served": "headquarter",
+        "owning company": "parent company",
+        "type": "alliance",
+        "product": "hub airport"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Automotive industry"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.9647466058312206",
+            "0.9823733029156103"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "region served",
+            "China"
+          ],
+          [
+            "headquarter",
+            "United States",
+            "1.9538701502532385",
+            "0.9769350751266193"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "owning company",
+            "Changan Automobile"
+          ],
+          [
+            "parent company",
+            "Delta Air Lines",
+            "1.9320956227130854",
+            "0.9660478113565427"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Privately held company"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.9269089430447042",
+            "0.9634544715223521"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Car"
+          ],
+          [
+            "hub airport",
+            "Cincinnati/Northern Kentucky International Airport",
+            "1.7559945515633988",
+            "0.8779972757816994"
+          ]
+        ]
+      ],
+      "explanation": "\tChangan Ford Mazda is like Freedom Airlines. This is because 'Changan Ford Mazda' <industry> 'Automotive industry' in the same way that 'Freedom Airlines' <industry> 'Aviation', 'Changan Ford Mazda' <region served> 'China' in the same way that 'Freedom Airlines' <headquarter> 'United States', 'Changan Ford Mazda' <owning company> 'Changan Automobile' in the same way that 'Freedom Airlines' <parent company> 'Delta Air Lines', 'Changan Ford Mazda' <type> 'Privately held company' in the same way that 'Freedom Airlines' <alliance> 'SkyTeam', and 'Changan Ford Mazda' <product> 'Car' in the same way that 'Freedom Airlines' <hub airport> 'Cincinnati/Northern Kentucky International Airport'.\n"
+    },
+    {
+      "total_score": "0.9484162757292568",
+      "confidence": "1",
+      "rating": "0.9484162757292568",
+      "src": "Yangtze River Express",
+      "target": "Xoom Corporation",
+      "asserts": {
+        "headquarter": "key person",
+        "industry": "type",
+        "hub airport": "product"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "headquarter",
+            "Shanghai"
+          ],
+          [
+            "key person",
+            "Chairman",
+            "1.9726685036125007",
+            "0.9863342518062503"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Hainan Airlines"
+          ],
+          [
+            "parent company",
+            "PayPal",
+            "1.943013237234915",
+            "0.9715066186174575"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Aviation"
+          ],
+          [
+            "type",
+            "Subsidiary",
+            "1.8953193542228286",
+            "0.9476596771114143"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "headquarter",
+            "China"
+          ],
+          [
+            "key person",
+            "Chief executive officer",
+            "1.842007718212598",
+            "0.921003859106299"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "hub airport",
+            "Shanghai Pudong International Airport"
+          ],
+          [
+            "product",
+            "Financial services",
+            "1.831153944009726",
+            "0.915576972004863"
+          ]
+        ]
+      ],
+      "explanation": "\tYangtze River Express is like Xoom Corporation. This is because 'Yangtze River Express' <headquarter> 'Shanghai' in the same way that 'Xoom Corporation' <key person> 'Chairman', 'Yangtze River Express' <parent company> 'Hainan Airlines' in the same way that 'Xoom Corporation' <parent company> 'PayPal', 'Yangtze River Express' <industry> 'Aviation' in the same way that 'Xoom Corporation' <type> 'Subsidiary', and 'Yangtze River Express' <hub airport> 'Shanghai Pudong International Airport' in the same way that 'Xoom Corporation' <product> 'Financial services'.\n"
+    },
+    {
+      "total_score": "0.9365195441483243",
+      "confidence": "1",
+      "rating": "0.9365195441483243",
+      "src": "Yangtze River Express",
+      "target": "Slide.com",
+      "asserts": {
+        "headquarter": "key person",
+        "industry": "type",
+        "parent company": "parent",
+        "hub airport": "foundation place"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "headquarter",
+            "Shanghai"
+          ],
+          [
+            "key person",
+            "Chairman",
+            "1.909230331939622",
+            "0.954615165969811"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Aviation"
+          ],
+          [
+            "type",
+            "Subsidiary",
+            "1.8868415241671177",
+            "0.9434207620835589"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Hainan Airlines"
+          ],
+          [
+            "parent",
+            "Google",
+            "1.8648432897385367",
+            "0.9324216448692684"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "hub airport",
+            "Shanghai Pudong International Airport"
+          ],
+          [
+            "foundation place",
+            "San Francisco",
+            "1.8616636742639667",
+            "0.9308318371319834"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "headquarter",
+            "China"
+          ],
+          [
+            "key person",
+            "Max Levchin",
+            "1.8426166213739996",
+            "0.9213083106869998"
+          ]
+        ]
+      ],
+      "explanation": "\tYangtze River Express is like Slide.com. This is because 'Yangtze River Express' <headquarter> 'Shanghai' in the same way that 'Slide.com' <key person> 'Chairman', 'Yangtze River Express' <industry> 'Aviation' in the same way that 'Slide.com' <type> 'Subsidiary', 'Yangtze River Express' <parent company> 'Hainan Airlines' in the same way that 'Slide.com' <parent> 'Google', and 'Yangtze River Express' <hub airport> 'Shanghai Pudong International Airport' in the same way that 'Slide.com' <foundation place> 'San Francisco'.\n"
+    },
+    {
+      "total_score": "0.9586702767221082",
+      "confidence": "0.9722222222222222",
+      "rating": "0.9860608560570256",
+      "src": "BOC International",
+      "target": "Barnett Bank",
+      "asserts": {
+        "location city": "genre",
+        "key person": "service",
+        "region served": "państwo"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "location city",
+            "Hong Kong"
+          ],
+          [
+            "genre",
+            "Financial services",
+            "1.9897633874891065",
+            "0.9948816937445533"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Subsidiary"
+          ],
+          [
+            "type",
+            "Bank",
+            "1.985638130716371",
+            "0.9928190653581855"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "key person",
+            "Chairman"
+          ],
+          [
+            "service",
+            "Finance",
+            "1.983027778811639",
+            "0.9915138894058195"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "region served",
+            "China"
+          ],
+          [
+            "państwo",
+            "United States",
+            "1.9531937536581887",
+            "0.9765968768290944"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Bank of China"
+          ],
+          [
+            "parent company",
+            "Bank of America",
+            "1.948985509894951",
+            "0.9744927549474754"
+          ]
+        ]
+      ],
+      "explanation": "\tBOC International is like Barnett Bank. This is because 'BOC International' <location city> 'Hong Kong' in the same way that 'Barnett Bank' <genre> 'Financial services', 'BOC International' <type> 'Subsidiary' in the same way that 'Barnett Bank' <type> 'Bank', 'BOC International' <key person> 'Chairman' in the same way that 'Barnett Bank' <service> 'Finance', 'BOC International' <region served> 'China' in the same way that 'Barnett Bank' <państwo> 'United States', and 'BOC International' <parent company> 'Bank of China' in the same way that 'Barnett Bank' <parent company> 'Bank of America'.\n"
+    },
+    {
+      "total_score": "0.9241250082002004",
+      "confidence": "0.9722222222222222",
+      "rating": "0.9505285798630633",
+      "src": "BOC International",
+      "target": "Freedom Airlines",
+      "asserts": {
+        "region served": "headquarter",
+        "type": "alliance",
+        "key person": "hub airport"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Investment banking"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.971842488226505",
+            "0.9859212441132525"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "region served",
+            "China"
+          ],
+          [
+            "headquarter",
+            "United States",
+            "1.947535095706566",
+            "0.973767547853283"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Subsidiary"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.9159540128590744",
+            "0.9579770064295372"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Bank of China"
+          ],
+          [
+            "parent company",
+            "Delta Air Lines",
+            "1.8950664609467498",
+            "0.9475332304733749"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "key person",
+            "Chairman"
+          ],
+          [
+            "hub airport",
+            "Cincinnati/Northern Kentucky International Airport",
+            "1.7748877408917365",
+            "0.8874438704458683"
+          ]
+        ]
+      ],
+      "explanation": "\tBOC International is like Freedom Airlines. This is because 'BOC International' <industry> 'Investment banking' in the same way that 'Freedom Airlines' <industry> 'Aviation', 'BOC International' <region served> 'China' in the same way that 'Freedom Airlines' <headquarter> 'United States', 'BOC International' <type> 'Subsidiary' in the same way that 'Freedom Airlines' <alliance> 'SkyTeam', 'BOC International' <parent company> 'Bank of China' in the same way that 'Freedom Airlines' <parent company> 'Delta Air Lines', and 'BOC International' <key person> 'Chairman' in the same way that 'Freedom Airlines' <hub airport> 'Cincinnati/Northern Kentucky International Airport'.\n"
+    },
+    {
+      "total_score": "0.9691846172337069",
+      "confidence": "1",
+      "rating": "0.9691846172337069",
+      "src": "China BlueChemical",
+      "target": "Barnett Bank",
+      "asserts": {
+        "key person": "genre",
+        "region served": "państwo",
+        "industry": "service",
+        "parent": "parent company"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "type",
+            "State-owned enterprise"
+          ],
+          [
+            "type",
+            "Bank",
+            "1.9935142031166955",
+            "0.9967571015583477"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "key person",
+            "Chairman"
+          ],
+          [
+            "genre",
+            "Financial services",
+            "1.993430351301038",
+            "0.996715175650519"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "region served",
+            "China"
+          ],
+          [
+            "państwo",
+            "United States",
+            "1.9485818736640281",
+            "0.9742909368320141"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Fertilizer"
+          ],
+          [
+            "service",
+            "Finance",
+            "1.8954649404105766",
+            "0.9477324702052883"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent",
+            "China National Offshore Oil Corporation"
+          ],
+          [
+            "parent company",
+            "Bank of America",
+            "1.860854803844731",
+            "0.9304274019223655"
+          ]
+        ]
+      ],
+      "explanation": "\tChina BlueChemical is like Barnett Bank. This is because 'China BlueChemical' <type> 'State-owned enterprise' in the same way that 'Barnett Bank' <type> 'Bank', 'China BlueChemical' <key person> 'Chairman' in the same way that 'Barnett Bank' <genre> 'Financial services', 'China BlueChemical' <region served> 'China' in the same way that 'Barnett Bank' <państwo> 'United States', 'China BlueChemical' <industry> 'Fertilizer' in the same way that 'Barnett Bank' <service> 'Finance', and 'China BlueChemical' <parent> 'China National Offshore Oil Corporation' in the same way that 'Barnett Bank' <parent company> 'Bank of America'.\n"
+    },
+    {
+      "total_score": "0.9731608345182539",
+      "confidence": "1",
+      "rating": "0.9731608345182539",
+      "src": "China BlueChemical",
+      "target": "Providian",
+      "asserts": {
+        "region served": "location",
+        "parent": "parent company"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Fertilizer"
+          ],
+          [
+            "industry",
+            "Financial services",
+            "1.9882097044981624",
+            "0.9941048522490812"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "State-owned enterprise"
+          ],
+          [
+            "type",
+            "Public company",
+            "1.9848384790759988",
+            "0.9924192395379994"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "region served",
+            "China"
+          ],
+          [
+            "location",
+            "San Francisco",
+            "1.960584620199143",
+            "0.9802923100995715"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "key person",
+            "Chairman"
+          ],
+          [
+            "key person",
+            "Chief executive officer",
+            "1.9358982569252365",
+            "0.9679491284626183"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent",
+            "China National Offshore Oil Corporation"
+          ],
+          [
+            "parent company",
+            "JPMorgan Chase",
+            "1.862077284483997",
+            "0.9310386422419985"
+          ]
+        ]
+      ],
+      "explanation": "\tChina BlueChemical is like Providian. This is because 'China BlueChemical' <industry> 'Fertilizer' in the same way that 'Providian' <industry> 'Financial services', 'China BlueChemical' <type> 'State-owned enterprise' in the same way that 'Providian' <type> 'Public company', 'China BlueChemical' <region served> 'China' in the same way that 'Providian' <location> 'San Francisco', 'China BlueChemical' <key person> 'Chairman' in the same way that 'Providian' <key person> 'Chief executive officer', and 'China BlueChemical' <parent> 'China National Offshore Oil Corporation' in the same way that 'Providian' <parent company> 'JPMorgan Chase'.\n"
+    },
+    {
+      "total_score": "0.9401834666586023",
+      "confidence": "1",
+      "rating": "0.9401834666586023",
+      "src": "China BlueChemical",
+      "target": "Freedom Airlines",
+      "asserts": {
+        "region served": "headquarter",
+        "type": "alliance",
+        "parent": "hub airport",
+        "key person": "parent company"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Fertilizer"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.9840694026490544",
+            "0.9920347013245272"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "region served",
+            "China"
+          ],
+          [
+            "headquarter",
+            "United States",
+            "1.9488490665748617",
+            "0.9744245332874308"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "State-owned enterprise"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.9281876436855054",
+            "0.9640938218427527"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent",
+            "China National Offshore Oil Corporation"
+          ],
+          [
+            "hub airport",
+            "Cincinnati/Northern Kentucky International Airport",
+            "1.8202818298627794",
+            "0.9101409149313897"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "key person",
+            "Chairman"
+          ],
+          [
+            "parent company",
+            "Delta Air Lines",
+            "1.720446723813823",
+            "0.8602233619069115"
+          ]
+        ]
+      ],
+      "explanation": "\tChina BlueChemical is like Freedom Airlines. This is because 'China BlueChemical' <industry> 'Fertilizer' in the same way that 'Freedom Airlines' <industry> 'Aviation', 'China BlueChemical' <region served> 'China' in the same way that 'Freedom Airlines' <headquarter> 'United States', 'China BlueChemical' <type> 'State-owned enterprise' in the same way that 'Freedom Airlines' <alliance> 'SkyTeam', 'China BlueChemical' <parent> 'China National Offshore Oil Corporation' in the same way that 'Freedom Airlines' <hub airport> 'Cincinnati/Northern Kentucky International Airport', and 'China BlueChemical' <key person> 'Chairman' in the same way that 'Freedom Airlines' <parent company> 'Delta Air Lines'.\n"
+    },
+    {
+      "total_score": "0.9356623275965731",
+      "confidence": "1",
+      "rating": "0.9356623275965731",
+      "src": "SAIC Motor UK",
+      "target": "Lab126",
+      "asserts": {
+        "subsidiary": "państwo"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Subsidiary"
+          ],
+          [
+            "type",
+            "Subsidiary",
+            "1.9791785561347877",
+            "0.9895892780673938"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Automotive industry"
+          ],
+          [
+            "industry",
+            "Computer hardware",
+            "1.9582637450708686",
+            "0.9791318725354343"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Car"
+          ],
+          [
+            "product",
+            "Amazon Kindle",
+            "1.9428531721592126",
+            "0.9714265860796063"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "SAIC Motor"
+          ],
+          [
+            "parent company",
+            "Amazon.com",
+            "1.8418982394120382",
+            "0.9209491197060191"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "subsidiary",
+            "MG Motor"
+          ],
+          [
+            "państwo",
+            "United States",
+            "1.634429563188824",
+            "0.817214781594412"
+          ]
+        ]
+      ],
+      "explanation": "\tSAIC Motor UK is like Lab126. This is because 'SAIC Motor UK' <type> 'Subsidiary' in the same way that 'Lab126' <type> 'Subsidiary', 'SAIC Motor UK' <industry> 'Automotive industry' in the same way that 'Lab126' <industry> 'Computer hardware', 'SAIC Motor UK' <product> 'Car' in the same way that 'Lab126' <product> 'Amazon Kindle', 'SAIC Motor UK' <parent company> 'SAIC Motor' in the same way that 'Lab126' <parent company> 'Amazon.com', and 'SAIC Motor UK' <subsidiary> 'MG Motor' in the same way that 'Lab126' <państwo> 'United States'.\n"
+    },
+    {
+      "total_score": "0.9734066127501165",
+      "confidence": "1",
+      "rating": "0.9734066127501165",
+      "src": "SAIC-GM",
+      "target": "Barnett Bank",
+      "asserts": {
+        "product": "genre",
+        "region served": "państwo",
+        "owner": "parent company",
+        "industry": "service"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Privately held company"
+          ],
+          [
+            "type",
+            "Bank",
+            "1.9951494710227689",
+            "0.9975747355113844"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Car"
+          ],
+          [
+            "genre",
+            "Financial services",
+            "1.9850396989208714",
+            "0.9925198494604357"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "region served",
+            "China"
+          ],
+          [
+            "państwo",
+            "United States",
+            "1.9508243654840198",
+            "0.9754121827420099"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "owner",
+            "SAIC Motor"
+          ],
+          [
+            "parent company",
+            "Bank of America",
+            "1.9156238258900995",
+            "0.9578119129450497"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Automotive industry"
+          ],
+          [
+            "service",
+            "Finance",
+            "1.8874287661834055",
+            "0.9437143830917027"
+          ]
+        ]
+      ],
+      "explanation": "\tSAIC-GM is like Barnett Bank. This is because 'SAIC-GM' <type> 'Privately held company' in the same way that 'Barnett Bank' <type> 'Bank', 'SAIC-GM' <product> 'Car' in the same way that 'Barnett Bank' <genre> 'Financial services', 'SAIC-GM' <region served> 'China' in the same way that 'Barnett Bank' <państwo> 'United States', 'SAIC-GM' <owner> 'SAIC Motor' in the same way that 'Barnett Bank' <parent company> 'Bank of America', and 'SAIC-GM' <industry> 'Automotive industry' in the same way that 'Barnett Bank' <service> 'Finance'.\n"
+    },
+    {
+      "total_score": "0.9753359602708173",
+      "confidence": "1",
+      "rating": "0.9753359602708173",
+      "src": "SAIC-GM",
+      "target": "Providian",
+      "asserts": {
+        "region served": "location",
+        "product": "key person",
+        "owner": "parent company"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Privately held company"
+          ],
+          [
+            "type",
+            "Public company",
+            "1.986689052804031",
+            "0.9933445264020155"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Automotive industry"
+          ],
+          [
+            "industry",
+            "Financial services",
+            "1.9822332810721464",
+            "0.9911166405360732"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "region served",
+            "China"
+          ],
+          [
+            "location",
+            "San Francisco",
+            "1.9509437902725486",
+            "0.9754718951362743"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Car"
+          ],
+          [
+            "key person",
+            "Chairman",
+            "1.9227858471487258",
+            "0.9613929235743629"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "owner",
+            "SAIC Motor"
+          ],
+          [
+            "parent company",
+            "JPMorgan Chase",
+            "1.9107076314107219",
+            "0.9553538157053609"
+          ]
+        ]
+      ],
+      "explanation": "\tSAIC-GM is like Providian. This is because 'SAIC-GM' <type> 'Privately held company' in the same way that 'Providian' <type> 'Public company', 'SAIC-GM' <industry> 'Automotive industry' in the same way that 'Providian' <industry> 'Financial services', 'SAIC-GM' <region served> 'China' in the same way that 'Providian' <location> 'San Francisco', 'SAIC-GM' <product> 'Car' in the same way that 'Providian' <key person> 'Chairman', and 'SAIC-GM' <owner> 'SAIC Motor' in the same way that 'Providian' <parent company> 'JPMorgan Chase'.\n"
+    },
+    {
+      "total_score": "0.9469837684341147",
+      "confidence": "1",
+      "rating": "0.9469837684341147",
+      "src": "SAIC-GM",
+      "target": "Freedom Airlines",
+      "asserts": {
+        "region served": "headquarter",
+        "type": "alliance",
+        "owner": "parent company",
+        "product": "hub airport"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Automotive industry"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.9699049402513782",
+            "0.9849524701256891"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "region served",
+            "China"
+          ],
+          [
+            "headquarter",
+            "United States",
+            "1.9500652148086457",
+            "0.9750326074043228"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Privately held company"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.9312194029237344",
+            "0.9656097014618672"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "owner",
+            "SAIC Motor"
+          ],
+          [
+            "parent company",
+            "Delta Air Lines",
+            "1.8623174730737881",
+            "0.9311587365368941"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Car"
+          ],
+          [
+            "hub airport",
+            "Cincinnati/Northern Kentucky International Airport",
+            "1.7563306532836012",
+            "0.8781653266418006"
+          ]
+        ]
+      ],
+      "explanation": "\tSAIC-GM is like Freedom Airlines. This is because 'SAIC-GM' <industry> 'Automotive industry' in the same way that 'Freedom Airlines' <industry> 'Aviation', 'SAIC-GM' <region served> 'China' in the same way that 'Freedom Airlines' <headquarter> 'United States', 'SAIC-GM' <type> 'Privately held company' in the same way that 'Freedom Airlines' <alliance> 'SkyTeam', 'SAIC-GM' <owner> 'SAIC Motor' in the same way that 'Freedom Airlines' <parent company> 'Delta Air Lines', and 'SAIC-GM' <product> 'Car' in the same way that 'Freedom Airlines' <hub airport> 'Cincinnati/Northern Kentucky International Airport'.\n"
+    },
+    {
+      "total_score": "0.9393825292159971",
+      "confidence": "1",
+      "rating": "0.9393825292159971",
+      "src": "SAIC-GM",
+      "target": "Comair",
+      "asserts": {
+        "type": "alliance",
+        "owner": "parent company",
+        "region served": "target airport",
+        "product": "hub airport"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Automotive industry"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.9514632684838773",
+            "0.9757316342419387"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Privately held company"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.913126995009614",
+            "0.956563497504807"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "owner",
+            "SAIC Motor"
+          ],
+          [
+            "parent company",
+            "Delta Air Lines",
+            "1.882178643768341",
+            "0.9410893218841705"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "region served",
+            "China"
+          ],
+          [
+            "target airport",
+            "Hartsfield–Jackson Atlanta International Airport",
+            "1.8715639662511772",
+            "0.9357819831255886"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Car"
+          ],
+          [
+            "hub airport",
+            "John F. Kennedy International Airport",
+            "1.775492418646962",
+            "0.887746209323481"
+          ]
+        ]
+      ],
+      "explanation": "\tSAIC-GM is like Comair. This is because 'SAIC-GM' <industry> 'Automotive industry' in the same way that 'Comair' <industry> 'Aviation', 'SAIC-GM' <type> 'Privately held company' in the same way that 'Comair' <alliance> 'SkyTeam', 'SAIC-GM' <owner> 'SAIC Motor' in the same way that 'Comair' <parent company> 'Delta Air Lines', 'SAIC-GM' <region served> 'China' in the same way that 'Comair' <target airport> 'Hartsfield–Jackson Atlanta International Airport', and 'SAIC-GM' <product> 'Car' in the same way that 'Comair' <hub airport> 'John F. Kennedy International Airport'.\n"
+    },
+    {
+      "total_score": "0.958151480114258",
+      "confidence": "1",
+      "rating": "0.958151480114258",
+      "src": "SAIC-GM",
+      "target": "Compass Airlines (North America)",
+      "asserts": {
+        "product": "headquarter",
+        "type": "alliance",
+        "region served": "hub airport",
+        "owner": "lounge"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Automotive industry"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.9756042181528444",
+            "0.9878021090764222"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Car"
+          ],
+          [
+            "headquarter",
+            "Minneapolis–Saint Paul International Airport",
+            "1.9728856599623228",
+            "0.9864428299811614"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Privately held company"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.9357811325808063",
+            "0.9678905662904032"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "region served",
+            "China"
+          ],
+          [
+            "hub airport",
+            "Seattle–Tacoma International Airport",
+            "1.9038137859274085",
+            "0.9519068929637042"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "owner",
+            "SAIC Motor"
+          ],
+          [
+            "lounge",
+            "Delta Air Lines",
+            "1.7934300045191982",
+            "0.8967150022595991"
+          ]
+        ]
+      ],
+      "explanation": "\tSAIC-GM is like Compass Airlines (North America). This is because 'SAIC-GM' <industry> 'Automotive industry' in the same way that 'Compass Airlines (North America)' <industry> 'Aviation', 'SAIC-GM' <product> 'Car' in the same way that 'Compass Airlines (North America)' <headquarter> 'Minneapolis–Saint Paul International Airport', 'SAIC-GM' <type> 'Privately held company' in the same way that 'Compass Airlines (North America)' <alliance> 'SkyTeam', 'SAIC-GM' <region served> 'China' in the same way that 'Compass Airlines (North America)' <hub airport> 'Seattle–Tacoma International Airport', and 'SAIC-GM' <owner> 'SAIC Motor' in the same way that 'Compass Airlines (North America)' <lounge> 'Delta Air Lines'.\n"
+    },
+    {
+      "total_score": "0.952589547282807",
+      "confidence": "1",
+      "rating": "0.952589547282807",
+      "src": "SAIC-GM",
+      "target": "Endeavor Air",
+      "asserts": {
+        "product": "headquarter",
+        "type": "alliance",
+        "region served": "hub airport",
+        "owner": "lounge"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Automotive industry"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.9713088584573364",
+            "0.9856544292286682"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Car"
+          ],
+          [
+            "headquarter",
+            "Minneapolis–Saint Paul International Airport",
+            "1.968737960063641",
+            "0.9843689800318205"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "Privately held company"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.9316695061291222",
+            "0.9658347530645611"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "region served",
+            "China"
+          ],
+          [
+            "hub airport",
+            "Detroit Metropolitan Airport",
+            "1.8500514453812194",
+            "0.9250257226906097"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "owner",
+            "SAIC Motor"
+          ],
+          [
+            "lounge",
+            "Delta Air Lines",
+            "1.8041277027967508",
+            "0.9020638513983754"
+          ]
+        ]
+      ],
+      "explanation": "\tSAIC-GM is like Endeavor Air. This is because 'SAIC-GM' <industry> 'Automotive industry' in the same way that 'Endeavor Air' <industry> 'Aviation', 'SAIC-GM' <product> 'Car' in the same way that 'Endeavor Air' <headquarter> 'Minneapolis–Saint Paul International Airport', 'SAIC-GM' <type> 'Privately held company' in the same way that 'Endeavor Air' <alliance> 'SkyTeam', 'SAIC-GM' <region served> 'China' in the same way that 'Endeavor Air' <hub airport> 'Detroit Metropolitan Airport', and 'SAIC-GM' <owner> 'SAIC Motor' in the same way that 'Endeavor Air' <lounge> 'Delta Air Lines'.\n"
+    },
+    {
+      "total_score": "0.9010264241119075",
+      "confidence": "1",
+      "rating": "0.9010264241119075",
+      "src": "SAIC Volkswagen",
+      "target": "Compass Airlines (North America)",
+      "asserts": {
+        "location": "headquarter",
+        "product": "alliance",
+        "region served": "hub airport",
+        "parent company": "lounge"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "location",
+            "Shanghai"
+          ],
+          [
+            "headquarter",
+            "Minneapolis–Saint Paul International Airport",
+            "1.9047103752315748",
+            "0.9523551876157874"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Automotive industry"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.896535510463339",
+            "0.9482677552316695"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "product",
+            "Car"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.8229675850431786",
+            "0.9114837925215893"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "region served",
+            "China"
+          ],
+          [
+            "hub airport",
+            "Seattle–Tacoma International Airport",
+            "1.791309365056592",
+            "0.895654682528296"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "SAIC Motor"
+          ],
+          [
+            "lounge",
+            "Delta Air Lines",
+            "1.5947414053243891",
+            "0.7973707026621946"
+          ]
+        ]
+      ],
+      "explanation": "\tSAIC Volkswagen is like Compass Airlines (North America). This is because 'SAIC Volkswagen' <location> 'Shanghai' in the same way that 'Compass Airlines (North America)' <headquarter> 'Minneapolis–Saint Paul International Airport', 'SAIC Volkswagen' <industry> 'Automotive industry' in the same way that 'Compass Airlines (North America)' <industry> 'Aviation', 'SAIC Volkswagen' <product> 'Car' in the same way that 'Compass Airlines (North America)' <alliance> 'SkyTeam', 'SAIC Volkswagen' <region served> 'China' in the same way that 'Compass Airlines (North America)' <hub airport> 'Seattle–Tacoma International Airport', and 'SAIC Volkswagen' <parent company> 'SAIC Motor' in the same way that 'Compass Airlines (North America)' <lounge> 'Delta Air Lines'.\n"
+    },
+    {
+      "total_score": "0.9333574010082323",
+      "confidence": "1",
+      "rating": "0.9333574010082323",
+      "src": "Zhang Honggen",
+      "target": "Xoom Corporation",
+      "asserts": {
+        "place of birth": "key person",
+        "birth place": "type",
+        "PLACE OF DEATH": "parent company",
+        "manager club": "product"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "place of birth",
+            "Shanghai"
+          ],
+          [
+            "key person",
+            "Chairman",
+            "1.9678272864427724",
+            "0.9839136432213862"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "birth place",
+            "Taiwan"
+          ],
+          [
+            "type",
+            "Subsidiary",
+            "1.950682019204386",
+            "0.975341009602193"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "PLACE OF DEATH",
+            "Beijing"
+          ],
+          [
+            "parent company",
+            "PayPal",
+            "1.8422849669784611",
+            "0.9211424834892306"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "place of birth",
+            "China"
+          ],
+          [
+            "key person",
+            "Roelof Botha",
+            "1.8367043967038517",
+            "0.9183521983519258"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "manager club",
+            "Wanda Group"
+          ],
+          [
+            "product",
+            "Financial services",
+            "1.736075340752852",
+            "0.868037670376426"
+          ]
+        ]
+      ],
+      "explanation": "\tZhang Honggen is like Xoom Corporation. This is because 'Zhang Honggen' <place of birth> 'Shanghai' in the same way that 'Xoom Corporation' <key person> 'Chairman', 'Zhang Honggen' <birth place> 'Taiwan' in the same way that 'Xoom Corporation' <type> 'Subsidiary', 'Zhang Honggen' <PLACE OF DEATH> 'Beijing' in the same way that 'Xoom Corporation' <parent company> 'PayPal', and 'Zhang Honggen' <manager club> 'Wanda Group' in the same way that 'Xoom Corporation' <product> 'Financial services'.\n"
+    },
+    {
+      "total_score": "0.9550951902205878",
+      "confidence": "1",
+      "rating": "0.9550951902205878",
+      "src": "Zhang Honggen",
+      "target": "Slide.com",
+      "asserts": {
+        "PLACE OF DEATH": "foundation place",
+        "birth place": "type",
+        "place of birth": "key person",
+        "manager club": "parent"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "PLACE OF DEATH",
+            "Beijing"
+          ],
+          [
+            "foundation place",
+            "San Francisco",
+            "1.9536263435517616",
+            "0.9768131717758808"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "birth place",
+            "Taiwan"
+          ],
+          [
+            "type",
+            "Subsidiary",
+            "1.9452786522395162",
+            "0.9726393261197581"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "place of birth",
+            "Shanghai"
+          ],
+          [
+            "key person",
+            "Chairman",
+            "1.909852677329059",
+            "0.9549263386645295"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "manager club",
+            "Wanda Group"
+          ],
+          [
+            "parent",
+            "Google",
+            "1.8984615256461432",
+            "0.9492307628230716"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "place of birth",
+            "China"
+          ],
+          [
+            "key person",
+            "Max Levchin",
+            "1.8437327034393975",
+            "0.9218663517196988"
+          ]
+        ]
+      ],
+      "explanation": "\tZhang Honggen is like Slide.com. This is because 'Zhang Honggen' <PLACE OF DEATH> 'Beijing' in the same way that 'Slide.com' <foundation place> 'San Francisco', 'Zhang Honggen' <birth place> 'Taiwan' in the same way that 'Slide.com' <type> 'Subsidiary', 'Zhang Honggen' <place of birth> 'Shanghai' in the same way that 'Slide.com' <key person> 'Chairman', and 'Zhang Honggen' <manager club> 'Wanda Group' in the same way that 'Slide.com' <parent> 'Google'.\n"
+    },
+    {
+      "total_score": "0.9004180002401487",
+      "confidence": "0.9428571428571428",
+      "rating": "0.9549887881334911",
+      "src": "Zhang Honggen",
+      "target": "Providian",
+      "asserts": {
+        "place of birth": "key person",
+        "PLACE OF DEATH": "location",
+        "birth place": "type",
+        "manager club": "parent company"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "place of birth",
+            "Shanghai"
+          ],
+          [
+            "key person",
+            "President",
+            "1.978297299609595",
+            "0.9891486498047976"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "PLACE OF DEATH",
+            "Beijing"
+          ],
+          [
+            "location",
+            "San Francisco",
+            "1.9648575802395476",
+            "0.9824287901197738"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "birth place",
+            "Taiwan"
+          ],
+          [
+            "type",
+            "Public company",
+            "1.9566770934870656",
+            "0.9783385467435328"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "place of birth",
+            "China"
+          ],
+          [
+            "key person",
+            "Chairman",
+            "1.8489212231117105",
+            "0.9244606115558552"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "manager club",
+            "Wanda Group"
+          ],
+          [
+            "parent company",
+            "JPMorgan Chase",
+            "1.8011346848869922",
+            "0.9005673424434961"
+          ]
+        ]
+      ],
+      "explanation": "\tZhang Honggen is like Providian. This is because 'Zhang Honggen' <place of birth> 'Shanghai' in the same way that 'Providian' <key person> 'President', 'Zhang Honggen' <PLACE OF DEATH> 'Beijing' in the same way that 'Providian' <location> 'San Francisco', 'Zhang Honggen' <birth place> 'Taiwan' in the same way that 'Providian' <type> 'Public company', and 'Zhang Honggen' <manager club> 'Wanda Group' in the same way that 'Providian' <parent company> 'JPMorgan Chase'.\n"
+    },
+    {
+      "total_score": "0.9571551053054626",
+      "confidence": "1",
+      "rating": "0.9571551053054626",
+      "src": "Zhang Honggen",
+      "target": "Pan American World Airways",
+      "asserts": {
+        "PLACE OF DEATH": "headquarter",
+        "place of birth": "target airport",
+        "manager club": "hub airport",
+        "birth place": "industry"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "PLACE OF DEATH",
+            "Beijing"
+          ],
+          [
+            "headquarter",
+            "New York City",
+            "1.9498810561040538",
+            "0.9749405280520269"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "place of birth",
+            "Shanghai"
+          ],
+          [
+            "target airport",
+            "Washington Dulles International Airport",
+            "1.9194451821451761",
+            "0.9597225910725881"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "manager club",
+            "Wanda Group"
+          ],
+          [
+            "hub airport",
+            "John F. Kennedy International Airport",
+            "1.9184128795396223",
+            "0.9592064397698111"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "place of birth",
+            "China"
+          ],
+          [
+            "target airport",
+            "George Bush Intercontinental Airport",
+            "1.9035306698343972",
+            "0.9517653349171986"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "birth place",
+            "Taiwan"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.8802812654313747",
+            "0.9401406327156874"
+          ]
+        ]
+      ],
+      "explanation": "\tZhang Honggen is like Pan American World Airways. This is because 'Zhang Honggen' <PLACE OF DEATH> 'Beijing' in the same way that 'Pan American World Airways' <headquarter> 'New York City', 'Zhang Honggen' <place of birth> 'Shanghai' in the same way that 'Pan American World Airways' <target airport> 'Washington Dulles International Airport', 'Zhang Honggen' <manager club> 'Wanda Group' in the same way that 'Pan American World Airways' <hub airport> 'John F. Kennedy International Airport', and 'Zhang Honggen' <birth place> 'Taiwan' in the same way that 'Pan American World Airways' <industry> 'Aviation'.\n"
+    },
+    {
+      "total_score": "0.9605183588922697",
+      "confidence": "0.9722222222222222",
+      "rating": "0.9879617405749059",
+      "src": "China Jinmao",
+      "target": "Barnett Bank",
+      "asserts": {
+        "location city": "genre",
+        "key person": "service",
+        "region served": "państwo"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "location city",
+            "Hong Kong"
+          ],
+          [
+            "genre",
+            "Financial services",
+            "1.9923832388850888",
+            "0.9961916194425444"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "State-owned enterprise"
+          ],
+          [
+            "type",
+            "Bank",
+            "1.9920359309095892",
+            "0.9960179654547946"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "key person",
+            "Chairman"
+          ],
+          [
+            "service",
+            "Finance",
+            "1.985799726043302",
+            "0.992899863021651"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "region served",
+            "China"
+          ],
+          [
+            "państwo",
+            "United States",
+            "1.957093211246874",
+            "0.978546605623437"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Sinochem Group"
+          ],
+          [
+            "parent company",
+            "Bank of America",
+            "1.952305298664206",
+            "0.976152649332103"
+          ]
+        ]
+      ],
+      "explanation": "\tChina Jinmao is like Barnett Bank. This is because 'China Jinmao' <location city> 'Hong Kong' in the same way that 'Barnett Bank' <genre> 'Financial services', 'China Jinmao' <type> 'State-owned enterprise' in the same way that 'Barnett Bank' <type> 'Bank', 'China Jinmao' <key person> 'Chairman' in the same way that 'Barnett Bank' <service> 'Finance', 'China Jinmao' <region served> 'China' in the same way that 'Barnett Bank' <państwo> 'United States', and 'China Jinmao' <parent company> 'Sinochem Group' in the same way that 'Barnett Bank' <parent company> 'Bank of America'.\n"
+    },
+    {
+      "total_score": "0.9285101448883003",
+      "confidence": "0.9722222222222222",
+      "rating": "0.9550390061708232",
+      "src": "China Jinmao",
+      "target": "Freedom Airlines",
+      "asserts": {
+        "region served": "headquarter",
+        "type": "alliance",
+        "key person": "hub airport"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Real estate"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.9690683394099848",
+            "0.9845341697049924"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "region served",
+            "China"
+          ],
+          [
+            "headquarter",
+            "United States",
+            "1.9535898915142025",
+            "0.9767949457571012"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Sinochem Group"
+          ],
+          [
+            "parent company",
+            "Delta Air Lines",
+            "1.9480645979546714",
+            "0.9740322989773357"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "State-owned enterprise"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.9245346971138697",
+            "0.9622673485569349"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "key person",
+            "Chairman"
+          ],
+          [
+            "hub airport",
+            "Cincinnati/Northern Kentucky International Airport",
+            "1.7551325357155028",
+            "0.8775662678577514"
+          ]
+        ]
+      ],
+      "explanation": "\tChina Jinmao is like Freedom Airlines. This is because 'China Jinmao' <industry> 'Real estate' in the same way that 'Freedom Airlines' <industry> 'Aviation', 'China Jinmao' <region served> 'China' in the same way that 'Freedom Airlines' <headquarter> 'United States', 'China Jinmao' <parent company> 'Sinochem Group' in the same way that 'Freedom Airlines' <parent company> 'Delta Air Lines', 'China Jinmao' <type> 'State-owned enterprise' in the same way that 'Freedom Airlines' <alliance> 'SkyTeam', and 'China Jinmao' <key person> 'Chairman' in the same way that 'Freedom Airlines' <hub airport> 'Cincinnati/Northern Kentucky International Airport'.\n"
+    },
+    {
+      "total_score": "0.95315060790132",
+      "confidence": "0.9722222222222222",
+      "rating": "0.9803834824127863",
+      "src": "Sinofert Holdings",
+      "target": "Barnett Bank",
+      "asserts": {
+        "key person": "genre",
+        "location city": "państwo",
+        "industry": "service"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "type",
+            "State-owned enterprise"
+          ],
+          [
+            "type",
+            "Bank",
+            "1.9912503795594767",
+            "0.9956251897797384"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "key person",
+            "Chairman"
+          ],
+          [
+            "genre",
+            "Financial services",
+            "1.990947465160401",
+            "0.9954737325802006"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location city",
+            "Beijing"
+          ],
+          [
+            "państwo",
+            "United States",
+            "1.9788215122113968",
+            "0.9894107561056984"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Sinochem Group"
+          ],
+          [
+            "parent company",
+            "Bank of America",
+            "1.9496542944817143",
+            "0.9748271472408572"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Fertilizer"
+          ],
+          [
+            "service",
+            "Finance",
+            "1.893161172714874",
+            "0.946580586357437"
+          ]
+        ]
+      ],
+      "explanation": "\tSinofert Holdings is like Barnett Bank. This is because 'Sinofert Holdings' <type> 'State-owned enterprise' in the same way that 'Barnett Bank' <type> 'Bank', 'Sinofert Holdings' <key person> 'Chairman' in the same way that 'Barnett Bank' <genre> 'Financial services', 'Sinofert Holdings' <location city> 'Beijing' in the same way that 'Barnett Bank' <państwo> 'United States', 'Sinofert Holdings' <parent company> 'Sinochem Group' in the same way that 'Barnett Bank' <parent company> 'Bank of America', and 'Sinofert Holdings' <industry> 'Fertilizer' in the same way that 'Barnett Bank' <service> 'Finance'.\n"
+    },
+    {
+      "total_score": "0.9361154582816553",
+      "confidence": "0.9722222222222222",
+      "rating": "0.9628616142325598",
+      "src": "Sinofert Holdings",
+      "target": "Freedom Airlines",
+      "asserts": {
+        "location city": "headquarter",
+        "type": "alliance",
+        "region served": "hub airport"
+      },
+      "mapping": [
+        [
+          [
+            "OUTGOING",
+            "industry",
+            "Fertilizer"
+          ],
+          [
+            "industry",
+            "Aviation",
+            "1.9869200204007074",
+            "0.9934600102003537"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "location city",
+            "Beijing"
+          ],
+          [
+            "headquarter",
+            "United States",
+            "1.9672298083950777",
+            "0.9836149041975388"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "type",
+            "State-owned enterprise"
+          ],
+          [
+            "alliance",
+            "SkyTeam",
+            "1.931051003843483",
+            "0.9655255019217415"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "parent company",
+            "Sinochem Group"
+          ],
+          [
+            "parent company",
+            "Delta Air Lines",
+            "1.922224123101982",
+            "0.961112061550991"
+          ]
+        ],
+        [
+          [
+            "OUTGOING",
+            "region served",
+            "China"
+          ],
+          [
+            "hub airport",
+            "Cincinnati/Northern Kentucky International Airport",
+            "1.8211911865843473",
+            "0.9105955932921737"
+          ]
+        ]
+      ],
+      "explanation": "\tSinofert Holdings is like Freedom Airlines. This is because 'Sinofert Holdings' <industry> 'Fertilizer' in the same way that 'Freedom Airlines' <industry> 'Aviation', 'Sinofert Holdings' <location city> 'Beijing' in the same way that 'Freedom Airlines' <headquarter> 'United States', 'Sinofert Holdings' <type> 'State-owned enterprise' in the same way that 'Freedom Airlines' <alliance> 'SkyTeam', 'Sinofert Holdings' <parent company> 'Sinochem Group' in the same way that 'Freedom Airlines' <parent company> 'Delta Air Lines', and 'Sinofert Holdings' <region served> 'China' in the same way that 'Freedom Airlines' <hub airport> 'Cincinnati/Northern Kentucky International Airport'.\n"
+    }
+  ]
+}

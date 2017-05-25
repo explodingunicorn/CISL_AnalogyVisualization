@@ -24,9 +24,18 @@ svg {
     width: 100%;
     height: 100%;
 }
-.links line {
+
+.links .analogy {
+    stroke: #EDE580;
+}
+
+.links .connection {
     stroke: white;
     opacity: .4;
+}
+
+.links .master {
+    stroke: transparent;
 }
 
 .nodes circle {

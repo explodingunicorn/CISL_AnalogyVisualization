@@ -6,6 +6,7 @@ var app = new Vue({
         graph: '',
         graphMounted: false,
         selecting: false,
+        colorPool: new ColorPool(),
         //We are binding this to our data sets selection dropdown
         currentlySelected: 'music',
         nodeLabels: [
@@ -61,6 +62,16 @@ var app = new Vue({
                 val: 'ww2',
                 color: ''
             },
+            {
+                name: 'Chinese Companies',
+                val: 'chinese_company',
+                color: ''
+            },
+            {
+                name: 'US Companies',
+                val: 'us_company',
+                color: ''
+            }
         ],
 
     },
@@ -68,15 +79,13 @@ var app = new Vue({
         //This adds data sets to our graph using analogy graph
         addDataSet: function() {
             var tag = this.currentlySelected;
-            this.graph.loadDataSet('js/data/' + tag + '.xml', tag);
-            var newColor = this.graph.getColor(tag);
+            var color = this.colorPool.getColor(tag);
+            this.graph.loadDataSet('js/data/' + tag + '.xml', tag, color);
+
             this.selecting = false;
-            console.log(tag);
             for (var i = 0; i < this.dataSetsAvailable.length; i++) {
-                console.log('hi');
                 if (tag === this.dataSetsAvailable[i].val) {
-                    console.log('hi');
-                    this.dataSetsAvailable[i].color = newColor;
+                    this.dataSetsAvailable[i].color = color;
                     this.dataSetsUsed.push(this.dataSetsAvailable[i]);
                     this.dataSetsAvailable.splice(i, 1);
                     break;
@@ -112,6 +121,5 @@ var app = new Vue({
         this.addDataSet();
         this.currentlySelected = "romanEmpire1000"
         this.addDataSet();
-        console.log(this.dataSetsUsed);
     }
 });
