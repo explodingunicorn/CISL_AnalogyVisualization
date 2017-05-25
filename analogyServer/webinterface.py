@@ -23,7 +23,7 @@ def cache_load(f):
         cache[f] = AIMind(filename=f)
         return cache[f]
 
-data_dir = "./data files/"
+data_dir = "./assets/js/data"
 def full_filename(filename):
     #add path to filename
     return os.path.join(data_dir, filename)
