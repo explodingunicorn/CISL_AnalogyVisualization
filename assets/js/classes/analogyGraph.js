@@ -1,11 +1,12 @@
-var AnalogyGraph = function(labels) {
+var AnalogyGraph = function() {
     var svg = d3.select("#graph");
     var width = window.innerWidth;
     var height = window.innerHeight;
 
     //These are for the final assembled links and node because they need to be in the same array for d3 to read them
-    var _HULLS = [], _NODES, _LINKS;
-    var _ANALOGIES = [];
+    var _HULLS = [], _NODES = [], _LINKS = [], _ANALOGIES = [];
+
+    //Begin to append our groups to the svg
     var hull = svg.append('g')
                     .attr('class', 'hulls');
     //Start our zoom with it's own rect before we create our nodes and links group
@@ -16,7 +17,7 @@ var AnalogyGraph = function(labels) {
     var node = svg.append('g')
                     .attr('class', 'nodes')
                     .selectAll("circle");
-    var LABELS = [svg.append('text'), svg.append('text')];
+    var labels = [svg.append('text'), svg.append('text')];
 
     //Use this array to hold data sets the user is adding
     var existingGraphs = [];
@@ -34,6 +35,7 @@ var AnalogyGraph = function(labels) {
         .force("charge", d3.forceManyBody().strength(-200))
         .force("center", d3.forceCenter(width / 2, height / 2));
 
+    //This sends a post request to our server to cache our results
     this.cacheResults = function() {
         $.ajax({
             url: '/',
@@ -52,6 +54,7 @@ var AnalogyGraph = function(labels) {
         });
     }
 
+    //Sends a post request to our server to get an analogies
     this.getAnalogyLinks = function() {
         var graph = this;
         $.ajax({
@@ -62,10 +65,12 @@ var AnalogyGraph = function(labels) {
             },
             type: 'POST',
             success: function(response) {
+                //If we get a response back that means we have cached results already so we will use those
                 if(response) {
                     graph.loadSaveData(JSON.parse(response));
                 }
 
+                //If not we need to do the calculations again
                 else {
                     graph.createAnalogyLinks();
                 }
@@ -76,6 +81,7 @@ var AnalogyGraph = function(labels) {
         });
     }
 
+    //Called to create our analogy links. Loops through all data and gets an analogy for each pair.
     this.createAnalogyLinks = function() {
         //Create a new resolver to handle our ajax calls
         resolver = new Resolver(nodeGroups[0].data.length * nodeGroups[1].data.length, this);
@@ -89,11 +95,13 @@ var AnalogyGraph = function(labels) {
         }
     }
 
+    //This loads in our cached analogies
     this.loadSaveData = function(saveObj) {
         //Create a new link group
         linkGroups.push({data: [], key: 'Analogies'});
         //Get our cached analogies in order to create new links in our graph
         _ANALOGIES = saveObj.analogies;
+        //This is inefficient right now, but we loop through all of our analogies, then loop through each nodeGroup to find the correct node    
         for (var i = 0; i < _ANALOGIES.length; i++) {
             var src, target
             for (var j = 0; j < nodeGroups[0].data.length; j++) {
@@ -108,18 +116,16 @@ var AnalogyGraph = function(labels) {
                 }
             }
 
+            //After we find the correct node we push some links to our analogy link group, the more links we push the stronger the bond
             linkGroups[2].data.push({source: src, target: target, value: _ANALOGIES[i].total_score, strength: 1});
             linkGroups[2].data.push({source: src, target: target, value: _ANALOGIES[i].total_score, strength: 1});
             linkGroups[2].data.push({source: src, target: target, value: _ANALOGIES[i].total_score, strength: 1});
             linkGroups[2].data.push({source: src, target: target, value: _ANALOGIES[i].total_score, strength: 1, analogy: _ANALOGIES[i].mapping});
+
+            //We also need to push the nodes from our opposing graphs to one anothers hulls
             _HULLS[0].nodes.push(target);
             _HULLS[1].nodes.push(src);
         }
-
-        // var hullPoints = saveObj.hullPoints;
-        // for(var i = 0; i < hullPoints.length; i++) {
-        //     _HULLS[hullPoints[i].hullNum].nodes.push(nodeGroups[hullPoints[i].targetNodeGroup].data[hullPoints[i].index]);
-        // }
 
         assembleGraph();
     }
@@ -262,7 +268,7 @@ var AnalogyGraph = function(labels) {
 
         //{source: srcNode, target: targetNode, value: analogy.total_score}
 
-        //A for loop to push our nodes and links from their groups into single arrays
+        //A for loop to push our nodes and links from their groups into single array
         for(var i = 0; i < nodeGroups.length; i++) {
             masterNodes.push({name: nodeGroups[i].key, connections: 1, type: 'master'});
             _NODES.push(masterNodes[i]);
@@ -275,6 +281,7 @@ var AnalogyGraph = function(labels) {
             masterLinkGroups.push(newLinks);            
         }
 
+        //A loop to push our normal links from their groups into a single array
         for(var i = 0; i < linkGroups.length; i++) {
             for(var j = 0; j< linkGroups[i].data.length; j++) {
                 _LINKS.push(linkGroups[i].data[j]);
@@ -282,6 +289,7 @@ var AnalogyGraph = function(labels) {
             }
         }
 
+        //A loop to push our master, invisible links into the same array
         for(var i = 0; i < masterLinkGroups.length; i++) {
             for(var j = 0; j < masterLinkGroups[i].length; j++) {
                 _LINKS.push(masterLinkGroups[i][j]);
@@ -385,10 +393,6 @@ var AnalogyGraph = function(labels) {
         });
     }
 
-    this.getColor = function(tag) {
-        return colorPool.getUsedColor(tag);
-    }
-
     //Function that runs to update the graph on 'tick'
     function ticked() {
         if(_HULLS) {
@@ -426,8 +430,8 @@ var AnalogyGraph = function(labels) {
                 _HULLS[i].shape.attr('transform', d3.event.transform);
             }
 
-            for(var i = 0; i < LABELS.length; i++) {
-                LABELS[i].attr('transform', d3.event.transform);
+            for(var i = 0; i < labels.length; i++) {
+                labels[i].attr('transform', d3.event.transform);
             }
         }
     }
@@ -488,7 +492,7 @@ var AnalogyGraph = function(labels) {
 
     function showLabels(nodesArr) {
         for (var i = 0; i < nodesArr.length; i++) {
-            LABELS[i].attr('x', nodesArr[i].x)
+            labels[i].attr('x', nodesArr[i].x)
                 .attr('y', nodesArr[i].y + 5)
                 .text(nodesArr[i].name)
                 .attr("text-anchor", "middle")
@@ -499,8 +503,8 @@ var AnalogyGraph = function(labels) {
     }
 
     function hideLabels() {
-        for (var i = 0; i < LABELS.length; i++) {
-            LABELS[i].text('');
+        for (var i = 0; i < labels.length; i++) {
+            labels[i].text('');
         }
     }
 };

@@ -19,15 +19,4 @@ var ColorPool = function() {
             return color;
         }
     };
-
-    this.getUsedColor = function(tag) {
-        console.log('getting used color');
-        for (var i = 0; i < this.usedColors.length; i++) {
-            console.log(this.usedColors[i].tag);
-            // if (this.usedColors[i].tag === tag) {
-            //     return this.usedColors[i].color;
-            // }
-        }
-        return 'black'
-    }
 }

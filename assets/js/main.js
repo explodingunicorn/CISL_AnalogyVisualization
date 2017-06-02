@@ -29,6 +29,7 @@ var app = new Vue({
                 }
             },
         ],
+        //Stores the data sets that are already currently in the graph
         dataSetsUsed: [],
         //An object that holds all of the relevant info for our current data sets
         dataSetsAvailable: [
@@ -80,6 +81,7 @@ var app = new Vue({
         addDataSet: function() {
             var tag = this.currentlySelected;
             var color = this.colorPool.getColor(tag);
+            //Tell our graph to load a new data set
             this.graph.loadDataSet('js/data/' + tag + '.xml', tag, color);
 
             this.selecting = false;
@@ -94,29 +96,14 @@ var app = new Vue({
         },
         generateAnalogy: function() {
             this.graph.getAnalogyLinks();
-        },
-        sendTest: function() {
-            $.ajax({
-                url: '/',
-                type: 'POST',
-                contentType: "application/json",
-                data: JSON.stringify({name: 'butts'}),
-                complete: function() {
-
-                },
-                success: function(data) {
-                    console.log('success!');
-                },
-                error: function() {
-                    console.log('There was an error');
-                }
-            })
         }
     },
     mounted: function() {
         //We are instantiating our Analogy Graph here because we need to wait for the app to mount in order for the svg to be available to d3
         this.graph = new AnalogyGraph(this.nodeLabels);
         this.graphMounted = true;
+
+        //This is used to create the graph automatically so we don't have to pick our own selection everytime
         this.currentlySelected = "music"
         this.addDataSet();
         this.currentlySelected = "romanEmpire1000"

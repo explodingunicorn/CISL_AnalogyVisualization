@@ -35,6 +35,8 @@ assets
 ----analogyGraph.js
 ```
 
+The static assets also contain all of the xml files which contains our data. The data must reside here because the frontend needs the data inside of the static files in order to function. You will find the data files under the 'js' folder.
+
 The code for the analogy server is under the analogyServer folder. All it contains is two python scripts. One of which starts the python server, the other is the analogy engine.
 
 To be continued...
